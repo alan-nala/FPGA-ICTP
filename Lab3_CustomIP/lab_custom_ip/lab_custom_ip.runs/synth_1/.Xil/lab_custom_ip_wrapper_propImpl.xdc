@@ -1,0 +1,5 @@
+set_property SRC_FILE_INFO {cfile:/scratch/smr3765/labs/Lab3_PWM_Simulation/lab_custom_ip/lab_custom_ip.srcs/constrs_1/new/lab_custom_ip.xdc rfile:../../../lab_custom_ip.srcs/constrs_1/new/lab_custom_ip.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN T22 [get_ports pwm_0]
+set_property src_info {type:XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN Y11 [get_ports pwm_1]

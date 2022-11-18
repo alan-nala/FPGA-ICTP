@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="sdx.custom.platform.repository.locations" value="/scratch/smr3765/labs/Lab3_PWM_Simulation/lab_custom_ip/vitis2/lab_custom_ip_wrapper/export/lab_custom_ip_wrapper"/>
+	<item key="sdx.custom.platform.repository.last.directory.dialog.location" value="/scratch/smr3765/labs/Lab3_PWM_Simulation/lab_custom_ip/vitis2/lab_custom_ip_wrapper/export/lab_custom_ip_wrapper"/>
+</section>

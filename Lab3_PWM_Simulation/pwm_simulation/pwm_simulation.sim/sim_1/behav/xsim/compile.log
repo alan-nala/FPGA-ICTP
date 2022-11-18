@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/scratch/smr3765/labs/Lab3_PWM_Simulation/pwm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'pwm'
+INFO: [VRFC 10-163] Analyzing VHDL file "/scratch/smr3765/labs/Lab3_PWM_Simulation/pwm_simulation/pwm_simulation.srcs/sim_1/imports/sol/pwm_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'pwm_tb'

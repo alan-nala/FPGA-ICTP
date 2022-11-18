@@ -1,0 +1,29 @@
+16:26:17 **** Incremental Build of configuration Debug for project lab_custom_ip_c3 ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+ 
+make --no-print-directory main-build
+Building file: ../src/lab_custom_ip_c3_sol.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab_custom_ip_c3_sol.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/agustin/Escritorio/workshop_ictp2022/smr3765/Labs/Lab3_CustomIP/my_ip_cores/pwm_c3/lab_custom_ip_wrapper/export/lab_custom_ip_wrapper/sw/lab_custom_ip_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/lab_custom_ip_c3_sol.d" -MT"src/lab_custom_ip_c3_sol.o" -o "src/lab_custom_ip_c3_sol.o" "../src/lab_custom_ip_c3_sol.c"
+../src/lab_custom_ip_c3_sol.c: In function 'main':
+../src/lab_custom_ip_c3_sol.c:35:8: warning: unused variable 'i' [-Wunused-variable]
+   35 |    int i;
+      |        ^
+Finished building: ../src/lab_custom_ip_c3_sol.c
+ 
+Building target: lab_custom_ip_c3.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/home/agustin/Escritorio/workshop_ictp2022/smr3765/Labs/Lab3_CustomIP/my_ip_cores/pwm_c3/lab_custom_ip_wrapper/export/lab_custom_ip_wrapper/sw/lab_custom_ip_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "lab_custom_ip_c3.elf"  ./src/lab_custom_ip_c3_sol.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: lab_custom_ip_c3.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size lab_custom_ip_c3.elf  |tee "lab_custom_ip_c3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51035	   2548	  22640	  76223	  129bf	lab_custom_ip_c3.elf
+Finished building: lab_custom_ip_c3.elf.size
+ 
+
+16:26:18 Build Finished (took 1s.533ms)
+

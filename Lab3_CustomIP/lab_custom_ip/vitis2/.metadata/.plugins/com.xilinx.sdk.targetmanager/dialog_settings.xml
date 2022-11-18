@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Zed 210248A39C5D&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Zed-210248A39C5D-4ba00477-0&quot;,&quot;3&quot;:&quot;jsn-Zed-210248A39C5D-23727093-0&quot;}}]}"/>
+	<item key="lab_custom_ip_system-bitFile" value="/scratch/smr3765/labs/Lab3_PWM_Simulation/lab_custom_ip/vitis2/lab_custom_ip_wrapper/export/lab_custom_ip_wrapper/hw/lab_custom_ip_wrapper.bit"/>
+	<item key="lab_custom_ip_system-bmmFile" value=""/>
+	<item key="lab_custom_ip_system-target" value="Local"/>
+	<item key="lab_custom_ip_system-device" value="Auto Detect"/>
+	<item key="lab_custom_ip_system-partial_bit" value="false"/>
+	<item key="lab_custom_ip_system-skip_rev_check" value="false"/>
+	<item key="programfpga.sdxproject" value="lab_custom_ip_system"/>
+</section>

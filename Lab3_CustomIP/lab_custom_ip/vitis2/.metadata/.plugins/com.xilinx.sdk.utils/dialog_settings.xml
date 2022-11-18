@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="scw_hwspec" value="/scratch/smr3765/labs/Lab3_PWM_Simulation/lab_custom_ip"/>
+	<item key="sdx_program_fpga_view_bit_bmm_browse_key" value="/scratch/smr3765/labs/Lab3_PWM_Simulation/lab_custom_ip/vitis2/lab_custom_ip_wrapper/export/lab_custom_ip_wrapper/hw"/>
+</section>

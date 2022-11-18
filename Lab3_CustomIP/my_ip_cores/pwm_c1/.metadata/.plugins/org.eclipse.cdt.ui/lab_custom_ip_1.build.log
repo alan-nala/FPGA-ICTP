@@ -1,0 +1,25 @@
+11:22:51 **** Build of configuration Debug for project lab_custom_ip_1 ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+ 
+make --no-print-directory main-build
+Building file: ../src/lab_custom_ip_c1.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab_custom_ip_c1.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/agustin/Escritorio/workshop_ictp2022/smr3765/Labs/Lab3_CustomIP/my_ip_cores/pwm_c1/lab_custom_ip_wrapper/export/lab_custom_ip_wrapper/sw/lab_custom_ip_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/lab_custom_ip_c1.d" -MT"src/lab_custom_ip_c1.o" -o "src/lab_custom_ip_c1.o" "../src/lab_custom_ip_c1.c"
+Finished building: ../src/lab_custom_ip_c1.c
+ 
+Building target: lab_custom_ip_1.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/home/agustin/Escritorio/workshop_ictp2022/smr3765/Labs/Lab3_CustomIP/my_ip_cores/pwm_c1/lab_custom_ip_wrapper/export/lab_custom_ip_wrapper/sw/lab_custom_ip_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "lab_custom_ip_1.elf"  ./src/lab_custom_ip_c1.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: lab_custom_ip_1.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size lab_custom_ip_1.elf  |tee "lab_custom_ip_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29058	   2184	  22632	  53874	   d272	lab_custom_ip_1.elf
+Finished building: lab_custom_ip_1.elf.size
+ 
+
+11:22:52 Build Finished (took 1s.496ms)
+
