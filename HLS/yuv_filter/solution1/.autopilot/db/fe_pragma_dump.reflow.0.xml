@@ -1,0 +1,7 @@
+<pragmas>
+<pragma file="../../Labs/HLS_Lab/yuv_filter/yuv_filter.c" line="36" pragmaType="inline" parentfunction="rgb2yuv" off="1" region="0" recursive="0"/>
+<pragma file="../../Labs/HLS_Lab/yuv_filter/yuv_filter.c" line="122" pragmaType="inline" parentfunction="yuv_scale" off="1" region="0" recursive="0"/>
+<pragma file="../../Labs/HLS_Lab/yuv_filter/yuv_filter.c" line="135" pragmaType="loop_flatten" parentfunction="yuv_scale" off="1"/>
+<pragma file="../../Labs/HLS_Lab/yuv_filter/yuv_filter.c" line="139" pragmaType="pipeline" parentfunction="yuv_scale" off="1" ii="0" rewind="0" style=""/>
+<pragma file="../../Labs/HLS_Lab/yuv_filter/yuv_filter.c" line="75" pragmaType="inline" parentfunction="yuv2rgb" off="1" region="0" recursive="0"/>
+</pragmas>

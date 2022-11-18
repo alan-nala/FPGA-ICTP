@@ -1,0 +1,283 @@
+18:18:51 DEBUG : Logs will be stored at '/scratch/smr3765/labs/lab2_gpio/IDE.log'.
+18:18:59 INFO  : Launching XSCT server: xsct -n  -interactive /scratch/smr3765/labs/lab2_gpio/temp_xsdb_launch_script.tcl
+18:18:59 INFO  : Launching XSCT server: xsct -n  -interactive /scratch/smr3765/labs/lab2_gpio/temp_xsdb_launch_script.tcl
+18:19:01 INFO  : Registering command handlers for Vitis TCF services
+18:19:09 INFO  : Platform repository initialization has completed.
+18:19:43 INFO  : XSCT server has started successfully.
+18:19:43 INFO  : XSCT server has started successfully.
+18:19:43 INFO  : Successfully done setting XSCT server connection channel  
+18:19:58 INFO  : plnx-install-location is set to ''
+18:19:58 INFO  : Successfully done setting XSCT server connection channel  
+18:19:58 INFO  : Successfully done setting workspace for the tool. 
+18:19:58 INFO  : Successfully done query RDI_DATADIR 
+18:19:58 INFO  : Successfully done setting workspace for the tool. 
+18:28:27 INFO  : No changes in MSS file content so sources will not be generated.
+18:28:36 INFO  : No changes in MSS file content so sources will not be generated.
+18:49:43 INFO  : Checking for BSP changes to sync application flags for project 'lab2_gpio_application'...
+18:50:04 INFO  : Checking for BSP changes to sync application flags for project 'lab2_gpio_application'...
+18:51:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:51:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+18:51:46 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+18:52:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:52:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+18:52:38 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+18:53:05 INFO  : Checking for BSP changes to sync application flags for project 'lab2_gpio_application'...
+18:53:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:54:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+18:54:08 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+18:57:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:58:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+18:58:00 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+18:58:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:58:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+18:58:45 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+18:59:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:59:51 INFO  : Jtag cable 'Digilent Zed 210248A39C5D' is selected.
+18:59:51 INFO  : 'jtag frequency' command is executed.
+18:59:51 INFO  : Context for 'APU' is selected.
+18:59:51 INFO  : System reset is completed.
+18:59:54 INFO  : 'after 3000' command is executed.
+18:59:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}' command is executed.
+18:59:57 INFO  : Device configured successfully with "/scratch/smr3765/labs/lab2_gpio/lab2_gpio_application/_ide/bitstream/lab2_gpio_wrapper.bit"
+18:59:57 INFO  : Context for 'APU' is selected.
+18:59:57 INFO  : Hardware design and registers information is loaded from '/scratch/smr3765/labs/lab2_gpio/lab2_gpio_platform/export/lab2_gpio_platform/hw/lab2_gpio_wrapper.xsa'.
+18:59:57 INFO  : 'configparams force-mem-access 1' command is executed.
+18:59:57 INFO  : Context for 'APU' is selected.
+18:59:57 INFO  : Sourcing of '/scratch/smr3765/labs/lab2_gpio/lab2_gpio_application/_ide/psinit/ps7_init.tcl' is done.
+18:59:58 INFO  : 'ps7_init' command is executed.
+18:59:58 INFO  : 'ps7_post_config' command is executed.
+18:59:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:59:59 INFO  : The application '/scratch/smr3765/labs/lab2_gpio/lab2_gpio_application/Debug/lab2_gpio_application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:59:59 INFO  : 'configparams force-mem-access 0' command is executed.
+18:59:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}
+fpga -file /scratch/smr3765/labs/lab2_gpio/lab2_gpio_application/_ide/bitstream/lab2_gpio_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /scratch/smr3765/labs/lab2_gpio/lab2_gpio_platform/export/lab2_gpio_platform/hw/lab2_gpio_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /scratch/smr3765/labs/lab2_gpio/lab2_gpio_application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /scratch/smr3765/labs/lab2_gpio/lab2_gpio_application/Debug/lab2_gpio_application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:59:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:59:59 INFO  : 'con' command is executed.
+18:59:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:59:59 INFO  : Launch script is exported to file '/scratch/smr3765/labs/lab2_gpio/lab2_gpio_application_system/_ide/scripts/debugger_lab2_gpio_application-default.tcl'
+19:00:42 INFO  : Disconnected from the channel tcfchan#3.
+19:00:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:00:43 INFO  : Jtag cable 'Digilent Zed 210248A39C5D' is selected.
+19:00:43 INFO  : 'jtag frequency' command is executed.
+19:00:43 INFO  : Context for 'APU' is selected.
+19:00:43 INFO  : System reset is completed.
+19:00:46 INFO  : 'after 3000' command is executed.
+19:00:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}' command is executed.
+19:00:49 INFO  : Device configured successfully with "/scratch/smr3765/labs/lab2_gpio/lab2_gpio_application/_ide/bitstream/lab2_gpio_wrapper.bit"
+19:00:49 INFO  : Context for 'APU' is selected.
+19:00:49 INFO  : Hardware design and registers information is loaded from '/scratch/smr3765/labs/lab2_gpio/lab2_gpio_platform/export/lab2_gpio_platform/hw/lab2_gpio_wrapper.xsa'.
+19:00:49 INFO  : 'configparams force-mem-access 1' command is executed.
+19:00:49 INFO  : Context for 'APU' is selected.
+19:00:49 INFO  : Sourcing of '/scratch/smr3765/labs/lab2_gpio/lab2_gpio_application/_ide/psinit/ps7_init.tcl' is done.
+19:00:50 INFO  : 'ps7_init' command is executed.
+19:00:50 INFO  : 'ps7_post_config' command is executed.
+19:00:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:00:50 INFO  : The application '/scratch/smr3765/labs/lab2_gpio/lab2_gpio_application/Debug/lab2_gpio_application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:00:50 INFO  : 'configparams force-mem-access 0' command is executed.
+19:00:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}
+fpga -file /scratch/smr3765/labs/lab2_gpio/lab2_gpio_application/_ide/bitstream/lab2_gpio_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /scratch/smr3765/labs/lab2_gpio/lab2_gpio_platform/export/lab2_gpio_platform/hw/lab2_gpio_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /scratch/smr3765/labs/lab2_gpio/lab2_gpio_application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /scratch/smr3765/labs/lab2_gpio/lab2_gpio_application/Debug/lab2_gpio_application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:00:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:00:50 INFO  : 'con' command is executed.
+19:00:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:00:50 INFO  : Launch script is exported to file '/scratch/smr3765/labs/lab2_gpio/lab2_gpio_application_system/_ide/scripts/debugger_lab2_gpio_application-default.tcl'
+19:02:28 INFO  : Disconnected from the channel tcfchan#4.
+19:02:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:02:30 INFO  : Jtag cable 'Digilent Zed 210248A39C5D' is selected.
+19:02:30 INFO  : 'jtag frequency' command is executed.
+19:02:30 INFO  : Context for 'APU' is selected.
+19:02:30 INFO  : System reset is completed.
+19:02:33 INFO  : 'after 3000' command is executed.
+19:02:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}' command is executed.
+19:02:35 INFO  : Device configured successfully with "/scratch/smr3765/labs/lab2_gpio/lab2_gpio_application/_ide/bitstream/lab2_gpio_wrapper.bit"
+19:02:35 INFO  : Context for 'APU' is selected.
+19:02:35 INFO  : Hardware design and registers information is loaded from '/scratch/smr3765/labs/lab2_gpio/lab2_gpio_platform/export/lab2_gpio_platform/hw/lab2_gpio_wrapper.xsa'.
+19:02:35 INFO  : 'configparams force-mem-access 1' command is executed.
+19:02:35 INFO  : Context for 'APU' is selected.
+19:02:35 INFO  : Sourcing of '/scratch/smr3765/labs/lab2_gpio/lab2_gpio_application/_ide/psinit/ps7_init.tcl' is done.
+19:02:36 INFO  : 'ps7_init' command is executed.
+19:02:36 INFO  : 'ps7_post_config' command is executed.
+19:02:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:02:36 INFO  : The application '/scratch/smr3765/labs/lab2_gpio/lab2_gpio_application/Debug/lab2_gpio_application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:02:36 INFO  : 'configparams force-mem-access 0' command is executed.
+19:02:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}
+fpga -file /scratch/smr3765/labs/lab2_gpio/lab2_gpio_application/_ide/bitstream/lab2_gpio_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /scratch/smr3765/labs/lab2_gpio/lab2_gpio_platform/export/lab2_gpio_platform/hw/lab2_gpio_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /scratch/smr3765/labs/lab2_gpio/lab2_gpio_application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /scratch/smr3765/labs/lab2_gpio/lab2_gpio_application/Debug/lab2_gpio_application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:02:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:02:36 INFO  : 'con' command is executed.
+19:02:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:02:36 INFO  : Launch script is exported to file '/scratch/smr3765/labs/lab2_gpio/lab2_gpio_application_system/_ide/scripts/debugger_lab2_gpio_application-default.tcl'
+19:06:55 INFO  : Checking for BSP changes to sync application flags for project 'lab2_gpio_application'...
+19:07:40 INFO  : Disconnected from the channel tcfchan#5.
+19:07:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:07:41 INFO  : Jtag cable 'Digilent Zed 210248A39C5D' is selected.
+19:07:41 INFO  : 'jtag frequency' command is executed.
+19:07:41 INFO  : Context for 'APU' is selected.
+19:07:41 INFO  : System reset is completed.
+19:07:44 INFO  : 'after 3000' command is executed.
+19:07:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}' command is executed.
+19:07:46 INFO  : Device configured successfully with "/scratch/smr3765/labs/lab2_gpio/lab2_gpio_application/_ide/bitstream/lab2_gpio_wrapper.bit"
+19:07:46 INFO  : Context for 'APU' is selected.
+19:07:46 INFO  : Hardware design and registers information is loaded from '/scratch/smr3765/labs/lab2_gpio/lab2_gpio_platform/export/lab2_gpio_platform/hw/lab2_gpio_wrapper.xsa'.
+19:07:46 INFO  : 'configparams force-mem-access 1' command is executed.
+19:07:46 INFO  : Context for 'APU' is selected.
+19:07:46 INFO  : Sourcing of '/scratch/smr3765/labs/lab2_gpio/lab2_gpio_application/_ide/psinit/ps7_init.tcl' is done.
+19:07:48 INFO  : 'ps7_init' command is executed.
+19:07:48 INFO  : 'ps7_post_config' command is executed.
+19:07:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:07:48 INFO  : The application '/scratch/smr3765/labs/lab2_gpio/lab2_gpio_application/Debug/lab2_gpio_application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:07:48 INFO  : 'configparams force-mem-access 0' command is executed.
+19:07:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}
+fpga -file /scratch/smr3765/labs/lab2_gpio/lab2_gpio_application/_ide/bitstream/lab2_gpio_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /scratch/smr3765/labs/lab2_gpio/lab2_gpio_platform/export/lab2_gpio_platform/hw/lab2_gpio_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /scratch/smr3765/labs/lab2_gpio/lab2_gpio_application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /scratch/smr3765/labs/lab2_gpio/lab2_gpio_application/Debug/lab2_gpio_application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:07:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:07:48 INFO  : 'con' command is executed.
+19:07:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:07:48 INFO  : Launch script is exported to file '/scratch/smr3765/labs/lab2_gpio/lab2_gpio_application_system/_ide/scripts/debugger_lab2_gpio_application-default.tcl'
+19:08:21 INFO  : Disconnected from the channel tcfchan#7.

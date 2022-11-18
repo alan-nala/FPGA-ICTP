@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'yuv2rgb.1' to 'yuv2rgb_1'." projectName="yuv_filter" solutionName="solution1" date="2022-11-18T11:16:52.428+0100" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'yuv2rgb.1_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y' to 'yuv2rgb_1_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y'." projectName="yuv_filter" solutionName="solution1" date="2022-11-18T11:16:52.423+0100" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'rgb2yuv.1' to 'rgb2yuv_1'." projectName="yuv_filter" solutionName="solution1" date="2022-11-18T11:16:52.419+0100" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'rgb2yuv.1_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y' to 'rgb2yuv_1_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y'." projectName="yuv_filter" solutionName="solution1" date="2022-11-18T11:16:52.415+0100" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

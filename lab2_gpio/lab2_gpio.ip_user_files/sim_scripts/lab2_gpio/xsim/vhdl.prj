@@ -1,0 +1,7 @@
+vhdl xil_defaultlib  \
+"../../../../lab2_gpio.gen/sources_1/bd/lab2_gpio/ip/lab2_gpio_axi_gpio_0_0/sim/lab2_gpio_axi_gpio_0_0.vhd" \
+"../../../../lab2_gpio.gen/sources_1/bd/lab2_gpio/ip/lab2_gpio_rst_ps7_0_100M_1/sim/lab2_gpio_rst_ps7_0_100M_1.vhd" \
+"../../../../lab2_gpio.gen/sources_1/bd/lab2_gpio/ip/lab2_gpio_axi_gpio_0_1/sim/lab2_gpio_axi_gpio_0_1.vhd" \
+"../../../../lab2_gpio.gen/sources_1/bd/lab2_gpio/sim/lab2_gpio.vhd" \
+
+nosort

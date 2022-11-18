@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Nov 16 17:51:42 2022
+# Process ID: 28941
+# Current directory: /scratch/smr3765/labs/lab1_hw/lab1_hw.runs/lab1_hw_processing_system7_0_0_synth_1
+# Command line: vivado -log lab1_hw_processing_system7_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab1_hw_processing_system7_0_0.tcl
+# Log file: /scratch/smr3765/labs/lab1_hw/lab1_hw.runs/lab1_hw_processing_system7_0_0_synth_1/lab1_hw_processing_system7_0_0.vds
+# Journal file: /scratch/smr3765/labs/lab1_hw/lab1_hw.runs/lab1_hw_processing_system7_0_0_synth_1/vivado.jou
+# Running On: hp6g4-inf-21.ictp.it, OS: Linux, CPU Frequency: 922.504 MHz, CPU Physical cores: 6, Host memory: 16583 MB
+#-----------------------------------------------------------
+source lab1_hw_processing_system7_0_0.tcl -notrace

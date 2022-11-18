@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu Nov 17 17:47:00 2022
+# Process ID: 22757
+# Current directory: /scratch/smr3765/labs/lab2_gpio/lab2_gpio.runs/lab2_gpio_xbar_0_synth_1
+# Command line: vivado -log lab2_gpio_xbar_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab2_gpio_xbar_0.tcl
+# Log file: /scratch/smr3765/labs/lab2_gpio/lab2_gpio.runs/lab2_gpio_xbar_0_synth_1/lab2_gpio_xbar_0.vds
+# Journal file: /scratch/smr3765/labs/lab2_gpio/lab2_gpio.runs/lab2_gpio_xbar_0_synth_1/vivado.jou
+# Running On: hp6g4-inf-21.ictp.it, OS: Linux, CPU Frequency: 3451.889 MHz, CPU Physical cores: 6, Host memory: 16583 MB
+#-----------------------------------------------------------
+WARNING: [Common 17-1221] Tcl app 'designutils' is out of date for this release. Please run tclapp::reset_tclstore and reinstall the app.
+source lab2_gpio_xbar_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 2719.949 ; gain = 4.984 ; free physical = 7066 ; free virtual = 18879
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP lab2_gpio_xbar_0, cache-ID = 6fe1d80f39ec0e92.
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 17 17:47:28 2022...
