@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="lab_irq" location="/scratch/smr3765/labs/lab_irq/lab_irq" platform="/scratch/smr3765/labs/lab_irq/lab_irq_wrapper/export/lab_irq_wrapper/lab_irq_wrapper.xpfm" platformUID="xilinx:zedboard::0.0(custom)" systemProject="lab_irq_system" sysConfig="lab_irq_wrapper" runtime="cpp" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="40ea06ee59935490f1d81a8f96ec2ffd">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1857217053" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.232224448" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>

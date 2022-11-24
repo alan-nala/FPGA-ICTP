@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /scratch/smr3765/labs/HLS/yuv_filter/solution2/./sim/autowrap/testbench/yuv_filter.c_pre.c.tb.c

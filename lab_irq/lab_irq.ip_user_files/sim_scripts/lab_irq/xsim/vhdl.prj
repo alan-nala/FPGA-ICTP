@@ -1,0 +1,10 @@
+vhdl xil_defaultlib  \
+"/scratch/smr3765/labs/lab_irq/lab_irq.gen/sources_1/bd/lab_irq/ip/lab_irq_processing_system7_0_0/lab_irq_processing_system7_0_0_sim_netlist.vhdl" \
+"../../../../lab_irq.gen/sources_1/bd/lab_irq/ip/lab_irq_ZedboardOLED_v1_0_0_0/sim/lab_irq_ZedboardOLED_v1_0_0_0.vhd" \
+"../../../../lab_irq.gen/sources_1/bd/lab_irq/ip/lab_irq_rst_ps7_0_100M_0/sim/lab_irq_rst_ps7_0_100M_0.vhd" \
+"/scratch/smr3765/labs/lab_irq/lab_irq.gen/sources_1/bd/lab_irq/ip/lab_irq_xbar_0/lab_irq_xbar_0_sim_netlist.vhdl" \
+"../../../../lab_irq.gen/sources_1/bd/lab_irq/ip/lab_irq_axi_gpio_0_0/sim/lab_irq_axi_gpio_0_0.vhd" \
+"/scratch/smr3765/labs/lab_irq/lab_irq.gen/sources_1/bd/lab_irq/ip/lab_irq_auto_pc_0/lab_irq_auto_pc_0_sim_netlist.vhdl" \
+"../../../../lab_irq.gen/sources_1/bd/lab_irq/sim/lab_irq.vhd" \
+
+nosort

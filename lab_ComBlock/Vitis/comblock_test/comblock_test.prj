@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="comblock_test" location="/scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test" platform="/scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/ComBlock_wrapper.xpfm" platformUID="xilinx:zedboard::0.0(custom)" systemProject="comblock_test_system" sysConfig="ComBlock_wrapper" runtime="cpp" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="c2920844a5807b9547ababaf388f1405">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1406146747">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.89263304" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

@@ -1,0 +1,138 @@
+Test passed!
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /scratch/Xilinx/Vivado/2022.1/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_yuv_filter_top glbl -Oenable_linking_all_libraries -prj yuv_filter.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims -L unisims_ver -L xpm -L floating_point_v7_0_20 -L floating_point_v7_1_14 --lib ieee_proposed=./ieee_proposed -s yuv_filter 
+Multi-threading is on. Using 10 slave threads.
+Determining compilation order of HDL files.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/scratch/smr3765/labs/HLS/yuv_filter/solution2/sim/vhdl/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "/scratch/smr3765/labs/HLS/yuv_filter/solution2/sim/vhdl/AESL_sim_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/scratch/smr3765/labs/HLS/yuv_filter/solution2/sim/vhdl/AESL_automem_in_channels_ch3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_in_channels_ch3'
+INFO: [VRFC 10-163] Analyzing VHDL file "/scratch/smr3765/labs/HLS/yuv_filter/solution2/sim/vhdl/yuv_filter.autotb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'apatb_yuv_filter_top'
+INFO: [VRFC 10-163] Analyzing VHDL file "/scratch/smr3765/labs/HLS/yuv_filter/solution2/sim/vhdl/yuv_filter_mac_muladd_9s_9ns_8ns_18_4_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'yuv_filter_mac_muladd_9s_9ns_8ns_18_4_1_DSP48_4'
+INFO: [VRFC 10-3107] analyzing entity 'yuv_filter_mac_muladd_9s_9ns_8ns_18_4_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/scratch/smr3765/labs/HLS/yuv_filter/solution2/sim/vhdl/yuv_filter_mac_muladd_8ns_7s_16s_16_4_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'yuv_filter_mac_muladd_8ns_7s_16s_16_4_1_DSP48_1'
+INFO: [VRFC 10-3107] analyzing entity 'yuv_filter_mac_muladd_8ns_7s_16s_16_4_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/scratch/smr3765/labs/HLS/yuv_filter/solution2/sim/vhdl/AESL_automem_out_channels_ch1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_out_channels_ch1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/scratch/smr3765/labs/HLS/yuv_filter/solution2/sim/vhdl/yuv_filter_mac_muladd_8s_9ns_18s_18_4_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'yuv_filter_mac_muladd_8s_9ns_18s_18_4_1_DSP48_5'
+INFO: [VRFC 10-3107] analyzing entity 'yuv_filter_mac_muladd_8s_9ns_18s_18_4_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/scratch/smr3765/labs/HLS/yuv_filter/solution2/sim/vhdl/yuv_filter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'yuv_filter'
+INFO: [VRFC 10-163] Analyzing VHDL file "/scratch/smr3765/labs/HLS/yuv_filter/solution2/sim/vhdl/yuv_filter_mac_muladd_8s_9s_18s_18_4_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'yuv_filter_mac_muladd_8s_9s_18s_18_4_1_DSP48_6'
+INFO: [VRFC 10-3107] analyzing entity 'yuv_filter_mac_muladd_8s_9s_18s_18_4_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/scratch/smr3765/labs/HLS/yuv_filter/solution2/sim/vhdl/yuv_filter_yuv2rgb_1_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'yuv_filter_yuv2rgb_1_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y'
+INFO: [VRFC 10-163] Analyzing VHDL file "/scratch/smr3765/labs/HLS/yuv_filter/solution2/sim/vhdl/AESL_automem_out_channels_ch3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_out_channels_ch3'
+INFO: [VRFC 10-163] Analyzing VHDL file "/scratch/smr3765/labs/HLS/yuv_filter/solution2/sim/vhdl/yuv_filter_mac_muladd_8s_8s_18s_18_4_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'yuv_filter_mac_muladd_8s_8s_18s_18_4_1_DSP48_7'
+INFO: [VRFC 10-3107] analyzing entity 'yuv_filter_mac_muladd_8s_8s_18s_18_4_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/scratch/smr3765/labs/HLS/yuv_filter/solution2/sim/vhdl/yuv_filter_mul_8ns_8ns_15_1_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'yuv_filter_mul_8ns_8ns_15_1_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/scratch/smr3765/labs/HLS/yuv_filter/solution2/sim/vhdl/yuv_filter_yuv_scale.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'yuv_filter_yuv_scale'
+INFO: [VRFC 10-163] Analyzing VHDL file "/scratch/smr3765/labs/HLS/yuv_filter/solution2/sim/vhdl/yuv_filter_mul_mul_16ns_16ns_32_4_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'yuv_filter_mul_mul_16ns_16ns_32_4_1_DSP48_3'
+INFO: [VRFC 10-3107] analyzing entity 'yuv_filter_mul_mul_16ns_16ns_32_4_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/scratch/smr3765/labs/HLS/yuv_filter/solution2/sim/vhdl/yuv_filter_rgb2yuv_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'yuv_filter_rgb2yuv_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/scratch/smr3765/labs/HLS/yuv_filter/solution2/sim/vhdl/yuv_filter_mac_muladd_8ns_7ns_16ns_16_4_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'yuv_filter_mac_muladd_8ns_7ns_16ns_16_4_1_DSP48_2'
+INFO: [VRFC 10-3107] analyzing entity 'yuv_filter_mac_muladd_8ns_7ns_16ns_16_4_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/scratch/smr3765/labs/HLS/yuv_filter/solution2/sim/vhdl/yuv_filter_flow_control_loop_pipe_sequential_init.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'yuv_filter_flow_control_loop_pipe_sequential_init'
+INFO: [VRFC 10-163] Analyzing VHDL file "/scratch/smr3765/labs/HLS/yuv_filter/solution2/sim/vhdl/yuv_filter_yuv2rgb_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'yuv_filter_yuv2rgb_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/scratch/smr3765/labs/HLS/yuv_filter/solution2/sim/vhdl/AESL_automem_in_channels_ch2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_in_channels_ch2'
+INFO: [VRFC 10-163] Analyzing VHDL file "/scratch/smr3765/labs/HLS/yuv_filter/solution2/sim/vhdl/yuv_filter_p_yuv_channels_ch1_RAM_AUTO_1R1W.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'yuv_filter_p_yuv_channels_ch1_RAM_AUTO_1R1W'
+INFO: [VRFC 10-163] Analyzing VHDL file "/scratch/smr3765/labs/HLS/yuv_filter/solution2/sim/vhdl/yuv_filter_rgb2yuv_1_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'yuv_filter_rgb2yuv_1_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y'
+INFO: [VRFC 10-163] Analyzing VHDL file "/scratch/smr3765/labs/HLS/yuv_filter/solution2/sim/vhdl/AESL_automem_in_channels_ch1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_in_channels_ch1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/scratch/smr3765/labs/HLS/yuv_filter/solution2/sim/vhdl/yuv_filter_mul_8ns_8s_16_1_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'yuv_filter_mul_8ns_8s_16_1_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/scratch/smr3765/labs/HLS/yuv_filter/solution2/sim/vhdl/AESL_automem_out_channels_ch2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_out_channels_ch2'
+INFO: [VRFC 10-163] Analyzing VHDL file "/scratch/smr3765/labs/HLS/yuv_filter/solution2/sim/vhdl/yuv_filter_mac_muladd_8ns_5ns_9ns_13_4_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'yuv_filter_mac_muladd_8ns_5ns_9ns_13_4_1_DSP48_0'
+INFO: [VRFC 10-3107] analyzing entity 'yuv_filter_mac_muladd_8ns_5ns_9ns_13_4_1'
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling module work.glbl
+Compiling architecture rtl of entity xil_defaultlib.yuv_filter_p_yuv_channels_ch1_RAM_AUTO_1R1W [\yuv_filter_p_yuv_channels_ch1_R...]
+Compiling architecture behav of entity xil_defaultlib.yuv_filter_mul_8ns_8s_16_1_1 [\yuv_filter_mul_8ns_8s_16_1_1(nu...]
+Compiling architecture behav of entity xil_defaultlib.yuv_filter_mac_muladd_8ns_5ns_9ns_13_4_1_DSP48_0 [yuv_filter_mac_muladd_8ns_5ns_9n...]
+Compiling architecture arch of entity xil_defaultlib.yuv_filter_mac_muladd_8ns_5ns_9ns_13_4_1 [\yuv_filter_mac_muladd_8ns_5ns_9...]
+Compiling architecture behav of entity xil_defaultlib.yuv_filter_mac_muladd_8ns_7s_16s_16_4_1_DSP48_1 [yuv_filter_mac_muladd_8ns_7s_16s...]
+Compiling architecture arch of entity xil_defaultlib.yuv_filter_mac_muladd_8ns_7s_16s_16_4_1 [\yuv_filter_mac_muladd_8ns_7s_16...]
+Compiling architecture behav of entity xil_defaultlib.yuv_filter_mac_muladd_8ns_7ns_16ns_16_4_1_DSP48_2 [yuv_filter_mac_muladd_8ns_7ns_16...]
+Compiling architecture arch of entity xil_defaultlib.yuv_filter_mac_muladd_8ns_7ns_16ns_16_4_1 [\yuv_filter_mac_muladd_8ns_7ns_1...]
+Compiling architecture behav of entity xil_defaultlib.yuv_filter_flow_control_loop_pipe_sequential_init [yuv_filter_flow_control_loop_pip...]
+Compiling architecture behav of entity xil_defaultlib.yuv_filter_rgb2yuv_1_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y [yuv_filter_rgb2yuv_1_pipeline_rg...]
+Compiling architecture behav of entity xil_defaultlib.yuv_filter_mul_mul_16ns_16ns_32_4_1_DSP48_3 [yuv_filter_mul_mul_16ns_16ns_32_...]
+Compiling architecture arch of entity xil_defaultlib.yuv_filter_mul_mul_16ns_16ns_32_4_1 [\yuv_filter_mul_mul_16ns_16ns_32...]
+Compiling architecture behav of entity xil_defaultlib.yuv_filter_rgb2yuv_1 [yuv_filter_rgb2yuv_1_default]
+Compiling architecture behav of entity xil_defaultlib.yuv_filter_mul_8ns_8ns_15_1_1 [\yuv_filter_mul_8ns_8ns_15_1_1(n...]
+Compiling architecture behav of entity xil_defaultlib.yuv_filter_yuv_scale [yuv_filter_yuv_scale_default]
+Compiling architecture behav of entity xil_defaultlib.yuv_filter_mac_muladd_9s_9ns_8ns_18_4_1_DSP48_4 [yuv_filter_mac_muladd_9s_9ns_8ns...]
+Compiling architecture arch of entity xil_defaultlib.yuv_filter_mac_muladd_9s_9ns_8ns_18_4_1 [\yuv_filter_mac_muladd_9s_9ns_8n...]
+Compiling architecture behav of entity xil_defaultlib.yuv_filter_mac_muladd_8s_9ns_18s_18_4_1_DSP48_5 [yuv_filter_mac_muladd_8s_9ns_18s...]
+Compiling architecture arch of entity xil_defaultlib.yuv_filter_mac_muladd_8s_9ns_18s_18_4_1 [\yuv_filter_mac_muladd_8s_9ns_18...]
+Compiling architecture behav of entity xil_defaultlib.yuv_filter_mac_muladd_8s_9s_18s_18_4_1_DSP48_6 [yuv_filter_mac_muladd_8s_9s_18s_...]
+Compiling architecture arch of entity xil_defaultlib.yuv_filter_mac_muladd_8s_9s_18s_18_4_1 [\yuv_filter_mac_muladd_8s_9s_18s...]
+Compiling architecture behav of entity xil_defaultlib.yuv_filter_mac_muladd_8s_8s_18s_18_4_1_DSP48_7 [yuv_filter_mac_muladd_8s_8s_18s_...]
+Compiling architecture arch of entity xil_defaultlib.yuv_filter_mac_muladd_8s_8s_18s_18_4_1 [\yuv_filter_mac_muladd_8s_8s_18s...]
+Compiling architecture behav of entity xil_defaultlib.yuv_filter_yuv2rgb_1_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y [yuv_filter_yuv2rgb_1_pipeline_yu...]
+Compiling architecture behav of entity xil_defaultlib.yuv_filter_yuv2rgb_1 [yuv_filter_yuv2rgb_1_default]
+Compiling architecture behav of entity xil_defaultlib.yuv_filter [yuv_filter_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_in_channels_ch1 [aesl_automem_in_channels_ch1_def...]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_in_channels_ch2 [aesl_automem_in_channels_ch2_def...]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_in_channels_ch3 [aesl_automem_in_channels_ch3_def...]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_out_channels_ch1 [aesl_automem_out_channels_ch1_de...]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_out_channels_ch2 [aesl_automem_out_channels_ch2_de...]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_out_channels_ch3 [aesl_automem_out_channels_ch3_de...]
+Compiling architecture behav of entity xil_defaultlib.apatb_yuv_filter_top
+Built simulation snapshot yuv_filter
+
+****** xsim v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/yuv_filter/xsim_script.tcl
+# xsim {yuv_filter} -autoloadwcfg -tclbatch {yuv_filter.tcl}
+Time resolution is 1 ps
+source yuv_filter.tcl
+## run all
+Note: simulation done!
+Time: 3268515 ns  Iteration: 1  Process: /apatb_yuv_filter_top/generate_sim_done_proc  File: /scratch/smr3765/labs/HLS/yuv_filter/solution2/sim/vhdl/yuv_filter.autotb.vhd
+Failure: NORMAL EXIT (note: failure is to force the simulator to stop)
+Time: 3268515 ns  Iteration: 1  Process: /apatb_yuv_filter_top/generate_sim_done_proc  File: /scratch/smr3765/labs/HLS/yuv_filter/solution2/sim/vhdl/yuv_filter.autotb.vhd
+$finish called at time : 3268515 ns
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:47 . Memory (MB): peak = 2732.883 ; gain = 0.000 ; free physical = 2514 ; free virtual = 17266
+## quit
+INFO: xsimkernel Simulation Memory Usage: 604760 KB (Peak: 735836 KB), Simulation CPU Usage: 34460 ms
+INFO: [Common 17-206] Exiting xsim at Fri Nov 18 12:32:00 2022...
+Test passed!

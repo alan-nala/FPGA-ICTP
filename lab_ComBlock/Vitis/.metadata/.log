@@ -1,0 +1,3742 @@
+!SESSION 2022-11-23 16:46:03.381 -----------------------------------------------
+eclipse.buildId=2021.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2022-11-23 16:46:05.313
+!MESSAGE Bundle reference:file:org.apache.log4j_1.2.15.v201012070815.jar not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-11-23 16:46:05.485
+!MESSAGE Bundle reference:file:org.slf4j.impl.log4j12_1.7.2.v20131105-2200.jar not found.
+
+!ENTRY org.eclipse.ui 4 4 2022-11-23 16:46:53.092
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:47:07.975
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:47:07.975
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:47:07.976
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:47:07.978
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:47:13.983
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:47:13.983
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:47:13.983
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:47:13.983
+!MESSAGE XSCT Command: [setws /scratch/smr3765/labs/lab_ComBlock/Vitis], Thread: Thread-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:47:13.983
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /scratch/Xilinx/Vitis/2022.1/data]. Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:47:13.984
+!MESSAGE XSCT command with result: [setws /scratch/smr3765/labs/lab_ComBlock/Vitis], Result: [null, ]. Thread: Thread-25
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-11-23 16:50:14.774
+!MESSAGE Opening file dialog using preferences. Current path: /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/fixed_hwplatforms, Local preference: scw_hwspec, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:50:26.284
+!MESSAGE XSCT Command: [::hsi::utils::openhw /tmp/hwspec_ComBlock_wrapper10155658534524294218/ComBlock_wrapper.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:50:28.536
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /tmp/hwspec_ComBlock_wrapper10155658534524294218/ComBlock_wrapper.xsa], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:50:28.540
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json /tmp/hwspec_ComBlock_wrapper10155658534524294218/ComBlock_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:50:28.542
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json /tmp/hwspec_ComBlock_wrapper10155658534524294218/ComBlock_wrapper.xsa], Result: [null, {"device": "7z020",
+"family": "zynq",
+"timestamp": "Wed Nov 23 16:43:16 2022",
+"vivado_version": "2022.1",
+"part": "xc7z020clg484-1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:50:28.543
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json /tmp/hwspec_ComBlock_wrapper10155658534524294218/ComBlock_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:50:28.550
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json /tmp/hwspec_ComBlock_wrapper10155658534524294218/ComBlock_wrapper.xsa], Result: [null, {"axi_smc": {"hier_name": "axi_smc",
+"type": "smartconnect",
+"version": "1.0",
+"ip_type": "BUS",
+},
+"c_counter_binary_0": {"hier_name": "c_counter_binary_0",
+"type": "c_counter_binary",
+"version": "12.0",
+"ip_type": "PERIPHERAL",
+},
+"c_counter_binary_1": {"hier_name": "c_counter_binary_1",
+"type": "c_counter_binary",
+"version": "12.0",
+"ip_type": "PERIPHERAL",
+},
+"comblock_0": {"hier_name": "comblock_0",
+"type": "comblock",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"processing_system7_0": {"hier_name": "processing_system7_0",
+"type": "processing_system7",
+"version": "5.5",
+"ip_type": "",
+},
+"rst_ps7_0_100M": {"hier_name": "rst_ps7_0_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"xlconstant_0": {"hier_name": "xlconstant_0",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"xlconstant_1": {"hier_name": "xlconstant_1",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"ps7_clockc_0": {"hier_name": "ps7_clockc_0",
+"type": "ps7_clockc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_uart_1": {"hier_name": "ps7_uart_1",
+"type": "ps7_uart",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pl310_0": {"hier_name": "ps7_pl310_0",
+"type": "ps7_pl310",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pmu_0": {"hier_name": "ps7_pmu_0",
+"type": "ps7_pmu",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_axi_interconnect_0": {"hier_name": "ps7_axi_interconnect_0",
+"type": "ps7_axi_interconnect",
+"version": "1.00.a",
+"ip_type": "BUS",
+},
+"ps7_cortexa9_0": {"hier_name": "ps7_cortexa9_0",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_cortexa9_1": {"hier_name": "ps7_cortexa9_1",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_ddr_0": {"hier_name": "ps7_ddr_0",
+"type": "ps7_ddr",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ethernet_0": {"hier_name": "ps7_ethernet_0",
+"type": "ps7_ethernet",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ddrc_0": {"hier_name": "ps7_ddrc_0",
+"type": "ps7_ddrc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dev_cfg_0": {"hier_name": "ps7_dev_cfg_0",
+"type": "ps7_dev_cfg",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_xadc_0": {"hier_name": "ps7_xadc_0",
+"type": "ps7_xadc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ocmc_0": {"hier_name": "ps7_ocmc_0",
+"type": "ps7_ocmc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_coresight_comp_0": {"hier_name": "ps7_coresight_comp_0",
+"type": "ps7_coresight_comp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpv_0": {"hier_name": "ps7_gpv_0",
+"type": "ps7_gpv",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuc_0": {"hier_name": "ps7_scuc_0",
+"type": "ps7_scuc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_globaltimer_0": {"hier_name": "ps7_globaltimer_0",
+"type": "ps7_globaltimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_intc_dist_0": {"hier_name": "ps7_intc_dist_0",
+"type": "ps7_intc_dist",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_l2cachec_0": {"hier_name": "ps7_l2cachec_0",
+"type": "ps7_l2cachec",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_s": {"hier_name": "ps7_dma_s",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_iop_bus_config_0": {"hier_name": "ps7_iop_bus_config_0",
+"type": "ps7_iop_bus_config",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ram_0": {"hier_name": "ps7_ram_0",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ram_1": {"hier_name": "ps7_ram_1",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_scugic_0": {"hier_name": "ps7_scugic_0",
+"type": "ps7_scugic",
+"version": "1.00.a",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"ps7_scutimer_0": {"hier_name": "ps7_scutimer_0",
+"type": "ps7_scutimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuwdt_0": {"hier_name": "ps7_scuwdt_0",
+"type": "ps7_scuwdt",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_slcr_0": {"hier_name": "ps7_slcr_0",
+"type": "ps7_slcr",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_ns": {"hier_name": "ps7_dma_ns",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_0": {"hier_name": "ps7_afi_0",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_1": {"hier_name": "ps7_afi_1",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_2": {"hier_name": "ps7_afi_2",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_3": {"hier_name": "ps7_afi_3",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_m_axi_gp0": {"hier_name": "ps7_m_axi_gp0",
+"type": "ps7_m_axi_gp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:50:57.401
+!MESSAGE XSCT Command: [hsi::utils::get_supported_os -json /tmp/hwspec_ComBlock_wrapper10155658534524294218/ComBlock_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:50:57.408
+!MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json /tmp/hwspec_ComBlock_wrapper10155658534524294218/ComBlock_wrapper.xsa], Result: [null, {"ps7_cortexa9_0": {"freertos10_xilinx_v1_11": {"name": "freertos10_xilinx",
+"version": "1.11",
+"desc": "This Xilinx FreeRTOS port is based on FreeRTOS kernel version 10.4.6",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/ThirdParty/bsp/freertos10_xilinx_v1_11",
+},
+"standalone_v7_7": {"name": "standalone",
+"version": "7.7",
+"desc": "Standalone is a simple, low-level software layer. It provides access to basic processor features such as caches, interrupts and exceptions as well as the basic features of a hosted environment, such as standard input and output, profiling, abort and exit.",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lgcc,-lc,--end-group",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/bsp/standalone_v7_7",
+},
+},
+"ps7_cortexa9_1": {"freertos10_xilinx_v1_11": {"name": "freertos10_xilinx",
+"version": "1.11",
+"desc": "This Xilinx FreeRTOS port is based on FreeRTOS kernel version 10.4.6",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/ThirdParty/bsp/freertos10_xilinx_v1_11",
+},
+"standalone_v7_7": {"name": "standalone",
+"version": "7.7",
+"desc": "Standalone is a simple, low-level software layer. It provides access to basic processor features such as caches, interrupts and exceptions as well as the basic features of a hosted environment, such as standard input and output, profiling, abort and exit.",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lgcc,-lc,--end-group",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/bsp/standalone_v7_7",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:12.799
+!MESSAGE XSCT Command: [::hsi::utils::get_all_app_details -json], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:12.806
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_app_details -json], Result: [null, {"srec_spi_bootloader": {"userdefname": "SREC SPI Bootloader",
+"description": "Simple bootloader for loading SREC images from non volatile memory (SPI). This program assumes that you have an SREC image programmed into SPI flash already. The program also assumes that the target SREC image is an application for this processor that does not overlap the bootloader and resides in separate physical memory in the hardware. Typically this application is initialized into BRAM so that it bootloads the SREC image when the FPGA is powered up.
+
+Don't forget to modify blconfig.h to reflect the offset where your SREC image resides in non-volatile memory!",
+"supp_proc": "microblaze",
+"supp_os": "standalone",
+"path": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/sw_apps/srec_spi_bootloader",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"lwip_udp_perf_server": {"userdefname": "lwIP UDP Perf Server",
+"description": "The LwIP UDP Perf Server application is used for creating UDP server and measure downlink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. The application creates UDP server on board and starts listening for UDP client connections. It will display client connection information with interim and average UDP statistics for data transfer.",
+"supp_proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/sw_apps/lwip_udp_perf_server",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"versal_plm": {"userdefname": "versal PLM",
+"description": "Platform Loader and Manager for versal.",
+"supp_proc": "psu_pmc psv_pmc",
+"supp_os": "standalone",
+"path": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/sw_apps/versal_plm",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"srec_bootloader": {"userdefname": "SREC Bootloader",
+"description": "Simple bootloader for loading SREC images from non volatile memory. This program assumes that you have an SREC image programmed into BPI flash. The program also assumes that the target SREC image is an application for this processor that does not overlap the bootloader and resides in separate physical memory in the hardware. Typically this application is initialized into BRAM so that it bootloads the SREC image when the FPGA is powered up.
+
+Don't forget to modify blconfig.h to reflect the physical address where your SREC image resides in non-volatile memory!",
+"supp_proc": "microblaze",
+"supp_os": "standalone",
+"path": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/sw_apps/srec_bootloader",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "false",
+},
+"lwip_echo_server": {"userdefname": "lwIP Echo Server",
+"description": "The lwIP Echo Server application provides a simple demonstration of how to use the light-weight IP stack (lwIP). This application sets up the board to use IP address 192.168.1.10 or IPv6 FE80:0:0:0:20A:35FF:FE00:102, with MAC address 00:0a:35:00:01:02. The server listens for input at port 7 and simply echoes back whatever data is sent to that port.",
+"supp_proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/sw_apps/lwip_echo_server",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"imgsel": {"userdefname": "Image Selector",
+"description": "ImgSel for Zynq Ultrascale+ MPSoC. The Image Selector  selects the image based on configuration parameters",
+"supp_proc": "psu_cortexa53",
+"supp_os": "standalone",
+"path": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/sw_apps/imgsel",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"openamp_matrix_multiply": {"userdefname": "OpenAMP matrix multiplication Demo",
+"description": " OpenAMP matrix multiplication application ",
+"supp_proc": "psu_cortexr5 psv_cortexr5 ps7_cortexa9",
+"supp_os": "freertos10_xilinx standalone",
+"path": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/sw_apps/openamp_matrix_multiply",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"freertos_lwip_udp_perf_server": {"userdefname": "FreeRTOS lwIP UDP Perf Server",
+"description": "The FreeRTOS LwIP UDP Perf Server application is used for creating UDP server and measure downlink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. The application creates UDP server on board and starts listening for UDP client connections. It will display client connection information with interim and average UDP statistics for data transfer.",
+"supp_proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos10_xilinx",
+"path": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/sw_apps/freertos_lwip_udp_perf_server",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"openamp_rpc_demo": {"userdefname": "OpenAMP RPC Demo",
+"description": " OpenAMP rpc-demo application ",
+"supp_proc": "psu_cortexr5 psv_cortexr5 ps7_cortexa9",
+"supp_os": "freertos10_xilinx standalone",
+"path": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/sw_apps/openamp_rpc_demo",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"zynqmp_dram_test": {"userdefname": "Zynq MP DRAM tests",
+"description": "This application runs out of OCM and performs memory tests on Zynq MP DRAM.  For more information about the test, refer to ZYNQMP_DRAM_DIAGNOSTICS_TEST.docx, in the src directory of the application",
+"supp_proc": "psu_cortexa53",
+"supp_os": "standalone",
+"path": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/sw_apps/zynqmp_dram_test",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "false",
+},
+"empty_application": {"userdefname": "Empty Application(C)",
+"description": "A blank C project.",
+"supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5 psu_cortexa72 psv_cortexr5 psv_cortexa72",
+"supp_os": "standalone xilkernel freertos10_xilinx",
+"path": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/sw_apps/empty_application",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "false",
+},
+"zynq_dram_test": {"userdefname": "Zynq DRAM tests",
+"description": "This application runs out of OCM and performs memory tests and read/write eye measurements on Zynq DRAM.  For more information about the test, refer to ZYNQ_DRAM_DIAGNOSTICS_TEST.docx, in the src directory of the application",
+"supp_proc": "ps7_cortexa9",
+"supp_os": "standalone",
+"path": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/sw_apps/zynq_dram_test",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "false",
+},
+"lwip_tcp_perf_client": {"userdefname": "lwIP TCP Perf Client",
+"description": "The LwIP TCP Perf Client application is used for creating TCP client and measure TCP uplink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10 and IPv6 link local address when ipv6_enable is true, with MAC address 00:0a:35:00:01:02. This application creates TCP client on board and make connection with TCP server running on host machine. It will display connection information along with interim and average TCP statistics for data transfer.",
+"supp_proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/sw_apps/lwip_tcp_perf_client",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"libmetal_echo_demo": {"userdefname": "Libmetal AMP Demo",
+"description": "Libmetal AMP Application",
+"supp_proc": "psu_cortexr5 psv_cortexr5",
+"supp_os": "freertos10_xilinx standalone",
+"path": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/sw_apps/libmetal_echo_demo",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"peripheral_tests": {"userdefname": "Peripheral Tests",
+"description": "Simple test routines for all peripherals in the hardware.",
+"supp_proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 microblaze psv_cortexa72 psv_cortexr5",
+"supp_os": "standalone xilkernel",
+"path": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/sw_apps/peripheral_tests",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "false",
+},
+"freertos_lwip_tcp_perf_client": {"userdefname": "FreeRTOS lwIP TCP Perf Client",
+"description": "The FreeRTOS LwIP TCP Perf Client application is used for creating TCP client and measure TCP uplink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10 and IPv6 link local address whenipv6_enable is true, with MAC address 00:0a:35:00:01:02. This application creates TCP client on board and make connection with TCP server running on host machine. It will display connection information along with interim and average TCP statistics for data transfer.",
+"supp_proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos10_xilinx",
+"path": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/sw_apps/freertos_lwip_tcp_perf_client",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"freertos_lwip_udp_perf_client": {"userdefname": "FreeRTOS lwIP UDP Perf Client",
+"description": "The FreeRTOS LwIP UDP Perf Client application is used for creating UDP client and measure UDP uplink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. This application creates UDP client on board and make connection with UDP server running on host machine. It will display connection information along with interim and average UDP statistics for data transfer.",
+"supp_proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos10_xilinx",
+"path": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/sw_apps/freertos_lwip_udp_perf_client",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"dhrystone": {"userdefname": "Dhrystone",
+"description": "Dhrystone synthetic benchmark program for baremetal environment.",
+"supp_proc": "microblaze psu_cortexa53 ps7_cortexa9 psv_cortexa72 psu_cortexr5 psv_cortexr5",
+"supp_os": "standalone",
+"path": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/sw_apps/dhrystone",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "false",
+},
+"rsa_auth_app": {"userdefname": "RSA Authentication App",
+"description": "Used to RSA authenticate a user application",
+"supp_proc": "ps7_cortexa9",
+"supp_os": "standalone",
+"path": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/sw_apps/rsa_auth_app",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"openamp_echo_test": {"userdefname": "OpenAMP echo-test",
+"description": " OpenAMP echo-test application ",
+"supp_proc": "psu_cortexr5 psv_cortexr5 ps7_cortexa9",
+"supp_os": "freertos10_xilinx standalone",
+"path": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/sw_apps/openamp_echo_test",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"freertos_lwip_tcp_perf_server": {"userdefname": "FreeRTOS lwIP TCP Perf Server",
+"description": "The FreeRTOS LwIP TCP Server application is used for creating TCP server using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10 and IPv6 link local address when ipv6_enable is true, with MAC address 00:0a:35:00:01:02. The application creates TCP server on board and starts listening for TCP client connections. It will display client connection info and also display interim and average TCP statistics for data transfer. This application handles only 1 client connection at a time.",
+"supp_proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos10_xilinx",
+"path": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/sw_apps/freertos_lwip_tcp_perf_server",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"zynqmp_pmufw": {"userdefname": "ZynqMP PMU Firmware",
+"description": "Platform Management Unit Firmware for ZynqMP.",
+"supp_proc": "psu_pmu",
+"supp_os": "standalone",
+"path": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/sw_apps/zynqmp_pmufw",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"zynq_fsbl": {"userdefname": "Zynq FSBL",
+"description": "First Stage Bootloader (FSBL) for Zynq. The FSBL configures the FPGA with HW bit stream (if it exists)  and loads the Operating System (OS) Image or Standalone (SA) Image or 2nd Stage Boot Loader image from the  non-volatile memory (NAND/NOR/QSPI) to RAM (DDR) and starts executing it.  It supports multiple partitions,  and each partition can be a code image or a bit stream.",
+"supp_proc": "ps7_cortexa9",
+"supp_os": "standalone",
+"path": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/sw_apps/zynq_fsbl",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"memory_tests": {"userdefname": "Memory Tests",
+"description": "This application tests Memory Regions present in the hardware.",
+"supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexa72 psv_cortexr5",
+"supp_os": "standalone",
+"path": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/sw_apps/memory_tests",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "false",
+},
+"versal_psmfw": {"userdefname": "versal PSM Firmware",
+"description": "Processing System Management Unit Firmware for versal.",
+"supp_proc": "psu_psm psv_psm",
+"supp_os": "standalone",
+"path": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/sw_apps/versal_psmfw",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"mba_fs_boot": {"userdefname": "mba_fs_boot",
+"description": "fs-boot for microblaze by Xilinx Inc..",
+"supp_proc": "microblaze",
+"supp_os": "standalone",
+"path": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/sw_apps/mba_fs_boot",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"img_rcvry": {"userdefname": "Image Recovery",
+"description": "Image Recovery tool which writes  user selected images on the board.",
+"supp_proc": "psu_cortexa53",
+"supp_os": "standalone",
+"path": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/sw_apps/img_rcvry",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"ddr_self_refresh": {"userdefname": "DDR self refresh",
+"description": "This DDR self refresh application provides a simple demonstration of how to enter to/exit from DDR self refresh mode. This application runs on R5 out of TCM.",
+"supp_proc": "psu_cortexr5",
+"supp_os": "standalone",
+"path": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/sw_apps/ddr_self_refresh",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"freertos_lwip_echo_server": {"userdefname": "FreeRTOS lwIP Echo Server",
+"description": "The FreeRTOS lwIP Echo Server application provides a simple demonstration of how to use the light-weight IP stack (lwIP) with FreeRTOS. This application sets up the board to use IP address 192.168.1.10 or IPv6 address FE80:0:0:0:20A:35FF:FE00:102, with MAC address 00:0a:35:00:01:02. The server listens for input at port 7 and simply echoes back whatever data is sent to that port.",
+"supp_proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos10_xilinx",
+"path": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/sw_apps/freertos_lwip_echo_server",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"lwip_tcp_perf_server": {"userdefname": "lwIP TCP Perf Server",
+"description": "The LwIP TCP Perf Server application is used for creating TCP server and measure downlink performance using light-weight IP stack (lwIP). This application sets up the board to use default IPv4 address 192.168.1.10 and IPv6 link local address when ipv6_enable is true, with MAC address 00:0a:35:00:01:02. The application creates TCP server on board and starts listening for TCP client connections. It will display client connection information with interim and average TCP statistics for data transfer.",
+"supp_proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/sw_apps/lwip_tcp_perf_server",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"freertos_hello_world": {"userdefname": "FreeRTOS Hello World",
+"description": " FreeRTOS Hello World application",
+"supp_proc": "psu_cortexr5 psv_cortexr5 ps7_cortexa9 psu_cortexa53 microblaze psv_cortexa72",
+"supp_os": "freertos10_xilinx",
+"path": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/sw_apps/freertos_hello_world",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"lwip_udp_perf_client": {"userdefname": "lwIP UDP Perf Client",
+"description": "The LwIP UDP Perf Client application is used for creating UDP client and measure UDP uplink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. This application creates UDP client on board and make connection with UDP server running on host machine. It will display connection information along with interim and average UDP statistics for data transfer.",
+"supp_proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/sw_apps/lwip_udp_perf_client",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"hello_world": {"userdefname": "Hello World",
+"description": "Let's say 'Hello World' in C.",
+"supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5 psu_cortexa72 psv_cortexr5 psv_cortexa72",
+"supp_os": "standalone xilkernel",
+"path": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/sw_apps/hello_world",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "false",
+},
+"zynqmp_fsbl": {"userdefname": "Zynq MP FSBL",
+"description": "First Stage Bootloader (FSBL) for Zynq Ultrascale+ MPSoC. The FSBL configures the FPGA with HW bit stream (if it exists)  and loads the Operating System (OS) Image or Standalone (SA) Image or 2nd Stage Boot Loader image from the  non-volatile memory (NAND/SD/QSPI) to RAM (DDR) and takes A53/R5 out of reset.  It supports multiple partitions,  and each partition can be a code image or a bit stream.",
+"supp_proc": "psu_cortexa53 psu_cortexr5",
+"supp_os": "standalone",
+"path": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/sw_apps/zynqmp_fsbl",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"linux_empty_app": {"userdefname": "Linux Empty Application",
+"description": "A blank Linux C project.",
+"supp_proc": "ps7_cortexa9 psu_cortexa53 microblaze psv_cortexa72",
+"supp_os": "linux",
+"path": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/sw_apps_linux/linux_empty_app",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "false",
+},
+"linux_hello_world": {"userdefname": "Linux Hello World",
+"description": "Let's say 'Hello World' in C.",
+"supp_proc": "ps7_cortexa9 psu_cortexa53 microblaze psv_cortexa72",
+"supp_os": "linux",
+"path": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/sw_apps_linux/linux_hello_world",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "false",
+},
+}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:13.090
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw /tmp/hwspec_ComBlock_wrapper10155658534524294218/ComBlock_wrapper.xsa -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:13.209
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw /tmp/hwspec_ComBlock_wrapper10155658534524294218/ComBlock_wrapper.xsa -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:13.210
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw /tmp/hwspec_ComBlock_wrapper10155658534524294218/ComBlock_wrapper.xsa -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:13.233
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw /tmp/hwspec_ComBlock_wrapper10155658534524294218/ComBlock_wrapper.xsa -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:19.980
+!MESSAGE XSCT Command: [platform create -name {ComBlock_wrapper} -hw {/scratch/smr3765/labs/lab_ComBlock/ComBlock_wrapper.xsa} -out {/scratch/smr3765/labs/lab_ComBlock/Vitis};platform write], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:30.805
+!MESSAGE XSCT command with result: [platform create -name {ComBlock_wrapper} -hw {/scratch/smr3765/labs/lab_ComBlock/ComBlock_wrapper.xsa} -out {/scratch/smr3765/labs/lab_ComBlock/Vitis};platform write], Result: [null, Successfully saved  the platform at "/scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/platform.spr"]. Thread: ModalContext
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2022-11-23 16:51:30.879
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.ui.part.IntroPart.dispose(IntroPart.java:99)
+	at org.eclipse.ui.internal.ViewIntroAdapterPart.dispose(ViewIntroAdapterPart.java:153)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.invalidate(CompatibilityPart.java:260)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.destroy(CompatibilityPart.java:417)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1002)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:967)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.uninject(InjectorImpl.java:200)
+	at org.eclipse.e4.core.internal.di.Requestor.uninject(Requestor.java:176)
+	at org.eclipse.e4.core.internal.contexts.ContextObjectSupplier$ContextInjectionListener.update(ContextObjectSupplier.java:89)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:105)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.removeListenersTo(EclipseContext.java:491)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.uninject(ContextInjectionFactory.java:184)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:954)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.disposeWidget(ElementReferenceRenderer.java:115)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:945)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.subscribeTopicToBeRendered(PartRenderingEngine.java:187)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.di.internal.extensions.EventObjectSupplier$DIEventHandler.handleEvent(EventObjectSupplier.java:92)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setToBeRendered(UIElementImpl.java:314)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.hidePart(PartServiceImpl.java:1406)
+	at org.eclipse.ui.internal.WorkbenchPage.hidePart(WorkbenchPage.java:1537)
+	at org.eclipse.ui.internal.WorkbenchPage.hidePart(WorkbenchPage.java:1496)
+	at org.eclipse.ui.internal.WorkbenchPage.hideView(WorkbenchPage.java:2609)
+	at org.eclipse.ui.internal.WorkbenchIntroManager.closeIntro(WorkbenchIntroManager.java:98)
+	at com.xilinx.sdx.ui.utils.SWTUtils.closeWelcomeView(SWTUtils.java:529)
+	at com.xilinx.sdx.scw.project.ScwProjectCreationHandler$1.run(ScwProjectCreationHandler.java:71)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4930)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4451)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:166)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:368)
+	at org.eclipse.jface.wizard.WizardDialog.run(WizardDialog.java:1033)
+	at com.xilinx.sdx.npw.NewProjectCreationHandler.execute(NewProjectCreationHandler.java:105)
+	at com.xilinx.sdx.npw.NewProjectWizard._createApplicationProject(NewProjectWizard.java:214)
+	at com.xilinx.sdx.npw.NewProjectWizard.performFinish(NewProjectWizard.java:161)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:832)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:472)
+	at org.eclipse.jface.dialogs.Dialog.lambda$0(Dialog.java:619)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5687)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1423)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4955)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4448)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at com.xilinx.sdx.npw.OpenApplicationProjectWizardAction.run(OpenApplicationProjectWizardAction.java:27)
+	at com.xilinx.sdx.npw.OpenApplicationProjectWizardAction.clicked(OpenApplicationProjectWizardAction.java:44)
+	at com.xilinx.ide.product.intro.IDEIntroPart.createApplicationProject(IDEIntroPart.java:475)
+	at com.xilinx.ide.product.intro.IDEIntroPart$3.run(IDEIntroPart.java:274)
+	at com.xilinx.ide.product.intro.IDEIntroPart$12.mouseUp(IDEIntroPart.java:402)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:224)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5687)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1423)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4955)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4448)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:80)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:30.882
+!MESSAGE XSCT Command: [domain create -name {standalone_ps7_cortexa9_0} -display-name {standalone_ps7_cortexa9_0} -os {standalone} -proc {ps7_cortexa9_0} -runtime {cpp} -arch {32-bit} -support-app {hello_world}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:32.207
+!MESSAGE XSCT command with result: [domain create -name {standalone_ps7_cortexa9_0} -display-name {standalone_ps7_cortexa9_0} -os {standalone} -proc {ps7_cortexa9_0} -runtime {cpp} -arch {32-bit} -support-app {hello_world}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:32.209
+!MESSAGE XSCT Command: [platform write], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:32.215
+!MESSAGE XSCT command with result: [platform write], Result: [null, Successfully saved  the platform at "/scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/platform.spr"]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:32.294
+!MESSAGE XSCT Command: [platform active {ComBlock_wrapper}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:32.296
+!MESSAGE XSCT command with result: [platform active {ComBlock_wrapper}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:32.297
+!MESSAGE XSCT Command: [domain active {zynq_fsbl}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:32.298
+!MESSAGE XSCT command with result: [domain active {zynq_fsbl}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:32.301
+!MESSAGE XSCT Command: [domain active {standalone_ps7_cortexa9_0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:32.372
+!MESSAGE XSCT command with result: [domain active {standalone_ps7_cortexa9_0}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:32.373
+!MESSAGE XSCT Command: [platform generate -quick], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:32.577
+!MESSAGE XSCT command with result: [platform generate -quick], Result: [null, Successfully generated platform at "/scratch/smr3765/labs/lab_ComBlock/Vitis"]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:34.972
+!MESSAGE XSCT Command: [::hsi::utils::openhw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:39.305
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:39.306
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:39.312
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa], Result: [null, {"axi_smc": {"hier_name": "axi_smc",
+"type": "smartconnect",
+"version": "1.0",
+"ip_type": "BUS",
+},
+"c_counter_binary_0": {"hier_name": "c_counter_binary_0",
+"type": "c_counter_binary",
+"version": "12.0",
+"ip_type": "PERIPHERAL",
+},
+"c_counter_binary_1": {"hier_name": "c_counter_binary_1",
+"type": "c_counter_binary",
+"version": "12.0",
+"ip_type": "PERIPHERAL",
+},
+"comblock_0": {"hier_name": "comblock_0",
+"type": "comblock",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"processing_system7_0": {"hier_name": "processing_system7_0",
+"type": "processing_system7",
+"version": "5.5",
+"ip_type": "",
+},
+"rst_ps7_0_100M": {"hier_name": "rst_ps7_0_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"xlconstant_0": {"hier_name": "xlconstant_0",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"xlconstant_1": {"hier_name": "xlconstant_1",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"ps7_clockc_0": {"hier_name": "ps7_clockc_0",
+"type": "ps7_clockc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_uart_1": {"hier_name": "ps7_uart_1",
+"type": "ps7_uart",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pl310_0": {"hier_name": "ps7_pl310_0",
+"type": "ps7_pl310",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pmu_0": {"hier_name": "ps7_pmu_0",
+"type": "ps7_pmu",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_axi_interconnect_0": {"hier_name": "ps7_axi_interconnect_0",
+"type": "ps7_axi_interconnect",
+"version": "1.00.a",
+"ip_type": "BUS",
+},
+"ps7_cortexa9_0": {"hier_name": "ps7_cortexa9_0",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_cortexa9_1": {"hier_name": "ps7_cortexa9_1",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_ddr_0": {"hier_name": "ps7_ddr_0",
+"type": "ps7_ddr",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ethernet_0": {"hier_name": "ps7_ethernet_0",
+"type": "ps7_ethernet",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ddrc_0": {"hier_name": "ps7_ddrc_0",
+"type": "ps7_ddrc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dev_cfg_0": {"hier_name": "ps7_dev_cfg_0",
+"type": "ps7_dev_cfg",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_xadc_0": {"hier_name": "ps7_xadc_0",
+"type": "ps7_xadc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ocmc_0": {"hier_name": "ps7_ocmc_0",
+"type": "ps7_ocmc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_coresight_comp_0": {"hier_name": "ps7_coresight_comp_0",
+"type": "ps7_coresight_comp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpv_0": {"hier_name": "ps7_gpv_0",
+"type": "ps7_gpv",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuc_0": {"hier_name": "ps7_scuc_0",
+"type": "ps7_scuc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_globaltimer_0": {"hier_name": "ps7_globaltimer_0",
+"type": "ps7_globaltimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_intc_dist_0": {"hier_name": "ps7_intc_dist_0",
+"type": "ps7_intc_dist",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_l2cachec_0": {"hier_name": "ps7_l2cachec_0",
+"type": "ps7_l2cachec",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_s": {"hier_name": "ps7_dma_s",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_iop_bus_config_0": {"hier_name": "ps7_iop_bus_config_0",
+"type": "ps7_iop_bus_config",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ram_0": {"hier_name": "ps7_ram_0",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ram_1": {"hier_name": "ps7_ram_1",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_scugic_0": {"hier_name": "ps7_scugic_0",
+"type": "ps7_scugic",
+"version": "1.00.a",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"ps7_scutimer_0": {"hier_name": "ps7_scutimer_0",
+"type": "ps7_scutimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuwdt_0": {"hier_name": "ps7_scuwdt_0",
+"type": "ps7_scuwdt",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_slcr_0": {"hier_name": "ps7_slcr_0",
+"type": "ps7_slcr",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_ns": {"hier_name": "ps7_dma_ns",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_0": {"hier_name": "ps7_afi_0",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_1": {"hier_name": "ps7_afi_1",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_2": {"hier_name": "ps7_afi_2",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_3": {"hier_name": "ps7_afi_3",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_m_axi_gp0": {"hier_name": "ps7_m_axi_gp0",
+"type": "ps7_m_axi_gp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:39.345
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/system.mss ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:39.347
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/system.mss ], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:39.348
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:39.349
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.7",
+}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:41.377
+!MESSAGE XSCT Command: [hsi::utils::get_supported_os -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:41.383
+!MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa], Result: [null, {"ps7_cortexa9_0": {"freertos10_xilinx_v1_11": {"name": "freertos10_xilinx",
+"version": "1.11",
+"desc": "This Xilinx FreeRTOS port is based on FreeRTOS kernel version 10.4.6",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/ThirdParty/bsp/freertos10_xilinx_v1_11",
+},
+"standalone_v7_7": {"name": "standalone",
+"version": "7.7",
+"desc": "Standalone is a simple, low-level software layer. It provides access to basic processor features such as caches, interrupts and exceptions as well as the basic features of a hosted environment, such as standard input and output, profiling, abort and exit.",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lgcc,-lc,--end-group",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/bsp/standalone_v7_7",
+},
+},
+"ps7_cortexa9_1": {"freertos10_xilinx_v1_11": {"name": "freertos10_xilinx",
+"version": "1.11",
+"desc": "This Xilinx FreeRTOS port is based on FreeRTOS kernel version 10.4.6",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/ThirdParty/bsp/freertos10_xilinx_v1_11",
+},
+"standalone_v7_7": {"name": "standalone",
+"version": "7.7",
+"desc": "Standalone is a simple, low-level software layer. It provides access to basic processor features such as caches, interrupts and exceptions as well as the basic features of a hosted environment, such as standard input and output, profiling, abort and exit.",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lgcc,-lc,--end-group",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/lib/bsp/standalone_v7_7",
+},
+},
+}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:41.384
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:41.384
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/system.mss], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:41.385
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:41.385
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/system.mss], Result: [null, {}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:41.385
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa ps7_cortexa9_0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:41.386
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa ps7_cortexa9_0], Result: [null, comblock_0 ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_ethernet_0 ps7_globaltimer_0 ps7_gpv_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_slcr_0 ps7_uart_1 ps7_xadc_0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:41.386
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:41.389
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/system.mss], Result: [null, {"comblock_0": {"name": "comblock",
+"ver": "2.0",
+},
+"ps7_afi_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_afi_1": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_afi_2": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_afi_3": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_coresight_comp_0": {"name": "coresightps_dcc",
+"ver": "1.8",
+},
+"ps7_ddr_0": {"name": "ddrps",
+"ver": "1.2",
+},
+"ps7_ddrc_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_dev_cfg_0": {"name": "devcfg",
+"ver": "3.7",
+},
+"ps7_dma_ns": {"name": "dmaps",
+"ver": "2.8",
+},
+"ps7_dma_s": {"name": "dmaps",
+"ver": "2.8",
+},
+"ps7_ethernet_0": {"name": "emacps",
+"ver": "3.16",
+},
+"ps7_globaltimer_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_gpv_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_intc_dist_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_iop_bus_config_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_l2cachec_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_ocmc_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_pl310_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_pmu_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_ram_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_ram_1": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_scuc_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_scugic_0": {"name": "scugic",
+"ver": "4.7",
+},
+"ps7_scutimer_0": {"name": "scutimer",
+"ver": "2.4",
+},
+"ps7_scuwdt_0": {"name": "scuwdt",
+"ver": "2.4",
+},
+"ps7_slcr_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_uart_1": {"name": "uartps",
+"ver": "3.11",
+},
+"ps7_xadc_0": {"name": "xadcps",
+"ver": "2.6",
+},
+"ps7_cortexa9_0": {"name": "cpu_cortexa9",
+"ver": "2.11",
+},
+}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:41.389
+!MESSAGE XSCT Command: [hsi::utils::get_drivers_for_hw -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:41.793
+!MESSAGE XSCT command with result: [hsi::utils::get_drivers_for_hw -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa], Result: [null, {"axi_smc": {"version": "1.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"c_counter_binary_0": {"version": "12.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"c_counter_binary_1": {"version": "12.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"comblock_0": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"comblock_v2_0": {"name": "comblock",
+"version": "2.0",
+"repo": "/scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/drivers/comblock_v2_0",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"processing_system7_0": {"version": "5.5",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"rst_ps7_0_100M": {"version": "5.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"xlconstant_0": {"version": "1.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"xlconstant_1": {"version": "1.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_clockc_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_uart_1": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"uartps_v3_11": {"name": "uartps",
+"version": "3.11",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/uartps_v3_11",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_pl310_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_pmu_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_axi_interconnect_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_cortexa9_0": {"version": "5.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"cpu_cortexa9_v2_11": {"name": "cpu_cortexa9",
+"version": "2.11",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/cpu_cortexa9_v2_11",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_cortexa9_1": {"version": "5.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"cpu_cortexa9_v2_11": {"name": "cpu_cortexa9",
+"version": "2.11",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/cpu_cortexa9_v2_11",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_ddr_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"ddrps_v1_2": {"name": "ddrps",
+"version": "1.2",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/ddrps_v1_2",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_ethernet_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"emacps_v3_16": {"name": "emacps",
+"version": "3.16",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/emacps_v3_16",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_ddrc_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_dev_cfg_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"devcfg_v3_7": {"name": "devcfg",
+"version": "3.7",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/devcfg_v3_7",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_xadc_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"xadcps_v2_6": {"name": "xadcps",
+"version": "2.6",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/xadcps_v2_6",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_ocmc_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_coresight_comp_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"coresightps_dcc_v1_8": {"name": "coresightps_dcc",
+"version": "1.8",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/coresightps_dcc_v1_8",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_gpv_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_scuc_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_globaltimer_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_intc_dist_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_l2cachec_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_dma_s": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"dmaps_v2_8": {"name": "dmaps",
+"version": "2.8",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/dmaps_v2_8",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_iop_bus_config_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_ram_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_ram_1": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_scugic_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"scugic_v4_7": {"name": "scugic",
+"version": "4.7",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/scugic_v4_7",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_scutimer_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"scutimer_v2_4": {"name": "scutimer",
+"version": "2.4",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/scutimer_v2_4",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_scuwdt_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"scuwdt_v2_4": {"name": "scuwdt",
+"version": "2.4",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/scuwdt_v2_4",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_slcr_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_dma_ns": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"dmaps_v2_8": {"name": "dmaps",
+"version": "2.8",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/dmaps_v2_8",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_afi_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_afi_1": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_afi_2": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_afi_3": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_m_axi_gp0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /scratch/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:41.799
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:41.800
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/system.mss], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:41.800
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:41.873
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/system.mss], Result: [null, {}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:42.078
+!MESSAGE XSCT Command: [::hsi::utils::openhw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:42.079
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:42.079
+!MESSAGE XSCT Command: [::hsi::utils::opensw /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:42.080
+!MESSAGE XSCT command with result: [::hsi::utils::opensw /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/system.mss], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:42.080
+!MESSAGE XSCT Command: [::hsi::utils::generate_app_template -hw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa -sw /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/system.mss -app hello_world -processor ps7_cortexa9_0 -os standalone -dir /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/src], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:42.194
+!MESSAGE XSCT command with result: [::hsi::utils::generate_app_template -hw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa -sw /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/system.mss -app hello_world -processor ps7_cortexa9_0 -os standalone -dir /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/src], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:42.677
+!MESSAGE XSCT Command: [hsi::internal::extract_hw_files -quiet bit mmi bmm -dir {/scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/_ide/bitstream}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:42.800
+!MESSAGE XSCT command with result: [hsi::internal::extract_hw_files -quiet bit mmi bmm -dir {/scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/_ide/bitstream}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:42.801
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:42.873
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa], Result: [null, {"device": "7z020",
+"family": "zynq",
+"timestamp": "Wed Nov 23 16:43:16 2022",
+"vivado_version": "2022.1",
+"part": "xc7z020clg484-1",
+}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:42.876
+!MESSAGE XSCT Command: [::hsi::generate_target {psinit} [ ::hsi::get_cells -filter { CONFIGURABLE == true } -hierarchical] -dir {/scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/_ide/psinit} -quiet], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:47.333
+!MESSAGE XSCT command with result: [::hsi::generate_target {psinit} [ ::hsi::get_cells -filter { CONFIGURABLE == true } -hierarchical] -dir {/scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/_ide/psinit} -quiet], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:47.798
+!MESSAGE XSCT Command: [::hsi::utils::closesw /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:47.873
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/system.mss], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-11-23 16:51:48.074
+!MESSAGE Generating MD5 hash for file: /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:49.793
+!MESSAGE XSCT Command: [::hsi::utils::closehw /tmp/hwspec_ComBlock_wrapper10155658534524294218/ComBlock_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 16:51:49.890
+!MESSAGE XSCT command with result: [::hsi::utils::closehw /tmp/hwspec_ComBlock_wrapper10155658534524294218/ComBlock_wrapper.xsa], Result: [null, ]. Thread: main
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-11-23 16:51:59.380
+!MESSAGE Indexed 'comblock_test' (2 sources, 52 headers) in 8.9 sec: 1,493 declarations; 2,177 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-11-23 16:52:34.277
+!MESSAGE Indexed 'ComBlock_wrapper' (429 sources, 404 headers) in 34.9 sec: 14,435 declarations; 67,071 references; 228 unresolved inclusions; 80 syntax errors; 624 unresolved names (0.76%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-11-23 16:52:34.279
+!MESSAGE Indexed 'comblock_test_system' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-11-23 18:03:08.704
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-11-23 18:03:08.706
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-11-23 18:03:08.706
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:04:33.070
+!MESSAGE XSCT Command: [::hsi::utils::closehw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa], Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:04:33.092
+!MESSAGE XSCT command with result: [::hsi::utils::closehw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa], Result: [null, ]. Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:04:33.092
+!MESSAGE XSCT Command: [::hsi::utils::openhw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa], Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:04:39.686
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa], Result: [null, ]. Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:04:39.687
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:04:39.693
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:04:39.694
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:04:39.773
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.7",
+}]. Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-11-23 18:04:39.774
+!MESSAGE Generating MD5 hash for file: /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:04:39.779
+!MESSAGE XSCT Command: [::hsi::utils::closesw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:04:39.781
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2022-11-23 18:04:46.826
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:05:19.076
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-11: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:05:19.078
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-11: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:05:19.078
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-11: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:05:19.079
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.7",
+}]. Thread: Worker-11: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-11-23 18:05:19.080
+!MESSAGE Generating MD5 hash for file: /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:05:19.080
+!MESSAGE XSCT Command: [::hsi::utils::closesw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-11: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:05:19.081
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-11: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2022-11-23 18:05:21.473
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:05:26.798
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa], Thread: Worker-11: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:05:26.880
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa], Result: [null, {"axi_smc": {"hier_name": "axi_smc",
+"type": "smartconnect",
+"version": "1.0",
+"ip_type": "BUS",
+},
+"c_counter_binary_0": {"hier_name": "c_counter_binary_0",
+"type": "c_counter_binary",
+"version": "12.0",
+"ip_type": "PERIPHERAL",
+},
+"c_counter_binary_1": {"hier_name": "c_counter_binary_1",
+"type": "c_counter_binary",
+"version": "12.0",
+"ip_type": "PERIPHERAL",
+},
+"comblock_0": {"hier_name": "comblock_0",
+"type": "comblock",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"processing_system7_0": {"hier_name": "processing_system7_0",
+"type": "processing_system7",
+"version": "5.5",
+"ip_type": "",
+},
+"rst_ps7_0_100M": {"hier_name": "rst_ps7_0_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"xlconstant_0": {"hier_name": "xlconstant_0",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"xlconstant_1": {"hier_name": "xlconstant_1",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"ps7_clockc_0": {"hier_name": "ps7_clockc_0",
+"type": "ps7_clockc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_uart_1": {"hier_name": "ps7_uart_1",
+"type": "ps7_uart",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pl310_0": {"hier_name": "ps7_pl310_0",
+"type": "ps7_pl310",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pmu_0": {"hier_name": "ps7_pmu_0",
+"type": "ps7_pmu",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_axi_interconnect_0": {"hier_name": "ps7_axi_interconnect_0",
+"type": "ps7_axi_interconnect",
+"version": "1.00.a",
+"ip_type": "BUS",
+},
+"ps7_cortexa9_0": {"hier_name": "ps7_cortexa9_0",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_cortexa9_1": {"hier_name": "ps7_cortexa9_1",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_ddr_0": {"hier_name": "ps7_ddr_0",
+"type": "ps7_ddr",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ethernet_0": {"hier_name": "ps7_ethernet_0",
+"type": "ps7_ethernet",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ddrc_0": {"hier_name": "ps7_ddrc_0",
+"type": "ps7_ddrc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dev_cfg_0": {"hier_name": "ps7_dev_cfg_0",
+"type": "ps7_dev_cfg",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_xadc_0": {"hier_name": "ps7_xadc_0",
+"type": "ps7_xadc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ocmc_0": {"hier_name": "ps7_ocmc_0",
+"type": "ps7_ocmc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_coresight_comp_0": {"hier_name": "ps7_coresight_comp_0",
+"type": "ps7_coresight_comp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpv_0": {"hier_name": "ps7_gpv_0",
+"type": "ps7_gpv",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuc_0": {"hier_name": "ps7_scuc_0",
+"type": "ps7_scuc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_globaltimer_0": {"hier_name": "ps7_globaltimer_0",
+"type": "ps7_globaltimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_intc_dist_0": {"hier_name": "ps7_intc_dist_0",
+"type": "ps7_intc_dist",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_l2cachec_0": {"hier_name": "ps7_l2cachec_0",
+"type": "ps7_l2cachec",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_s": {"hier_name": "ps7_dma_s",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_iop_bus_config_0": {"hier_name": "ps7_iop_bus_config_0",
+"type": "ps7_iop_bus_config",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ram_0": {"hier_name": "ps7_ram_0",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ram_1": {"hier_name": "ps7_ram_1",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_scugic_0": {"hier_name": "ps7_scugic_0",
+"type": "ps7_scugic",
+"version": "1.00.a",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"ps7_scutimer_0": {"hier_name": "ps7_scutimer_0",
+"type": "ps7_scutimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuwdt_0": {"hier_name": "ps7_scuwdt_0",
+"type": "ps7_scuwdt",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_slcr_0": {"hier_name": "ps7_slcr_0",
+"type": "ps7_slcr",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_ns": {"hier_name": "ps7_dma_ns",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_0": {"hier_name": "ps7_afi_0",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_1": {"hier_name": "ps7_afi_1",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_2": {"hier_name": "ps7_afi_2",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_3": {"hier_name": "ps7_afi_3",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_m_axi_gp0": {"hier_name": "ps7_m_axi_gp0",
+"type": "ps7_m_axi_gp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: Worker-11: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:05:36.235
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:05:36.271
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:05:36.271
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:05:36.272
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.7",
+}]. Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-11-23 18:05:36.273
+!MESSAGE Generating MD5 hash for file: /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:05:36.274
+!MESSAGE XSCT Command: [::hsi::utils::closesw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:05:36.274
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2022-11-23 18:05:38.071
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:06:50.505
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-23: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:06:50.507
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-23: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:06:50.507
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-23: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:06:50.508
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.7",
+}]. Thread: Worker-23: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-11-23 18:06:50.509
+!MESSAGE Generating MD5 hash for file: /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:06:50.509
+!MESSAGE XSCT Command: [::hsi::utils::closesw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-23: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:06:50.510
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-23: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2022-11-23 18:06:51.844
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:07:31.593
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-15: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:07:31.674
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-15: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:07:31.675
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-15: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:07:31.677
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.7",
+}]. Thread: Worker-15: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-11-23 18:07:31.678
+!MESSAGE Generating MD5 hash for file: /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:07:31.680
+!MESSAGE XSCT Command: [::hsi::utils::closesw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-15: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:07:31.681
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-15: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2022-11-23 18:07:32.626
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:08:27.186
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-22: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:08:27.276
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-22: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:08:27.276
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-22: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:08:27.280
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.7",
+}]. Thread: Worker-22: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-11-23 18:08:27.280
+!MESSAGE Generating MD5 hash for file: /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:08:27.282
+!MESSAGE XSCT Command: [::hsi::utils::closesw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-22: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:08:27.284
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-22: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:25.885
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:25.886
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa], Result: [null, {"device": "7z020",
+"family": "zynq",
+"timestamp": "Wed Nov 23 16:43:16 2022",
+"vivado_version": "2022.1",
+"part": "xc7z020clg484-1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.396
+!MESSAGE XSCT Command: [::hsi::utils::get_ps_config_params -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.471
+!MESSAGE XSCT command with result: [::hsi::utils::get_ps_config_params -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa], Result: [null, {"PCW_APU_PERIPHERAL_FREQMHZ": "666.666667",
+"PCW_DDR_HPRLPR_QUEUE_PARTITION": "HPR(0)/LPR(32)",
+"PCW_DDR_HPR_TO_CRITICAL_PRIORITY_LEVEL": "15",
+"PCW_DDR_LPR_TO_CRITICAL_PRIORITY_LEVEL": "2",
+"PCW_DDR_PORT0_HPR_ENABLE": "0",
+"PCW_DDR_PORT1_HPR_ENABLE": "0",
+"PCW_DDR_PORT2_HPR_ENABLE": "0",
+"PCW_DDR_PORT3_HPR_ENABLE": "0",
+"PCW_DDR_WRITE_TO_CRITICAL_PRIORITY_LEVEL": "2",
+"PCW_FPGA0_PERIPHERAL_FREQMHZ": "100.000000",
+"PCW_UIPARAM_DDR_BUS_WIDTH": "32 Bit",
+"PCW_UIPARAM_DDR_FREQ_MHZ": "533.333313",
+}]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.472
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa ps7_cortexa9_0], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.482
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa ps7_cortexa9_0], Result: [null, {"comblock_0": {},
+"ps7_afi_0": {},
+"ps7_afi_1": {},
+"ps7_afi_2": {},
+"ps7_afi_3": {},
+"ps7_coresight_comp_0": {},
+"ps7_ddr_0": {},
+"ps7_ddrc_0": {},
+"ps7_dev_cfg_0": {},
+"ps7_dma_ns": {},
+"ps7_dma_s": {},
+"ps7_ethernet_0": {},
+"ps7_globaltimer_0": {},
+"ps7_gpv_0": {},
+"ps7_intc_dist_0": {},
+"ps7_iop_bus_config_0": {},
+"ps7_l2cachec_0": {},
+"ps7_ocmc_0": {},
+"ps7_pl310_0": {},
+"ps7_pmu_0": {},
+"ps7_ram_0": {},
+"ps7_ram_1": {},
+"ps7_scuc_0": {},
+"ps7_scugic_0": {},
+"ps7_scutimer_0": {},
+"ps7_scuwdt_0": {},
+"ps7_slcr_0": {},
+"ps7_uart_1": {},
+"ps7_xadc_0": {},
+}]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.482
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa ps7_cortexa9_0], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.491
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa ps7_cortexa9_0], Result: [null, {"comblock_0_AXIF": {"name": "comblock_0",
+"base": "0x43C00000",
+"high": "0x43C3FFFF",
+"size": "262144",
+"slaveintf": "AXIF",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"comblock_0_AXIL": {"name": "comblock_0",
+"base": "0x43C40000",
+"high": "0x43C4FFFF",
+"size": "65536",
+"slaveintf": "AXIL",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_0": {"name": "ps7_afi_0",
+"base": "0xF8008000",
+"high": "0xF8008FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_1": {"name": "ps7_afi_1",
+"base": "0xF8009000",
+"high": "0xF8009FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_2": {"name": "ps7_afi_2",
+"base": "0xF800A000",
+"high": "0xF800AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_3": {"name": "ps7_afi_3",
+"base": "0xF800B000",
+"high": "0xF800BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_coresight_comp_0": {"name": "ps7_coresight_comp_0",
+"base": "0xF8800000",
+"high": "0xF88FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddrc_0": {"name": "ps7_ddrc_0",
+"base": "0xF8006000",
+"high": "0xF8006FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dev_cfg_0": {"name": "ps7_dev_cfg_0",
+"base": "0xF8007000",
+"high": "0xF80070FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_ns": {"name": "ps7_dma_ns",
+"base": "0xF8004000",
+"high": "0xF8004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_s": {"name": "ps7_dma_s",
+"base": "0xF8003000",
+"high": "0xF8003FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ethernet_0": {"name": "ps7_ethernet_0",
+"base": "0xE000B000",
+"high": "0xE000BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_globaltimer_0": {"name": "ps7_globaltimer_0",
+"base": "0xF8F00200",
+"high": "0xF8F002FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpv_0": {"name": "ps7_gpv_0",
+"base": "0xF8900000",
+"high": "0xF89FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_intc_dist_0": {"name": "ps7_intc_dist_0",
+"base": "0xF8F01000",
+"high": "0xF8F01FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_iop_bus_config_0": {"name": "ps7_iop_bus_config_0",
+"base": "0xE0200000",
+"high": "0xE0200FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_l2cachec_0": {"name": "ps7_l2cachec_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ocmc_0": {"name": "ps7_ocmc_0",
+"base": "0xF800C000",
+"high": "0xF800CFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pl310_0": {"name": "ps7_pl310_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pmu_0": {"name": "ps7_pmu_0",
+"base": "0xF8893000",
+"high": "0xF8893FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuc_0": {"name": "ps7_scuc_0",
+"base": "0xF8F00000",
+"high": "0xF8F000FC",
+"size": "253",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scugic_0": {"name": "ps7_scugic_0",
+"base": "0xF8F00100",
+"high": "0xF8F001FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scutimer_0": {"name": "ps7_scutimer_0",
+"base": "0xF8F00600",
+"high": "0xF8F0061F",
+"size": "32",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuwdt_0": {"name": "ps7_scuwdt_0",
+"base": "0xF8F00620",
+"high": "0xF8F006FF",
+"size": "224",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_slcr_0": {"name": "ps7_slcr_0",
+"base": "0xF8000000",
+"high": "0xF8000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_1": {"name": "ps7_uart_1",
+"base": "0xE0001000",
+"high": "0xE0001FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_xadc_0": {"name": "ps7_xadc_0",
+"base": "0xF8007100",
+"high": "0xF8007120",
+"size": "33",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddr_0": {"name": "ps7_ddr_0",
+"base": "0x00100000",
+"high": "0x1FFFFFFF",
+"size": "535822336",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_0": {"name": "ps7_ram_0",
+"base": "0x00000000",
+"high": "0x0002FFFF",
+"size": "196608",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_1": {"name": "ps7_ram_1",
+"base": "0xFFFF0000",
+"high": "0xFFFFFDFF",
+"size": "65024",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.492
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa ps7_cortexa9_0 C_DEBUG_ENABLED], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.493
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa ps7_cortexa9_0 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.494
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.495
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.495
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.496
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.496
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.496
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.496
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa ps7_cortexa9_0 C_FREQ], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.497
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa ps7_cortexa9_0 C_FREQ], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.497
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.497
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Result: [null, 666666687]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.498
+!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.499
+!MESSAGE XSCT command with result: [::hsi::utils::get_cpu_nr -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa], Result: [null, {"ps7_cortexa9_0": {"bscan": "",
+"index": "0",
+},
+"ps7_cortexa9_1": {"bscan": "",
+"index": "1",
+},
+}]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.499
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa ps7_cortexa9_1], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.573
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa ps7_cortexa9_1], Result: [null, {"comblock_0": {},
+"ps7_afi_0": {},
+"ps7_afi_1": {},
+"ps7_afi_2": {},
+"ps7_afi_3": {},
+"ps7_coresight_comp_0": {},
+"ps7_ddr_0": {},
+"ps7_ddrc_0": {},
+"ps7_dev_cfg_0": {},
+"ps7_dma_ns": {},
+"ps7_dma_s": {},
+"ps7_ethernet_0": {},
+"ps7_globaltimer_0": {},
+"ps7_gpv_0": {},
+"ps7_intc_dist_0": {},
+"ps7_iop_bus_config_0": {},
+"ps7_l2cachec_0": {},
+"ps7_ocmc_0": {},
+"ps7_pl310_0": {},
+"ps7_pmu_0": {},
+"ps7_ram_0": {},
+"ps7_ram_1": {},
+"ps7_scuc_0": {},
+"ps7_scugic_0": {},
+"ps7_scutimer_0": {},
+"ps7_scuwdt_0": {},
+"ps7_slcr_0": {},
+"ps7_uart_1": {},
+"ps7_xadc_0": {},
+}]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.574
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa ps7_cortexa9_1], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.678
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa ps7_cortexa9_1], Result: [null, {"comblock_0_AXIF": {"name": "comblock_0",
+"base": "0x43C00000",
+"high": "0x43C3FFFF",
+"size": "262144",
+"slaveintf": "AXIF",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"comblock_0_AXIL": {"name": "comblock_0",
+"base": "0x43C40000",
+"high": "0x43C4FFFF",
+"size": "65536",
+"slaveintf": "AXIL",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_0": {"name": "ps7_afi_0",
+"base": "0xF8008000",
+"high": "0xF8008FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_1": {"name": "ps7_afi_1",
+"base": "0xF8009000",
+"high": "0xF8009FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_2": {"name": "ps7_afi_2",
+"base": "0xF800A000",
+"high": "0xF800AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_3": {"name": "ps7_afi_3",
+"base": "0xF800B000",
+"high": "0xF800BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_coresight_comp_0": {"name": "ps7_coresight_comp_0",
+"base": "0xF8800000",
+"high": "0xF88FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddrc_0": {"name": "ps7_ddrc_0",
+"base": "0xF8006000",
+"high": "0xF8006FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dev_cfg_0": {"name": "ps7_dev_cfg_0",
+"base": "0xF8007000",
+"high": "0xF80070FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_ns": {"name": "ps7_dma_ns",
+"base": "0xF8004000",
+"high": "0xF8004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_s": {"name": "ps7_dma_s",
+"base": "0xF8003000",
+"high": "0xF8003FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ethernet_0": {"name": "ps7_ethernet_0",
+"base": "0xE000B000",
+"high": "0xE000BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_globaltimer_0": {"name": "ps7_globaltimer_0",
+"base": "0xF8F00200",
+"high": "0xF8F002FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpv_0": {"name": "ps7_gpv_0",
+"base": "0xF8900000",
+"high": "0xF89FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_intc_dist_0": {"name": "ps7_intc_dist_0",
+"base": "0xF8F01000",
+"high": "0xF8F01FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_iop_bus_config_0": {"name": "ps7_iop_bus_config_0",
+"base": "0xE0200000",
+"high": "0xE0200FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_l2cachec_0": {"name": "ps7_l2cachec_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ocmc_0": {"name": "ps7_ocmc_0",
+"base": "0xF800C000",
+"high": "0xF800CFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pl310_0": {"name": "ps7_pl310_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pmu_0": {"name": "ps7_pmu_0",
+"base": "0xF8893000",
+"high": "0xF8893FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuc_0": {"name": "ps7_scuc_0",
+"base": "0xF8F00000",
+"high": "0xF8F000FC",
+"size": "253",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scugic_0": {"name": "ps7_scugic_0",
+"base": "0xF8F00100",
+"high": "0xF8F001FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scutimer_0": {"name": "ps7_scutimer_0",
+"base": "0xF8F00600",
+"high": "0xF8F0061F",
+"size": "32",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuwdt_0": {"name": "ps7_scuwdt_0",
+"base": "0xF8F00620",
+"high": "0xF8F006FF",
+"size": "224",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_slcr_0": {"name": "ps7_slcr_0",
+"base": "0xF8000000",
+"high": "0xF8000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_1": {"name": "ps7_uart_1",
+"base": "0xE0001000",
+"high": "0xE0001FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_xadc_0": {"name": "ps7_xadc_0",
+"base": "0xF8007100",
+"high": "0xF8007120",
+"size": "33",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddr_0": {"name": "ps7_ddr_0",
+"base": "0x00100000",
+"high": "0x1FFFFFFF",
+"size": "535822336",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_0": {"name": "ps7_ram_0",
+"base": "0x00000000",
+"high": "0x0002FFFF",
+"size": "196608",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_1": {"name": "ps7_ram_1",
+"base": "0xFFFF0000",
+"high": "0xFFFFFDFF",
+"size": "65024",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.679
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa ps7_cortexa9_1 C_DEBUG_ENABLED], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.679
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa ps7_cortexa9_1 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.680
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.680
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.680
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.681
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.681
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.681
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.681
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa ps7_cortexa9_1 C_FREQ], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.682
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa ps7_cortexa9_1 C_FREQ], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.682
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.683
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Result: [null, 666666687]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.684
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa ps7_cortexa9_0], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.685
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa ps7_cortexa9_0], Result: [null, comblock_0 ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_ethernet_0 ps7_globaltimer_0 ps7_gpv_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_slcr_0 ps7_uart_1 ps7_xadc_0]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.686
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_files_on_hw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa bit], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.687
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_files_on_hw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa bit], Result: [null, ComBlock_wrapper.bit]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:32.688
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY org.eclipse.tcf 4 0 2022-11-23 18:09:35.288
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-11-23 18:09:35.289
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:35.371
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#3]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:35.374
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:35.559
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248A39C5D]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:35.560
+!MESSAGE XSCT Command: [version -server], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:35.561
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.1.0]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:35.561
+!MESSAGE XSCT Command: [version], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:35.561
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.1.0
+SW Build 3524075 on 2022-04-13-17:42:45
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:35.571
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:35.574
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248A39C5D]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:35.575
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:35.584
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:35.585
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:35.588
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248A39C5D]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:35.588
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:35.597
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:35.598
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:35.601
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248A39C5D]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:35.601
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:35.611
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:35.612
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:35.616
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248A39C5D]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:35.616
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:35.626
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:35.626
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:35.630
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248A39C5D]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:35.630
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:35.677
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:35.678
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:35.681
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248A39C5D]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:35.682
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:35.693
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:35.694
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zed 210248A39C5D" && level == 0}], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:35.704
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zed 210248A39C5D" && level == 0}], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:35.705
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:35.705
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:35.705
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:35.711
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:35.711
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:35.767
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:35.768
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:38.771
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:38.783
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:38.786
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248A39C5D]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:38.786
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:38.796
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:38.797
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:38.798
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#3]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:38.798
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:38.801
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248A39C5D]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:38.801
+!MESSAGE XSCT Command: [proc fetch_device_jtag_ctx { node_id } {
+foreach t [jtag ta -ta] {
+if {[dict get $t node_id] == $node_id} {
+return [dict get $t target_ctx]
+}
+}
+error cannot find a jtag device with node id $node_id}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:38.801
+!MESSAGE XSCT command with result: [proc fetch_device_jtag_ctx { node_id } {
+foreach t [jtag ta -ta] {
+if {[dict get $t node_id] == $node_id} {
+return [dict get $t target_ctx]
+}
+}
+error cannot find a jtag device with node id $node_id}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:38.801
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:38.805
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248A39C5D]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:38.805
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:38.814
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:38.814
+!MESSAGE XSCT Command: [fetch_device_jtag_ctx 2], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:38.815
+!MESSAGE XSCT command with result: [fetch_device_jtag_ctx 2], Result: [null, jsn-Zed-210248A39C5D-4ba00477-0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:38.815
+!MESSAGE XSCT Command: [fetch_device_jtag_ctx 3], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:38.816
+!MESSAGE XSCT command with result: [fetch_device_jtag_ctx 3], Result: [null, jsn-Zed-210248A39C5D-23727093-0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:38.818
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:38.892
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:38.892
+!MESSAGE XSCT Command: [fpga -file /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/_ide/bitstream/ComBlock_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:41.279
+!MESSAGE XSCT command with result: [fpga -file /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/_ide/bitstream/ComBlock_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:41.290
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:41.300
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:41.301
+!MESSAGE XSCT Command: [loadhw -hw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:41.584
+!MESSAGE XSCT command with result: [loadhw -hw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, ComBlock_wrapper_2]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:41.585
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:41.591
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:41.592
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:41.687
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:41.687
+!MESSAGE XSCT Command: [source /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/_ide/psinit/ps7_init.tcl], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:41.688
+!MESSAGE XSCT command with result: [source /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:41.688
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:42.421
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:42.423
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:42.482
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:42.483
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:42.519
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:42.521
+!MESSAGE XSCT Command: [dow /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/Debug/comblock_test.elf], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:42.884
+!MESSAGE XSCT command with result: [dow /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/Debug/comblock_test.elf], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:42.885
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:42.912
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:43.074
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:43.094
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:43.094
+!MESSAGE XSCT Command: [con], Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:09:43.107
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:11:08.884
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:11:08.886
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:11:08.887
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:11:08.888
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.7",
+}]. Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-11-23 18:11:08.888
+!MESSAGE Generating MD5 hash for file: /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:11:08.888
+!MESSAGE XSCT Command: [::hsi::utils::closesw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:11:08.889
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:39.790
+!MESSAGE XSCT Command: [disconnect tcfchan#3], Thread: Thread-689
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:39.843
+!MESSAGE XSCT command with result: [disconnect tcfchan#3], Result: [null, ]. Thread: Thread-689
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:39.872
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:39.880
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#5]. Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:39.880
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:39.897
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248A39C5D]. Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:39.898
+!MESSAGE XSCT Command: [version -server], Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:39.899
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.1.0]. Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:39.899
+!MESSAGE XSCT Command: [version], Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:39.900
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.1.0
+SW Build 3524075 on 2022-04-13-17:42:45
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:39.901
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:39.979
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248A39C5D]. Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:39.980
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:40.102
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:40.103
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:40.115
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248A39C5D]. Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:40.171
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:40.189
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:40.189
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:40.196
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248A39C5D]. Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:40.196
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:40.206
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:40.207
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:40.280
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248A39C5D]. Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:40.281
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:40.375
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:40.376
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:40.392
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248A39C5D]. Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:40.393
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:40.503
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:40.503
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:40.584
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248A39C5D]. Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:40.584
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:40.686
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:40.687
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zed 210248A39C5D" && level == 0}], Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:40.792
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zed 210248A39C5D" && level == 0}], Result: [null, ]. Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:40.794
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:40.795
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:40.796
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:40.888
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:40.889
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:40.945
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:40.946
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:43.950
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:43.965
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:43.969
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248A39C5D]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:43.969
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:43.979
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:43.980
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:44.001
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:44.001
+!MESSAGE XSCT Command: [fpga -file /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/_ide/bitstream/ComBlock_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:46.459
+!MESSAGE XSCT command with result: [fpga -file /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/_ide/bitstream/ComBlock_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:46.480
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:46.486
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:46.487
+!MESSAGE XSCT Command: [loadhw -hw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:46.491
+!MESSAGE XSCT command with result: [loadhw -hw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, ComBlock_wrapper_2]. Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:46.491
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:46.492
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:46.492
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:46.571
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:46.571
+!MESSAGE XSCT Command: [source /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/_ide/psinit/ps7_init.tcl], Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:46.573
+!MESSAGE XSCT command with result: [source /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:46.573
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:47.300
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:47.301
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:47.305
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:47.305
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:47.312
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:47.312
+!MESSAGE XSCT Command: [dow /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/Debug/comblock_test.elf], Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:47.491
+!MESSAGE XSCT command with result: [dow /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/Debug/comblock_test.elf], Result: [null, ]. Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:47.491
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:47.518
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:47.523
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:47.530
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:47.530
+!MESSAGE XSCT Command: [con], Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:12:47.543
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-22: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:05.304
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:05.306
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:05.306
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:05.307
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.7",
+}]. Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-11-23 18:17:05.370
+!MESSAGE Generating MD5 hash for file: /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:05.371
+!MESSAGE XSCT Command: [::hsi::utils::closesw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:05.372
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/sw/ComBlock_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:51.908
+!MESSAGE XSCT Command: [disconnect tcfchan#5], Thread: Thread-761
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:51.910
+!MESSAGE XSCT command with result: [disconnect tcfchan#5], Result: [null, ]. Thread: Thread-761
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:51.913
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:51.917
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#7]. Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:51.917
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:51.971
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248A39C5D]. Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:51.971
+!MESSAGE XSCT Command: [version -server], Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:51.972
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.1.0]. Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:51.973
+!MESSAGE XSCT Command: [version], Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:51.973
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.1.0
+SW Build 3524075 on 2022-04-13-17:42:45
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:51.973
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:51.978
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248A39C5D]. Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:51.979
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:52.078
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:52.078
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:52.082
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248A39C5D]. Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:52.083
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:52.094
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:52.094
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:52.098
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248A39C5D]. Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:52.099
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:52.389
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:52.390
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:52.474
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248A39C5D]. Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:52.475
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:52.679
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:52.679
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:52.695
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248A39C5D]. Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:52.695
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:52.884
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:52.885
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:52.973
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248A39C5D]. Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:52.974
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:53.176
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:53.177
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zed 210248A39C5D" && level == 0}], Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:53.276
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zed 210248A39C5D" && level == 0}], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:53.277
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:53.278
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:53.279
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:53.388
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:53.389
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:53.524
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:53.524
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:56.575
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:56.594
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:56.598
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248A39C5D]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:56.598
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:56.608
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:56.609
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:56.677
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:56.678
+!MESSAGE XSCT Command: [fpga -file /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/_ide/bitstream/ComBlock_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:59.041
+!MESSAGE XSCT command with result: [fpga -file /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/_ide/bitstream/ComBlock_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:59.083
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:59.095
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:59.171
+!MESSAGE XSCT Command: [loadhw -hw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:59.185
+!MESSAGE XSCT command with result: [loadhw -hw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, ComBlock_wrapper_2]. Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:59.187
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:59.189
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:59.190
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:59.277
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:59.278
+!MESSAGE XSCT Command: [source /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/_ide/psinit/ps7_init.tcl], Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:59.281
+!MESSAGE XSCT command with result: [source /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:17:59.282
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:18:00.189
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:18:00.190
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:18:00.205
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:18:00.206
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:18:00.295
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:18:00.296
+!MESSAGE XSCT Command: [dow /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/Debug/comblock_test.elf], Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:18:00.705
+!MESSAGE XSCT command with result: [dow /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/Debug/comblock_test.elf], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:18:00.707
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:18:00.736
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:18:00.778
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:18:00.783
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:18:00.784
+!MESSAGE XSCT Command: [con], Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:18:00.883
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_comblock_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:20:47.871
+!MESSAGE XSCT Command: [disconnect tcfchan#7], Thread: Thread-811
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-23 18:20:47.874
+!MESSAGE XSCT command with result: [disconnect tcfchan#7], Result: [null, ]. Thread: Thread-811

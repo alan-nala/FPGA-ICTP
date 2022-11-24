@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html dir="ltr" class="client-js" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>FreeRTOS Tutorial - Embedded Systems Learning Academy</title>
+<meta charset="UTF-8">
+<meta name="generator" content="MediaWiki 1.18.2">
+<link rel="shortcut icon" href="http://www.socialledge.com/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.socialledge.com/sjsu/opensearch_desc.php" title="Embedded Systems Learning Academy (en)">
+<link rel="EditURI" type="application/rsd+xml" href="http://www.socialledge.com/sjsu/api.php?action=rsd">
+<link rel="alternate" type="application/atom+xml" title="Embedded Systems Learning Academy Atom feed" href="http://www.socialledge.com/sjsu/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="stylesheet" href="FreeRTOS%20Tutorial%20-%20Embedded%20Systems%20Learning%20Academy-Dateien/load.css">
+<style type="text/css" media="all">.mw-collapsible-toggle{float:right} li .mw-collapsible-toggle{float:none} .mw-collapsible-toggle-li{list-style:none}
+
+/* cache key: sjsuwiki:resourceloader:filter:minify-css:4:4250852ed2349a0d4d0fc6509a3e7d4c */
+</style><style type="text/css" media="all">.js-messagebox{margin:1em 5%;padding:0.5em 2.5%;border:1px solid #ccc;background-color:#fcfcfc;font-size:0.8em}.js-messagebox .js-messagebox-group{margin:1px;padding:0.5em 2.5%;border-bottom:1px solid #ddd}.js-messagebox .js-messagebox-group:last-child{border-bottom:thin none transparent}
+
+/* cache key: sjsuwiki:resourceloader:filter:minify-css:4:8b08bdc91c52a9ffba396dccfb5b473c */
+</style><meta name="ResourceLoaderDynamicStyles" content="">
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}a.new,#quickbar a.new{color:#ba0000}
+
+/* cache key: sjsuwiki:resourceloader:filter:minify-css:4:c88e2bcd56513749bec09a7e29cb3ffa */
+</style>
+<script src="FreeRTOS%20Tutorial%20-%20Embedded%20Systems%20Learning%20Academy-Dateien/ca-pub-2792492894831533.js" type="text/javascript" async=""></script><script src="FreeRTOS%20Tutorial%20-%20Embedded%20Systems%20Learning%20Academy-Dateien/load_002.php"></script><script src="FreeRTOS%20Tutorial%20-%20Embedded%20Systems%20Learning%20Academy-Dateien/load_005.php"></script>
+<script>if(window.mw){
+	mw.config.set({"wgCanonicalNamespace": "", "wgCanonicalSpecialPageName": false, "wgNamespaceNumber": 0, "wgPageName": "FreeRTOS_Tutorial", "wgTitle": "FreeRTOS Tutorial", "wgCurRevisionId": 5620, "wgArticleId": 212, "wgIsArticle": true, "wgAction": "view", "wgUserName": null, "wgUserGroups": ["*"], "wgCategories": [], "wgBreakFrames": false, "wgRestrictionEdit": [], "wgRestrictionMove": [], "wgWikiEditorEnabledModules": {"toolbar": false, "dialogs": false, "hidesig": true, "templateEditor": false, "templates": false, "preview": false, "previewDialog": false, "publish": false, "toc": false}});
+}
+</script><script>if(window.mw){
+	mw.loader.load(["mediawiki.page.startup"]);
+}
+</script><script type="text/javascript" src="FreeRTOS%20Tutorial%20-%20Embedded%20Systems%20Learning%20Academy-Dateien/load_004.php"></script>
+<style type="text/css">/*<![CDATA[*/
+.source-c {line-height: normal;}
+.source-c li, .source-c pre {
+	line-height: normal; border: 1px dashed #2f6fab;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for c
+ * CSS class: source-c, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.c.source-c .de1, .c.source-c .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.c.source-c  {font-family:monospace;}
+.c.source-c .imp {font-weight: bold; color: red;}
+.c.source-c li, .c.source-c .li1 {font-weight: normal; vertical-align:top;}
+.c.source-c .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.c.source-c .li2 {font-weight: bold; vertical-align:top;}
+.c.source-c .kw1 {color: #b1b100;}
+.c.source-c .kw2 {color: #000000; font-weight: bold;}
+.c.source-c .kw3 {color: #000066;}
+.c.source-c .kw4 {color: #993333;}
+.c.source-c .co1 {color: #666666; font-style: italic;}
+.c.source-c .co2 {color: #339933;}
+.c.source-c .coMULTI {color: #808080; font-style: italic;}
+.c.source-c .es0 {color: #000099; font-weight: bold;}
+.c.source-c .es1 {color: #000099; font-weight: bold;}
+.c.source-c .es2 {color: #660099; font-weight: bold;}
+.c.source-c .es3 {color: #660099; font-weight: bold;}
+.c.source-c .es4 {color: #660099; font-weight: bold;}
+.c.source-c .es5 {color: #006699; font-weight: bold;}
+.c.source-c .br0 {color: #009900;}
+.c.source-c .sy0 {color: #339933;}
+.c.source-c .st0 {color: #ff0000;}
+.c.source-c .nu0 {color: #0000dd;}
+.c.source-c .nu6 {color: #208080;}
+.c.source-c .nu8 {color: #208080;}
+.c.source-c .nu12 {color: #208080;}
+.c.source-c .nu16 {color:#800080;}
+.c.source-c .nu17 {color:#800080;}
+.c.source-c .nu18 {color:#800080;}
+.c.source-c .nu19 {color:#800080;}
+.c.source-c .me1 {color: #202020;}
+.c.source-c .me2 {color: #202020;}
+.c.source-c .ln-xtra, .c.source-c li.ln-xtra, .c.source-c div.ln-xtra {background-color: #ffc;}
+.c.source-c span.xtra { display:block; }
+
+/*]]>*/
+</style>
+<style type="text/css">/*<![CDATA[*/
+@import "/sjsu/index.php?title=MediaWiki:Geshi.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=18000";
+/*]]>*/
+</style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/sjsu/skins/vector/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-FreeRTOS_Tutorial action-view skin-vector">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<!-- content -->
+		<div id="content">
+			<a id="top"></a>
+			<div class="js-messagebox" id="mw-js-message" style="display:none;"></div>
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading">FreeRTOS Tutorial</h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+								<!-- tagline -->
+				<div id="siteSub">From Embedded Systems Learning Academy</div>
+				<!-- /tagline -->
+								<!-- subtitle -->
+				<div id="contentSub"></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav">
+					Jump to: <a href="#mw-head">navigation</a>,
+					<a href="#p-search">search</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodycontent -->
+				<div dir="ltr" class="mw-content-ltr" lang="en"><table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2><span class="toctoggle">&nbsp;[<a href="#" class="internal" id="togglelink">hide</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Screencast"><span class="tocnumber">1.1</span> <span class="toctext">Screencast</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="#What_is_an_OS"><span class="tocnumber">2</span> <span class="toctext">What is an OS</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#FreeRTOS_main.28.29_and_Tasks"><span class="tocnumber">3</span> <span class="toctext">FreeRTOS main() and Tasks</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#The_MAIN_Function"><span class="tocnumber">3.1</span> <span class="toctext">The MAIN Function</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#What_is_Stack_Memory.3F"><span class="tocnumber">3.2</span> <span class="toctext">What is Stack Memory?</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Task_Stack_Size"><span class="tocnumber">3.3</span> <span class="toctext">Task Stack Size</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Controlling_Tasks"><span class="tocnumber">3.4</span> <span class="toctext">Controlling Tasks</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Simple_Task"><span class="tocnumber">3.5</span> <span class="toctext">Simple Task</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Terminal_Task"><span class="tocnumber">3.6</span> <span class="toctext">Terminal Task</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="#FreeRTOS_Inter-task_Communication"><span class="tocnumber">4</span> <span class="toctext">FreeRTOS Inter-task Communication</span></a>
+<ul>
+<li class="toclevel-2 tocsection-12"><a href="#Queue_Communication"><span class="tocnumber">4.1</span> <span class="toctext">Queue Communication</span></a>
+<ul>
+<li class="toclevel-3 tocsection-13"><a href="#Explanation"><span class="tocnumber">4.1.1</span> <span class="toctext">Explanation</span></a></li>
+<li class="toclevel-3 tocsection-14"><a href="#Practical_Example"><span class="tocnumber">4.1.2</span> <span class="toctext">Practical Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-15"><a href="#Semaphores"><span class="tocnumber">4.2</span> <span class="toctext">Semaphores</span></a>
+<ul>
+<li class="toclevel-3 tocsection-16"><a href="#Mutex"><span class="tocnumber">4.2.1</span> <span class="toctext">Mutex</span></a></li>
+<li class="toclevel-3 tocsection-17"><a href="#Binary_Semaphore"><span class="tocnumber">4.2.2</span> <span class="toctext">Binary Semaphore</span></a></li>
+<li class="toclevel-3 tocsection-18"><a href="#Counting_Semaphore"><span class="tocnumber">4.2.3</span> <span class="toctext">Counting Semaphore</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-19"><a href="#FAQ"><span class="tocnumber">5</span> <span class="toctext">FAQ</span></a></li>
+<li class="toclevel-1 tocsection-20"><a href="#Going_Beyond"><span class="tocnumber">6</span> <span class="toctext">Going Beyond</span></a></li>
+</ul>
+</td></tr></tbody></table>
+<h2> <span class="mw-headline" id="Introduction"> Introduction </span></h2>
+<p>This article is about learning FreeRTOS.  The FreeRTOS <b>sample</b> project running on <b><a href="http://www.socialledge.com/sjsu/index.php?title=SJ_One_Board" title="SJ One Board">SJ One Board</a></b> is used as reference, but any FreeRTOS project on any controller can benefit from this article.
+</p><p>Notes about the FreeRTOS Sample Project:
+</p>
+<ul><li>  The Development Package ZIP File contains the FreeRTOS sample 
+project, however, the latest copy can always be downloaded from: <a rel="nofollow" target="_blank" class="external free" href="https://sourceforge.net/projects/armdevpkg/files">https://sourceforge.net/projects/armdevpkg/files</a>
+</li><li>  This article assumes you know how to compile and load a sample project to the SJ-One Board.
+</li></ul>
+<h3> <span class="mw-headline" id="Screencast"> Screencast </span></h3>
+<p>I created some screencasts to quickly go through FreeRTOS, however, I <b>HIGHLY</b> encourage you to read this article in full first.
+</p>
+<ul><li>  <b>Tasks and Queues</b>
+<dl><dd>  <b><a rel="nofollow" target="_blank" class="external text" href="http://www.youtube.com/watch?v=8lIpI30Tj-g">FreeRTOS tasks and Queues</a></b>
+</dd><dd>  <b><a rel="nofollow" target="_blank" class="external text" href="http://www.youtube.com/watch?v=yHfDO_jiIFw">FreeRTOS Queues</a></b>
+</dd></dl>
+</li><li>  <b>Semaphores&nbsp;:</b>
+<dl><dd> <b><a rel="nofollow" target="_blank" class="external text" href="http://www.youtube.com/watch?v=PjDHn_G078k">FreeRTOS Mutex</a></b>
+</dd><dd> <b><a rel="nofollow" target="_blank" class="external text" href="http://www.youtube.com/watch?v=grXuVMttVuU">FreeRTOS Binary Semaphore</a></b>
+</dd><dd> <b><a rel="nofollow" target="_blank" class="external text" href="http://www.youtube.com/watch?v=06TH2NgrKkA">FreeRTOS Interrupt Processing using Binary Semaphore</a></b>
+</dd></dl>
+</li><li>  <b><a rel="nofollow" target="_blank" class="external text" href="http://www.youtube.com/watch?v=4gawgXminv4">C++ Wrapper for FreeRTOS tasks</a></b>
+<dl><dd>  Use this tutorial after mastering the basic FreeRTOS concepts
+</dd><dd>  The source code is included in <b>SJSU_Dev</b> development package.
+</dd></dl>
+</li></ul>
+<p><br>
+</p>
+<h2> <span class="mw-headline" id="What_is_an_OS"> What is an OS </span></h2>
+<p>An Embedded Operating System like FreeRTOS is nothing but software 
+that provides multitasking facilities.  FreeRTOS allows to run multiple 
+tasks and has a simple scheduler to switch between tasks.  Here are some
+ of the FreeRTOS features:
+</p>
+<ul><li>  Priority-based multitasking capability
+</li><li>  Queues to communicate between multiple tasks
+</li><li>  Semaphores to manage resource sharing between multiple tasks
+</li><li>  Utilities to view CPU utilization, stack utilization etc.
+</li></ul>
+<p><br>
+</p>
+<h2> <span class="mw-headline" id="FreeRTOS_main.28.29_and_Tasks"> FreeRTOS main() and Tasks </span></h2>
+<h3> <span class="mw-headline" id="The_MAIN_Function"> The MAIN Function </span></h3>
+<p>The main function in FreeRTOS based project is nothing but a function
+ that creates tasks.  FreeRTOS will let you multi-task based on your 
+tasks and their priority.  Remember that a "task" is simply a "function"
+ name of type: <code><b>void my_task(void* p)</b></code>
+</p>
+<h3> <span class="mw-headline" id="What_is_Stack_Memory.3F"> What is Stack Memory? </span></h3>
+<p>Before you create a task, you need to know what is stack memory.  
+Every variable you declare uses memory on the stack.  This memory is 
+generally preferred over heap allocated memory that comes from <code>malloc</code> or <code>new</code> operators.  
+</p><p>What uses Stack Memory?
+</p>
+<ul><li>  Local Variables of the task.
+</li><li>  Function calls (function parameters + function return address)
+</li><li>  Local variables of functions your task calls.
+</li></ul>
+<p>How is stack managed?
+</p>
+<ul><li>  Every time you declare a variable, stack pointer moves down.
+<ul><li>  If you declare an int, your assembly code will generate: <code>SUB SP, 1</code>
+</li><li>  If you declare <code>char mem[128]</code> your assembly code will generate: <code>SUB SP, 32</code> assuming 32-bit machine
+</li></ul>
+</li><li>  That is why you should use curly braces and limit the scope 
+of variables as much as possible.  This way, every time a variable goes 
+out of scope, you will see something like: <code>ADD SP, ##</code> indicating memory released.
+</li><li>  This is why stack memory is preferred over heap because stack
+ uses just two ADD and SUB instructions to manage memory whereas heap 
+uses rather expensive <code>malloc</code> operations.  Furthermore, <code>malloc</code> fragments your memory and in a smaller system, fragmented memory may result in <code>malloc</code> returning NULL pointers.
+</li></ul>
+<p>Let's start with examples on how to estimate your stack memory:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">void</span> hello_world_task<span class="br0">(</span><span class="kw4">void</span><span class="sy0">*</span> p<span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw4">char</span> mem<span class="br0">[</span><span class="nu0">128</span><span class="br0">]</span><span class="sy0">;</span>
+    <span class="kw1">while</span><span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span> <span class="br0">{</span>
+    <span class="br0">}</span>
+<span class="br0">}</span>
+<span class="co1">//The task above uses 128 bytes of stack.</span></pre></div></div>
+<p><br>
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">void</span> hello_world_task<span class="br0">(</span><span class="kw4">void</span><span class="sy0">*</span> p<span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw4">char</span> mem<span class="br0">[</span><span class="nu0">128</span><span class="br0">]</span><span class="sy0">;</span>
+    <span class="kw4">int</span>  int_mem<span class="br0">[</span><span class="nu0">128</span><span class="br0">]</span><span class="sy0">;</span> <span class="co1">// 4 bytes per int</span>
+    <span class="kw1">while</span><span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span> <span class="br0">{</span>
+    <span class="br0">}</span>
+<span class="br0">}</span>
+<span class="co1">// The task above uses 128+ (128*4) bytes of stack.</span></pre></div></div>
+<p><br>
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">void</span> hello_world_task<span class="br0">(</span><span class="kw4">void</span><span class="sy0">*</span> p<span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw4">char</span> mem<span class="br0">[</span><span class="nu0">128</span><span class="br0">]</span><span class="sy0">;</span>
+    <span class="kw1">while</span><span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span> <span class="br0">{</span>
+        foo<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <span class="co1">// Assume foo uses 128 bytes of stack.</span>
+    <span class="br0">}</span>
+<span class="br0">}</span>
+<span class="co1">// The task above uses 128+128 bytes of stack.</span></pre></div></div>
+<p><br>
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">void</span> hello_world_task<span class="br0">(</span><span class="kw4">void</span><span class="sy0">*</span> p<span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw4">char</span> mem<span class="br0">[</span><span class="nu0">128</span><span class="br0">]</span><span class="sy0">;</span>
+    <span class="kw1">while</span><span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span> <span class="br0">{</span>
+        <span class="kw1">if</span><span class="br0">(</span>...<span class="br0">)</span> <span class="br0">{</span>
+            <span class="kw4">char</span> mem_one<span class="br0">[</span><span class="nu0">128</span><span class="br0">]</span><span class="sy0">;</span>
+        <span class="br0">}</span>
+        <span class="kw1">else</span><span class="br0">(</span>...<span class="br0">)</span> <span class="br0">{</span>
+            <span class="kw4">char</span> mem_two<span class="br0">[</span><span class="nu0">256</span><span class="br0">]</span><span class="sy0">;</span>
+        <span class="br0">}</span>
+    <span class="br0">}</span>
+<span class="br0">}</span>
+<span class="coMULTI">/* The task above uses 128 + 256 bytes of stack.  
+ * Note that it is not 128+128+256, because only one branch statement
+ * will execute and in the worst case, branch two's code will end up 
+ * using 128+256 bytes of stack.
+ */</span></pre></div></div>
+<p><br>
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">void</span> hello_world_task<span class="br0">(</span><span class="kw4">void</span><span class="sy0">*</span> p<span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw4">char</span> <span class="sy0">*</span>mem <span class="sy0">=</span> <span class="kw4">char</span><span class="sy0">*</span> <span class="kw3">malloc</span><span class="br0">(</span><span class="nu0">128</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="kw1">while</span><span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span> <span class="br0">{</span>
+    <span class="br0">}</span>
+<span class="br0">}</span>
+<span class="co1">// The task above uses just 4 bytes of stack (to hold mem pointer)</span>
+<span class="co1">// The actual memory comes from HEAP, which is not part of the stack.</span></pre></div></div>
+<p><br>
+</p>
+<h3> <span class="mw-headline" id="Task_Stack_Size"> Task Stack Size </span></h3>
+<p>The stack size of a task depends on the memory consumed by its local 
+variables and function call depth.  Please note that if your task (or 
+function) uses printf, it consumes around 1024 bytes of stack.  <b>At minimum however, you would need at least 512 bytes + your estimated stack space above</b>.  If you don't allocate enough stack space, your CPU will run to an exception and/or freeze.
+</p><p>You should definitely read the following article to study the memory layout:
+</p>
+<ul><li> <a href="http://www.socialledge.com/sjsu/images/d/dc/CmpE146RefFiles_StackAndHeap.pdf" class="internal" title="CmpE146RefFiles StackAndHeap.pdf">Stack Heap Walkthrough</a>
+</li></ul>
+<h3> <span class="mw-headline" id="Controlling_Tasks"> Controlling Tasks </span></h3>
+<p>In FreeRTOS, you have precise control of when tasks will use the CPU.  The rules are simple:
+</p>
+<ul><li>  Task with highest priority will run first, and never give up the CPU until it sleeps
+</li><li>  If 2 or more tasks with the same priority do not give up the 
+CPU (they don't sleep), then FreeRTOS will share the CPU between them 
+(time slice).
+</li></ul>
+<p>Here are some of the ways you can give up the CPU:
+</p>
+<ul><li>  <code><b>vTaskDelay()    </b></code>  This simply puts the task to "sleep"; you decide how much you want to sleep.
+</li><li>  <code><b>xQueueSend()    </b></code>  If the Queue you are sending to is full, this task will sleep (block).
+</li><li>  <code><b>xQueueReceive() </b></code>  If the Queue you are reading from is empty, this task will sleep (block).
+</li><li>  <code><b>xSemaphoreTake()</b></code>  You will sleep if the semaphore is taken by somebody else.
+</li></ul>
+<p>Remember that each function given above takes a parameter that 
+decides how long you are willing to sleep.  You could use this parameter
+ as a timeout.  For example, your logic may be: "I'm going to wait 1 
+second to receive something from the queue, otherwise I will &lt;do 
+whatever&gt;".
+</p>
+<h3> <span class="mw-headline" id="Simple_Task"> Simple Task </span></h3>
+<p>Below is a simple task example that prints a message once a second.  Note that <code>vTaskStartScheduler()</code> never returns and FreeRTOS will begin servicing the tasks at this point.  Also note that every task must have an <b>infinite loop and NEVER EXIT</b>.
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">void</span> hello_world_task<span class="br0">(</span><span class="kw4">void</span><span class="sy0">*</span> p<span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw1">while</span><span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span> <span class="br0">{</span>
+        <span class="kw3">puts</span><span class="br0">(</span><span class="st0">"Hello World!"</span><span class="br0">)</span><span class="sy0">;</span>
+        vTaskDelay<span class="br0">(</span><span class="nu0">1000</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="br0">}</span>
+<span class="br0">}</span>
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
+    xTaskCreate<span class="br0">(</span>hello_world_task<span class="sy0">,</span> <span class="br0">(</span><span class="kw4">signed</span> <span class="kw4">char</span><span class="sy0">*</span><span class="br0">)</span><span class="st0">"task_name"</span><span class="sy0">,</span> STACK_BYTES<span class="br0">(</span><span class="nu0">2048</span><span class="br0">)</span><span class="sy0">,</span> <span class="nu0">0</span><span class="sy0">,</span> <span class="nu0">1</span><span class="sy0">,</span> <span class="nu0">0</span><span class="br0">)</span><span class="sy0">;</span>
+    vTaskStartScheduler<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+&nbsp;
+    <span class="kw1">return</span> <span class="sy0">-</span><span class="nu0">1</span><span class="sy0">;</span>
+<span class="br0">}</span></pre></div></div>
+<p><br>
+</p>
+<h3> <span class="mw-headline" id="Terminal_Task"> Terminal Task </span></h3>
+<p>The FreeRTOS sample project creates "terminal" task that allows you 
+to interact with the serial port.  You can type "help" and press enter 
+in <b>Hercules</b> program to see the commands supported by the terminal
+ task.  You can, of course, add more commands to it.  You should now 
+pause reading this article and now look at how the <b>terminal</b> task works.  Here is a screenshot of terminal task interaction:
+<b>TODO: Add screenshot</b>
+</p>
+<h2> <span class="mw-headline" id="FreeRTOS_Inter-task_Communication"> FreeRTOS Inter-task Communication </span></h2>
+<h3> <span class="mw-headline" id="Queue_Communication"> Queue Communication </span></h3>
+<p>You can communicate between tasks by using Queues or Semaphores.  
+Let's create an example to communicate between two tasks based on the 
+Software Framework in the sample project.  Here's some sample code:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co1">// Global Queue Handle</span>
+QueueHandle_t qh <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span>
+&nbsp;
+<span class="kw4">void</span> task_tx<span class="br0">(</span><span class="kw4">void</span><span class="sy0">*</span> p<span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw4">int</span> myInt <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span>
+    <span class="kw1">while</span><span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span>
+    <span class="br0">{</span>
+        myInt<span class="sy0">++;</span>
+        <span class="kw1">if</span><span class="br0">(</span><span class="sy0">!</span>xQueueSend<span class="br0">(</span>qh<span class="sy0">,</span> <span class="sy0">&amp;</span>myInt<span class="sy0">,</span> <span class="nu0">500</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span>
+            <span class="kw3">puts</span><span class="br0">(</span><span class="st0">"Failed to send item to queue within 500ms"</span><span class="br0">)</span><span class="sy0">;</span>
+        <span class="br0">}</span>
+        vTaskDelay<span class="br0">(</span><span class="nu0">1000</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="br0">}</span>
+<span class="br0">}</span>
+&nbsp;
+<span class="kw4">void</span> task_rx<span class="br0">(</span><span class="kw4">void</span><span class="sy0">*</span> p<span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw4">int</span> myInt <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span>
+    <span class="kw1">while</span><span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span>
+    <span class="br0">{</span>
+        <span class="kw1">if</span><span class="br0">(</span><span class="sy0">!</span>xQueueReceive<span class="br0">(</span>qh<span class="sy0">,</span> <span class="sy0">&amp;</span>myInt<span class="sy0">,</span> <span class="nu0">1000</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span>
+            <span class="kw3">puts</span><span class="br0">(</span><span class="st0">"Failed to receive item within 1000 ms"</span><span class="br0">)</span><span class="sy0">;</span>
+        <span class="br0">}</span>
+        <span class="kw1">else</span> <span class="br0">{</span>
+            <span class="kw3">printf</span><span class="br0">(</span><span class="st0">"Received:&nbsp;%u<span class="es1">\n</span>"</span><span class="sy0">,</span> myInt<span class="br0">)</span><span class="sy0">;</span>
+        <span class="br0">}</span>
+    <span class="br0">}</span>
+<span class="br0">}</span>
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
+    qh <span class="sy0">=</span> xQueueCreate<span class="br0">(</span><span class="nu0">1</span><span class="sy0">,</span> <span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+&nbsp;
+    xTaskCreate<span class="br0">(</span>task_tx<span class="sy0">,</span> <span class="br0">(</span><span class="kw4">signed</span> <span class="kw4">char</span><span class="sy0">*</span><span class="br0">)</span><span class="st0">"t1"</span><span class="sy0">,</span> STACK_BYTES<span class="br0">(</span><span class="nu0">2048</span><span class="br0">)</span><span class="sy0">,</span> <span class="nu0">0</span><span class="sy0">,</span> <span class="nu0">1</span><span class="sy0">,</span> <span class="nu0">0</span><span class="br0">)</span><span class="sy0">;</span>
+    xTaskCreate<span class="br0">(</span>task_rx<span class="sy0">,</span> <span class="br0">(</span><span class="kw4">signed</span> <span class="kw4">char</span><span class="sy0">*</span><span class="br0">)</span><span class="st0">"t2"</span><span class="sy0">,</span> STACK_BYTES<span class="br0">(</span><span class="nu0">2048</span><span class="br0">)</span><span class="sy0">,</span> <span class="nu0">0</span><span class="sy0">,</span> <span class="nu0">1</span><span class="sy0">,</span> <span class="nu0">0</span><span class="br0">)</span><span class="sy0">;</span>
+    vTaskStartScheduler<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+&nbsp;
+    <span class="kw1">return</span> <span class="sy0">-</span><span class="nu0">1</span><span class="sy0">;</span>
+<span class="br0">}</span></pre></div></div> 
+<h4> <span class="mw-headline" id="Explanation"> Explanation </span></h4>
+<p>Note the following items:
+</p>
+<ul><li>  In <b>main()</b>, we create the Queue before creating tasks, otherwise sending to un-initialized Queue will crash the system.
+</li><li>  In <b>task_tx()</b>, we send one item every second, and if the queue is full, we print a failure message.
+</li><li>  In <b>task_rx()</b>, we receive one item, and we do not use 
+vTaskDelay().  This is because if there is nothing in the queue, 
+FreeRTOS will sleep(or block) this task from running.  The timeout 
+itself in xQueueReceive() allows us to sleep for 1000ms but wake-up if 
+an item is available in the queue earlier.
+</li><li>  If the priority of the receiving queue(task_rx()) is higher, 
+FreeRTOS will switch tasks the moment xQueueSend() happens, and the next
+ line inside task_tx() will not execute since CPU will be switched over 
+to task_rx().
+</li></ul>
+<p><br>
+</p>
+<h4> <span class="mw-headline" id="Practical_Example"> Practical Example </span></h4>
+<p>A practical example of a queue may be to start another task to start 
+doing its work while the primary task continues doing its own work 
+independently.  In the following example, we demonstrate how a terminal 
+task can kick-off another task to begin playing an mp3 song while it 
+operates independently to handle the next command from a terminal (user 
+input).
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">void</span> terminal_task<span class="br0">(</span><span class="kw4">void</span><span class="sy0">*</span> p<span class="br0">)</span>
+<span class="br0">{</span>
+     <span class="co1">// Assume you got a user-command to play an mp3:</span>
+     xQueueSend<span class="br0">(</span>song_name_queue<span class="sy0">,</span> <span class="st0">"song_name.mp3"</span><span class="sy0">,</span> <span class="nu0">0</span><span class="br0">)</span><span class="sy0">;</span>
+&nbsp;
+     ...
+<span class="br0">}</span>
+&nbsp;
+<span class="kw4">void</span> mp3_play_task<span class="br0">(</span><span class="kw4">void</span><span class="sy0">*</span> p<span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw4">char</span> song_name<span class="br0">[</span><span class="nu0">32</span><span class="br0">]</span><span class="sy0">;</span>
+    <span class="kw1">while</span><span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span> <span class="br0">{</span>
+        <span class="kw1">if</span><span class="br0">(</span>xQueueReceive<span class="br0">(</span>song_name_queue<span class="sy0">,</span> <span class="sy0">&amp;</span>song_name<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span><span class="sy0">,</span> portMAX_DELAY<span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span>
+            <span class="co1">// Start to play the song.</span>
+        <span class="br0">}</span>
+    <span class="br0">}</span>
+<span class="br0">}</span></pre></div></div> 
+<p><br>
+<br>
+</p>
+<h3> <span class="mw-headline" id="Semaphores"> Semaphores </span></h3>
+<p>Semaphores are meant to limit access to resources, but there are many
+ applications.  There are also many types of semaphores and the text 
+below discusses some of them and their application.
+</p>
+<h4> <span class="mw-headline" id="Mutex"> Mutex </span></h4>
+<p>One of the best example of a mutex is to guard a resource or a door 
+with a key.  For instance, let's say you have an SPI BUS, and only one 
+task should use it at a time.  Mutex provides mutual exclusion with <a rel="nofollow" target="_blank" class="external text" href="http://en.wikipedia.org/wiki/Priority_inversion">priority inversion mechanism</a>.  Mutex will only allow ONE task to get past <b>xSemaphoreGet()</b> operation and other tasks will be put to sleep if they reach this function at the same time.
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co1">// In main(), initialize your Mutex:</span>
+SemaphoreHandle_t spi_bus_lock <span class="sy0">=</span> xSemaphoreCreateMutex<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+&nbsp;
+<span class="kw4">void</span> task_one<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw1">while</span><span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span> <span class="br0">{</span>
+        <span class="kw1">if</span><span class="br0">(</span>xSemaphoreGet<span class="br0">(</span>spi_bus_lock<span class="sy0">,</span> <span class="nu0">1000</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span>
+            <span class="co1">// Use Guarded Resource</span>
+&nbsp;
+            <span class="co1">// Give Semaphore back:</span>
+            xSemaphoreGive<span class="br0">(</span>spi_bus_lock<span class="br0">)</span><span class="sy0">;</span>
+        <span class="br0">}</span>
+    <span class="br0">}</span>
+<span class="br0">}</span>
+<span class="kw4">void</span> task_two<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw1">while</span><span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span> <span class="br0">{</span>
+        <span class="kw1">if</span><span class="br0">(</span>xSemaphoreGet<span class="br0">(</span>spi_bus_lock<span class="sy0">,</span> <span class="nu0">1000</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span>
+            <span class="co1">// Use Guarded Resource</span>
+&nbsp;
+            <span class="co1">// Give Semaphore back:</span>
+            xSemaphoreGive<span class="br0">(</span>spi_bus_lock<span class="br0">)</span><span class="sy0">;</span>
+        <span class="br0">}</span>
+    <span class="br0">}</span>
+<span class="br0">}</span></pre></div></div>
+<p>In the code above, only ONE task will enter its xSemaphoreGet() 
+branch.  If both tasks execute the statement at the same time, one will 
+get the mutex, the other task will sleep until the mutex is returned by 
+the task that was able to obtain it in the first place.
+</p>
+<h4> <span class="mw-headline" id="Binary_Semaphore"> Binary Semaphore </span></h4>
+<p>Binary semaphore can also be used like a mutex, but binary semaphore 
+doesn't provide priority inversion mechanism.  Binary semaphores are 
+better suited for helper tasks for interrupts.  For example, if you have
+ an interrupt and you don't want to do a lot of processing inside the 
+interrupt, you can use a helper task.  To accomplish this, you can 
+perform a semaphore give operation inside the interrupt, and a dedicated
+ ask will sleep or block on <b>xSemaphoreGet()</b> operation.
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co1">// Somewhere in main()&nbsp;:</span>
+SemaphoreHandle_t event_signal<span class="sy0">;</span>
+vSemaphoreCreateBinary<span class="br0">(</span> event_signal <span class="br0">)</span><span class="sy0">;</span> <span class="co1">// Create the semaphore</span>
+xSemaphoreTake<span class="br0">(</span>event_signal<span class="sy0">,</span> <span class="nu0">0</span><span class="br0">)</span><span class="sy0">;</span>        <span class="co1">// Take semaphore after creating it.</span>
+&nbsp;
+&nbsp;
+<span class="kw4">void</span> System_Interrupt<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
+    xSemaphoreGiveFromISR<span class="br0">(</span>event_signal<span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+&nbsp;
+<span class="kw4">void</span> system_interrupt_task<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw1">while</span><span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span> <span class="br0">{</span>
+        <span class="kw1">if</span><span class="br0">(</span>xSemaphoreTake<span class="br0">(</span>event_signal<span class="sy0">,</span> <span class="nu0">9999999</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span>
+            <span class="co1">// Process the interrupt</span>
+        <span class="br0">}</span>
+    <span class="br0">}</span>
+<span class="br0">}</span></pre></div></div>
+<p>The above code shows example of a deferred interrupt processing.  The
+ idea is that you don't want to process the interrupt inside 
+System_Interrupt() because you'd be in a critical section with system 
+interrupts globally disabled, therefore, you can potentially lock up the
+ system or destroy real-time processing if the interrupt processing 
+takes too long.
+</p><p>Another way to use binary semaphore is to wake up one task from 
+another task by giving the semaphore.  So the semaphore will essentially
+ act like a signal that may indicate: "Something happened, now go do the
+ work in another task".  In the sample project, binary semaphore is used
+ to indicate when an I2C read operation is done, and the interrupt gives
+ this semaphore.  <b>Note that when you create a binary semaphore in 
+FreeRTOS, it is ready to be taken, so you may want to take the semaphore
+ after you create it such that the task waiting on this semaphore will 
+block until given by somebody.</b>
+</p>
+<h4> <span class="mw-headline" id="Counting_Semaphore"> Counting Semaphore </span></h4>
+<p>Counting semaphores are suited for applications in which more than 
+one user is allowed access to a resource.  For example, if you have a 
+parking garage of 10 cars, you can allow 10 semaphore access.  Each car 
+entering a garage will take 1 semaphore until 10 cars take 10 semaphores
+ and no more cars will be allowed access to the garage.  
+</p><p><br>
+</p>
+<h2> <span class="mw-headline" id="FAQ"> FAQ </span></h2>
+<ul><li>  <b>I wrote my own version of Queue, I don't want to use FreeRTOS queue since it is not efficient</b>
+<dl><dd>  Be careful here.  FreeRTOS queues may be more expensive, but 
+they provide benefits your queue may not provide.  FreeRTOS's queues can
+ switch tasks upon Queue send and receive, and your tasks will be 
+managed better and sleep as appropriate whereas your own version likely 
+doesn't integrate well with FreeRTOS.  For example, FreeRTOS may switch 
+context inside of xQueueSend() if it finds that someone with higher 
+priority was waiting for an item in this queue.
+</dd></dl>
+</li></ul>
+<ul><li>  <b>What if I send an item on FreeRTOS queue and my item goes out of scope?</b>
+<dl><dd>  FreeRTOS copies value of the item you send, so this is perfectly okay.
+</dd></dl>
+</li></ul>
+<ul><li>  <b>If I use deferred interrupt processing, but still want to process interrupt quickly, what can I do?</b>
+<dl><dd>  You can set the priority of the deferred interrupt task as 
+highest, and as soon as interrupt gives the binary semaphore and exit, 
+FreeRTOS will switch context to your interrupt task.
+</dd></dl>
+</li></ul>
+<ul><li>  <b>I have a lot of little tasks but end up using a lot of stack memory for each task.  What can I do?</b>
+<dl><dd>  First, think about consolidating tasks.  If your tasks do a 
+bunch of things every second, then combine the processing into a single 
+task.  If you have a number of things happening periodically, consider 
+using a FreeRTOS timer.  FreeRTOS timers use common stack but provide 
+independent timers.
+</dd></dl>
+</li></ul>
+<ul><li>  <b>How much stack space am I really using?</b>
+<dl><dd>  Use FreeRTOS's: <code>vTaskList()</code> function to get a 
+measure of the stack space.  The sample projects are specifically 
+modified such that this function will report stack free in bytes, along 
+with CPU utilization of each task.
+</dd></dl>
+</li></ul>
+<ul><li>  <b>I'm using a delay function and CPU utilization is very high</b>
+<dl><dd>  Your delay function is probably a busy-wait loop.  Use 
+FreeRTOS's vTaskDelay(), which is actually smart enough to put the task 
+to sleep and wake it up precisely when the timeout is done.  If a task 
+uses little processing every second and you use vTaskDelay(1000); your 
+CPU utilization will be near zero percent.
+</dd></dl>
+</li></ul>
+<ul><li>  <b>I don't understand the difference between vTaskDelay() and vTaskDelayUntil()</b>
+<dl><dd>  vTaskDelay() will delay by the defined amount, and if you 
+wanted a precise periodic processing of one second, this function might 
+not work as you'd expect.  In the example below, even if you wanted 
+sensor update of once per 1000ms, your actual rate would be anywhere 
+from 1005 to 1050ms because update_sensor() function's processing time 
+can vary.  In this example, if we switch over to vTaskDelayUntil(), we 
+will be updating sensors exactly once per 1000ms.
+</dd></dl>
+</li></ul>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">void</span> my_task<span class="br0">(</span><span class="kw4">void</span><span class="sy0">*</span> p<span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw1">while</span><span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span> <span class="br0">{</span>
+        update_sensors<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <span class="co1">// Assume this function can take 5-50ms</span>
+        vTaskDelay<span class="br0">(</span><span class="nu0">1000</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="br0">}</span>
+<span class="br0">}</span></pre></div></div>
+<p><br>
+</p>
+<h2> <span class="mw-headline" id="Going_Beyond"> Going Beyond </span></h2>
+<p>The basic tasks show you around FreeRTOS centric system and this is 
+just the starting point.  For example, if you are creating a relay 
+switch that gets turned on based on the light level, you may want to 
+create a task, get the light reading from the light sensor, and control 
+the relay.  Logically thinking, you may want to monitor the light 
+reading once a second, so don't forget to use vTaskDelay().
+</p><p>As your project gets more complex, you will determine by 
+experience that which tasks can be put to lower priority and which tasks
+ need high priority.  By prioritizing the tasks, you can create a 
+deterministic system and guarantee real-time operation of critical tasks
+ while completing "background" processing using lower priority tasks.
+</p><p>Valuable Reads:
+</p>
+<ul><li>  Read <a href="http://www.socialledge.com/sjsu/index.php?title=2012_SJ_One_Hello_World_Sample_Project" title="2012 SJ One Hello World Sample Project">2012 SJ One Hello World Sample Project </a> to get newbie oriented details about how to read sensor values of your SJ One Board.
+</li><li>  Read <a rel="nofollow" target="_blank" class="external text" href="http://www.freertos.org/a00106.html">FreeRTOS API</a> to unleash the power of this OS.
+</li></ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 177/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key sjsuwiki:pcache:idhash:212-0!*!0!!en!*!* and timestamp 20140728141523 -->
+</div>				<!-- /bodycontent -->
+								<!-- printfooter -->
+				<div class="printfooter">
+				Retrieved from "<a href="http://www.socialledge.com/sjsu/index.php?title=FreeRTOS_Tutorial&amp;oldid=5620">http://www.socialledge.com/sjsu/index.php?title=FreeRTOS_Tutorial&amp;oldid=5620</a>"				</div>
+				<!-- /printfooter -->
+												<!-- catlinks -->
+				<div id="catlinks" class="catlinks catlinks-allhidden"></div>				<!-- /catlinks -->
+												<div class="visualClear"></div>
+				<!-- debughtml -->
+								<!-- /debughtml -->
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<!-- header -->
+		<div id="mw-head" class="noprint">
+			
+<!-- 0 -->
+<div id="p-personal" class="">
+	<h5>Personal tools</h5>
+	<ul>
+		<li id="pt-login"><a href="http://www.socialledge.com/sjsu/index.php?title=Special:UserLogin&amp;returnto=FreeRTOS+Tutorial" title="You are encouraged to log in; however, it is not mandatory [alt-shift-o]" accesskey="o">Log in</a></li>
+	</ul>
+</div>
+
+<!-- /0 -->
+			<div id="left-navigation">
+				
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>Namespaces</h5>
+	<ul>
+					<li id="ca-nstab-main" class="selected"><span><a href="http://www.socialledge.com/sjsu/index.php?title=FreeRTOS_Tutorial" title="View the content page [alt-shift-c]" accesskey="c">Page</a></span></li>
+					<li id="ca-talk" class="new"><span><a href="http://www.socialledge.com/sjsu/index.php?title=Talk:FreeRTOS_Tutorial&amp;action=edit&amp;redlink=1" title="Discussion about the content page [alt-shift-t]" accesskey="t">Discussion</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+		<h5><span>Variants</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+			</div>
+			<div id="right-navigation">
+				
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>Views</h5>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="http://www.socialledge.com/sjsu/index.php?title=FreeRTOS_Tutorial">Read</a></span></li>
+					<li id="ca-viewsource"><span><a href="http://www.socialledge.com/sjsu/index.php?title=FreeRTOS_Tutorial&amp;action=edit" title="This page is protected.
+You can view its source [alt-shift-e]" accesskey="e">View source</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="http://www.socialledge.com/sjsu/index.php?title=FreeRTOS_Tutorial&amp;action=history" title="Past revisions of this page [alt-shift-h]" accesskey="h">View history</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>Actions</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search">
+	<h5><label for="searchInput">Search</label></h5>
+	<form action="/sjsu/index.php" id="searchform">
+		<input name="title" value="Special:Search" type="hidden">
+				<input name="search" title="Search Embedded Systems Learning Academy [alt-shift-f]" accesskey="f" id="searchInput" type="search">		<input name="go" value="Go" title="Go to a page with this exact name if exists" id="searchGoButton" class="searchButton" type="submit">		<input name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton" type="submit">			</form>
+</div>
+
+<!-- /2 -->
+			</div>
+		</div>
+		<!-- /header -->
+		<!-- panel -->
+			<div id="mw-panel" class="noprint">
+				<!-- logo -->
+					<div id="p-logo"><a style="background-image: url(/sjsu/skins/common/images/spartan_logo.gif);" href="http://www.socialledge.com/sjsu/index.php?title=Main_Page" title="Visit the main page"></a></div>
+				<!-- /logo -->
+				
+<!-- navigation -->
+<div class="portal" id="p-navigation">
+	<h5>Navigation</h5>
+	<div class="body">
+		<ul>
+			<li id="n-mainpage-description"><a href="http://www.socialledge.com/sjsu/index.php?title=Main_Page" title="Visit the main page [alt-shift-z]" accesskey="z">Main page</a></li>
+			<li id="n-portal"><a href="http://www.socialledge.com/sjsu/index.php?title=Embedded_Systems_Learning_Academy:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+			<li id="n-currentevents"><a href="http://www.socialledge.com/sjsu/index.php?title=Embedded_Systems_Learning_Academy:Current_events" title="Find background information on current events">Current events</a></li>
+			<li id="n-recentchanges"><a href="http://www.socialledge.com/sjsu/index.php?title=Special:RecentChanges" title="A list of recent changes in the wiki [alt-shift-r]" accesskey="r">Recent changes</a></li>
+			<li id="n-randompage"><a href="http://www.socialledge.com/sjsu/index.php?title=Special:Random" title="Load a random page [alt-shift-x]" accesskey="x">Random page</a></li>
+			<li id="n-help"><a href="http://www.socialledge.com/sjsu/index.php?title=Help:Contents" title="The place to find out">Help</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /navigation -->
+
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- TOOLBOX -->
+<div class="portal" id="p-tb">
+	<h5>Toolbox</h5>
+	<div class="body">
+		<ul>
+			<li id="t-whatlinkshere"><a href="http://www.socialledge.com/sjsu/index.php?title=Special:WhatLinksHere/FreeRTOS_Tutorial" title="A list of all wiki pages that link here [alt-shift-j]" accesskey="j">What links here</a></li>
+			<li id="t-recentchangeslinked"><a href="http://www.socialledge.com/sjsu/index.php?title=Special:RecentChangesLinked/FreeRTOS_Tutorial" title="Recent changes in pages linked from this page [alt-shift-k]" accesskey="k">Related changes</a></li>
+			<li id="t-specialpages"><a href="http://www.socialledge.com/sjsu/index.php?title=Special:SpecialPages" title="A list of all special pages [alt-shift-q]" accesskey="q">Special pages</a></li>
+			<li><a href="http://www.socialledge.com/sjsu/index.php?title=FreeRTOS_Tutorial&amp;printable=yes" rel="alternate">Printable version</a></li>
+			<li id="t-permalink"><a href="http://www.socialledge.com/sjsu/index.php?title=FreeRTOS_Tutorial&amp;oldid=5620" title="Permanent link to this revision of the page">Permanent link</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /TOOLBOX -->
+
+<!-- LANGUAGES -->
+
+<!-- /LANGUAGES -->
+
+<!-- googleadsense -->
+<div class="portal" id="p-googleadsense">
+	<h5>Google AdSense</h5>
+	<div class="body">
+		<script type="text/javascript"><!--
+google_ad_client = "ca-pub-2792492894831533";
+/* socialledge_ws */
+google_ad_slot = "6379987209";
+google_ad_width = 160;
+google_ad_height = 600;
+// -->
+</script>
+<script type="text/javascript" src="FreeRTOS%20Tutorial%20-%20Embedded%20Systems%20Learning%20Academy-Dateien/show_ads.js">
+</script><ins style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent"><ins id="aswift_0_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;" frameborder="0" height="600" width="160"></iframe></ins></ins>	</div>
+</div>
+
+<!-- /googleadsense -->
+			</div>
+		<!-- /panel -->
+		<!-- footer -->
+		<div id="footer">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 5 March 2014, at 09:29.</li>
+											<li id="footer-info-viewcount">This page has been accessed 21,629 times.</li>
+											<li id="footer-info-copyright">Content is available under Public Domain.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="http://www.socialledge.com/sjsu/index.php?title=Embedded_Systems_Learning_Academy:Privacy_policy" title="Embedded Systems Learning Academy:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="http://www.socialledge.com/sjsu/index.php?title=Embedded_Systems_Learning_Academy:About" title="Embedded Systems Learning Academy:About">About Embedded Systems Learning Academy</a></li>
+											<li id="footer-places-disclaimer"><a href="http://www.socialledge.com/sjsu/index.php?title=Embedded_Systems_Learning_Academy:General_disclaimer" title="Embedded Systems Learning Academy:General disclaimer">Disclaimers</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+					<li id="footer-copyrightico">
+						<img src="FreeRTOS%20Tutorial%20-%20Embedded%20Systems%20Learning%20Academy-Dateien/public-domain.png" alt="Public Domain" height="31" width="88">
+					</li>
+					<li id="footer-poweredbyico">
+						<a href="http://www.mediawiki.org/"><img src="FreeRTOS%20Tutorial%20-%20Embedded%20Systems%20Learning%20Academy-Dateien/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" height="31" width="88"></a>
+					</li>
+				</ul>
+						<div style="clear:both"></div>
+		</div>
+		<!-- /footer -->
+		<!-- fixalpha -->
+		<script type="text/javascript"> if ( window.isMSIE55 ) fixalpha(); </script>
+		<!-- /fixalpha -->
+		<script src="FreeRTOS%20Tutorial%20-%20Embedded%20Systems%20Learning%20Academy-Dateien/load.php"></script>
+<script>if(window.mw){
+	mw.loader.load(["mediawiki.user", "mediawiki.util", "mediawiki.page.ready", "mediawiki.legacy.wikibits", "mediawiki.legacy.ajax"]);
+}
+</script><script type="text/javascript" src="FreeRTOS%20Tutorial%20-%20Embedded%20Systems%20Learning%20Academy-Dateien/load_003.php"></script>
+<script>if(window.mw){
+	mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"highlightbroken":1,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,
+	"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false});;mw.user.tokens.set({"editToken":"+\\","watchToken":false});;mw.loader.state({"user.options":"ready","user.tokens":"ready"});
+	
+	/* cache key: sjsuwiki:resourceloader:filter:minify-js:4:19a4b18a9ac79a6b8c60b24af4668814 */
+}
+</script><script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="FreeRTOS%20Tutorial%20-%20Embedded%20Systems%20Learning%20Academy-Dateien/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-35170676-1");
+pageTracker._trackPageview();
+</script><!-- Served in 0.199 secs. -->
+	
+
+</body></html>

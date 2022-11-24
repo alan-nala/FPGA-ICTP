@@ -1,0 +1,32 @@
+Nothing to build in platform 'lab_irq_wrapper'
+
+17:23:52 **** Incremental Build of configuration Debug for project lab_irq ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+ 
+make --no-print-directory main-build
+Building file: ../src/lab_irq_sw.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab_irq_sw.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/scratch/smr3765/labs/lab_irq/lab_irq_wrapper/export/lab_irq_wrapper/sw/lab_irq_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/lab_irq_sw.d" -MT"src/lab_irq_sw.o" -o "src/lab_irq_sw.o" "../src/lab_irq_sw.c"
+Finished building: ../src/lab_irq_sw.c
+ 
+Building target: lab_irq.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/scratch/smr3765/labs/lab_irq/lab_irq_wrapper/export/lab_irq_wrapper/sw/lab_irq_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "lab_irq.elf"  ./src/ZedboardOLED.o ./src/lab_irq_sw.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: lab_irq.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size lab_irq.elf  |tee "lab_irq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30148	   1936	  17768	  49852	   c2bc	lab_irq.elf
+Finished building: lab_irq.elf.size
+ 
+17:23:53 **** Incremental Build of configuration Debug for project lab_irq_system ****
+make all 
+Generating bif file for the system project
+Executing command '::scw::generate_bif -xpfm /scratch/smr3765/labs/lab_irq/lab_irq_wrapper/export/lab_irq_wrapper/lab_irq_wrapper.xpfm -domains standalone_ps7_cortexa9_0 -bifpath /scratch/smr3765/labs/lab_irq/lab_irq_system/Debug/system.bif' on XSCT
+sdcard_gen --xpfm /scratch/smr3765/labs/lab_irq/lab_irq_wrapper/export/lab_irq_wrapper/lab_irq_wrapper.xpfm --sys_config lab_irq_wrapper --bif /scratch/smr3765/labs/lab_irq/lab_irq_system/Debug/system.bif --bitstream /scratch/smr3765/labs/lab_irq/lab_irq/_ide/bitstream/lab_irq_wrapper.bit --elf /scratch/smr3765/labs/lab_irq/lab_irq/Debug/lab_irq.elf,ps7_cortexa9_0
+awk: cmd. line:1: warning: command line argument `/etc/upstream-release' is a directory: skipped
+creating BOOT.BIN using /scratch/smr3765/labs/lab_irq/lab_irq/_ide/bitstream/lab_irq_wrapper.bit
+Running /scratch/Xilinx/Vitis/2022.1/bin/bootgen  -image /scratch/smr3765/labs/lab_irq/lab_irq_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

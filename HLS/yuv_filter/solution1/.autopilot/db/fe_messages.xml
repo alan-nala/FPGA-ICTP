@@ -1,0 +1,39 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/scratch/smr3765/labs/HLS/yuv_filter/solution1/csynth.tcl:20:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="yuv_filter" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=yuv_filter" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../../Labs/HLS_Lab/yuv_filter/yuv_filter.c:36:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="rgb2yuv" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../../Labs/HLS_Lab/yuv_filter/yuv_filter.c:53:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="rgb2yuv" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=200 max=1920" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../../Labs/HLS_Lab/yuv_filter/yuv_filter.c:56:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="rgb2yuv" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=200 max=1280" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../../Labs/HLS_Lab/yuv_filter/yuv_filter.c:75:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yuv2rgb" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../../Labs/HLS_Lab/yuv_filter/yuv_filter.c:94:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yuv2rgb" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=200 max=1920" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../../Labs/HLS_Lab/yuv_filter/yuv_filter.c:97:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yuv2rgb" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=200 max=1280" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../../Labs/HLS_Lab/yuv_filter/yuv_filter.c:122:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yuv_scale" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../../Labs/HLS_Lab/yuv_filter/yuv_filter.c:135:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yuv_scale" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="loop_flatten" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../../Labs/HLS_Lab/yuv_filter/yuv_filter.c:136:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yuv_scale" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=200 max=1920" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../../Labs/HLS_Lab/yuv_filter/yuv_filter.c:139:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yuv_scale" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../../Labs/HLS_Lab/yuv_filter/yuv_filter.c:141:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yuv_scale" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=200 max=1280" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

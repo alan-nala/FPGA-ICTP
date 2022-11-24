@@ -1,0 +1,32 @@
+Nothing to build in platform 'lab_dma_ch_wrapper'
+
+17:35:27 **** Build of configuration Debug for project lab_dma_ch_intr ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+ 
+make --no-print-directory main-build
+Building file: ../src/dma_simple_interrupt.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dma_simple_interrupt.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch_wrapper/export/lab_dma_ch_wrapper/sw/lab_dma_ch_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/dma_simple_interrupt.d" -MT"src/dma_simple_interrupt.o" -o "src/dma_simple_interrupt.o" "../src/dma_simple_interrupt.c"
+Finished building: ../src/dma_simple_interrupt.c
+ 
+Building target: lab_dma_ch_intr.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch_wrapper/export/lab_dma_ch_wrapper/sw/lab_dma_ch_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "lab_dma_ch_intr.elf"  ./src/dma_simple_interrupt.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: lab_dma_ch_intr.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size lab_dma_ch_intr.elf  |tee "lab_dma_ch_intr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40720	   3024	  24552	  68296	  10ac8	lab_dma_ch_intr.elf
+Finished building: lab_dma_ch_intr.elf.size
+ 
+17:35:35 **** Build of configuration Debug for project lab_dma_ch_intr_system ****
+make all 
+Generating bif file for the system project
+Executing command '::scw::generate_bif -xpfm /scratch/smr3765/labs/lab_dma_ch/lab_dma_ch_wrapper/export/lab_dma_ch_wrapper/lab_dma_ch_wrapper.xpfm -domains standalone_ps7_cortexa9_0 -bifpath /scratch/smr3765/labs/lab_dma_ch/lab_dma_ch_intr_system/Debug/system.bif' on XSCT
+sdcard_gen --xpfm /scratch/smr3765/labs/lab_dma_ch/lab_dma_ch_wrapper/export/lab_dma_ch_wrapper/lab_dma_ch_wrapper.xpfm --sys_config lab_dma_ch_wrapper --bif /scratch/smr3765/labs/lab_dma_ch/lab_dma_ch_intr_system/Debug/system.bif --bitstream /scratch/smr3765/labs/lab_dma_ch/lab_dma_ch_intr/_ide/bitstream/lab_dma_ch_wrapper.bit --elf /scratch/smr3765/labs/lab_dma_ch/lab_dma_ch_intr/Debug/lab_dma_ch_intr.elf,ps7_cortexa9_0
+awk: cmd. line:1: warning: command line argument `/etc/upstream-release' is a directory: skipped
+creating BOOT.BIN using /scratch/smr3765/labs/lab_dma_ch/lab_dma_ch_intr/_ide/bitstream/lab_dma_ch_wrapper.bit
+Running /scratch/Xilinx/Vitis/2022.1/bin/bootgen  -image /scratch/smr3765/labs/lab_dma_ch/lab_dma_ch_intr_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

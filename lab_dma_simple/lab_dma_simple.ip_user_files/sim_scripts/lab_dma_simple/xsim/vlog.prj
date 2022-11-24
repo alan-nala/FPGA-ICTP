@@ -1,0 +1,6 @@
+verilog xil_defaultlib --include "/scratch/Xilinx/Vivado/2022.1/data/xilinx_vip/include" --include "../../../../lab_dma_simple.gen/sources_1/bd/lab_dma_simple/ipshared/ec67/hdl" --include "../../../../lab_dma_simple.gen/sources_1/bd/lab_dma_simple/ipshared/5765/hdl" \
+"../../../../lab_dma_simple.gen/sources_1/bd/lab_dma_simple/ip/lab_dma_simple_xlconcat_0_0/sim/lab_dma_simple_xlconcat_0_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

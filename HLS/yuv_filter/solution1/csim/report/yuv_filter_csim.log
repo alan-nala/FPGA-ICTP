@@ -1,0 +1,30 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling(apcc) ../../../../../../Labs/HLS_Lab/yuv_filter/yuv_filter_test.c in debug mode
+INFO: [HLS 200-10] Running '/scratch/Xilinx/Vitis_HLS/2022.1/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'aboette' on host 'hp6g4-inf-21.ictp.it' (Linux_x86_64 version 4.15.0-197-generic) on Fri Nov 18 11:14:32 CET 2022
+INFO: [HLS 200-10] On os Linux Mint 19.1 Tessa
+INFO: [HLS 200-10] In directory '/scratch/smr3765/labs/HLS/yuv_filter/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_aboette/293181668766472664574
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 6.22 seconds. Total CPU system time: 0.09 seconds. Total elapsed time: 7.85 seconds; peak allocated memory: 19.336 MB.
+   Compiling(apcc) ../../../../../../Labs/HLS_Lab/yuv_filter/image_aux.c in debug mode
+INFO: [HLS 200-10] Running '/scratch/Xilinx/Vitis_HLS/2022.1/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'aboette' on host 'hp6g4-inf-21.ictp.it' (Linux_x86_64 version 4.15.0-197-generic) on Fri Nov 18 11:14:42 CET 2022
+INFO: [HLS 200-10] On os Linux Mint 19.1 Tessa
+INFO: [HLS 200-10] In directory '/scratch/smr3765/labs/HLS/yuv_filter/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_aboette/293931668766482567204
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 6.35 seconds. Total CPU system time: 0.08 seconds. Total elapsed time: 7.98 seconds; peak allocated memory: 19.336 MB.
+   Compiling(apcc) ../../../../../../Labs/HLS_Lab/yuv_filter/yuv_filter.c in debug mode
+INFO: [HLS 200-10] Running '/scratch/Xilinx/Vitis_HLS/2022.1/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'aboette' on host 'hp6g4-inf-21.ictp.it' (Linux_x86_64 version 4.15.0-197-generic) on Fri Nov 18 11:14:52 CET 2022
+INFO: [HLS 200-10] On os Linux Mint 19.1 Tessa
+INFO: [HLS 200-10] In directory '/scratch/smr3765/labs/HLS/yuv_filter/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_aboette/294641668766492114767
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 6.19 seconds. Total CPU system time: 0.1 seconds. Total elapsed time: 7.44 seconds; peak allocated memory: 19.332 MB.
+   Generating csim.exe
+Test passed!
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

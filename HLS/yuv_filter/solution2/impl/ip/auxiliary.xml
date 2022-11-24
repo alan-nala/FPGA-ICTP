@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="yuv_filter" xd:componentRef="yuv_filter" xd:initiationInterval="x" xd:clockPeriod="10" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="*(in_channels_ch1_q0)" xd:originalName="in" xd:direction="in" xd:interfaceRef="in_channels_ch1_q0" xd:busTypeRef="ap_memory" xd:dataWidth="8"/>
+  <xd:arg xd:name="*(in_channels_ch2_q0)" xd:originalName="in" xd:direction="in" xd:interfaceRef="in_channels_ch2_q0" xd:busTypeRef="ap_memory" xd:dataWidth="8"/>
+  <xd:arg xd:name="*(in_channels_ch3_q0)" xd:originalName="in" xd:direction="in" xd:interfaceRef="in_channels_ch3_q0" xd:busTypeRef="ap_memory" xd:dataWidth="8"/>
+  <xd:arg xd:name="*(in_width)" xd:originalName="in" xd:direction="in" xd:interfaceRef="in_width" xd:busTypeRef="register" xd:dataWidth="16"/>
+  <xd:arg xd:name="*(in_height)" xd:originalName="in" xd:direction="in" xd:interfaceRef="in_height" xd:busTypeRef="register" xd:dataWidth="16"/>
+  <xd:arg xd:name="*(out_channels_ch1_d0)" xd:originalName="out" xd:direction="out" xd:interfaceRef="out_channels_ch1_d0" xd:busTypeRef="ap_memory" xd:handshakeRef="ap_vld" xd:dataWidth="8"/>
+  <xd:arg xd:name="*(out_channels_ch2_d0)" xd:originalName="out" xd:direction="out" xd:interfaceRef="out_channels_ch2_d0" xd:busTypeRef="ap_memory" xd:handshakeRef="ap_vld" xd:dataWidth="8"/>
+  <xd:arg xd:name="*(out_channels_ch3_d0)" xd:originalName="out" xd:direction="out" xd:interfaceRef="out_channels_ch3_d0" xd:busTypeRef="ap_memory" xd:handshakeRef="ap_vld" xd:dataWidth="8"/>
+  <xd:arg xd:name="*(out_width)" xd:originalName="out" xd:direction="out" xd:interfaceRef="out_width" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="16"/>
+  <xd:arg xd:name="*(out_height)" xd:originalName="out" xd:direction="out" xd:interfaceRef="out_height" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="16"/>
+  <xd:arg xd:name="Y_scale" xd:originalName="Y_scale" xd:direction="in" xd:interfaceRef="Y_scale" xd:busTypeRef="register" xd:dataWidth="8"/>
+  <xd:arg xd:name="U_scale" xd:originalName="U_scale" xd:direction="in" xd:interfaceRef="U_scale" xd:busTypeRef="register" xd:dataWidth="8"/>
+  <xd:arg xd:name="V_scale" xd:originalName="V_scale" xd:direction="in" xd:interfaceRef="V_scale" xd:busTypeRef="register" xd:dataWidth="8"/>
+  <xd:latencyEstimates xd:best-case="240434" xd:worst-case="14749474" xd:average-case="4708554"/>
+  <xd:resourceEstimates xd:LUT="1680" xd:FF="942" xd:BRAM="0" xd:DSP="9"/>
+</xd:acceleratorMap>

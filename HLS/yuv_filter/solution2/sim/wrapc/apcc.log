@@ -1,0 +1,9 @@
+INFO: [HLS 200-10] Running '/scratch/Xilinx/Vitis_HLS/2022.1/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'aboette' on host 'hp6g4-inf-21.ictp.it' (Linux_x86_64 version 4.15.0-197-generic) on Fri Nov 18 12:30:28 CET 2022
+INFO: [HLS 200-10] On os Linux Mint 19.1 Tessa
+INFO: [HLS 200-10] In directory '/scratch/smr3765/labs/HLS/yuv_filter/solution2/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_aboette/238171668771028580512
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 4.51 seconds. Total CPU system time: 0.06 seconds. Total elapsed time: 5.42 seconds; peak allocated memory: 19.367 MB.

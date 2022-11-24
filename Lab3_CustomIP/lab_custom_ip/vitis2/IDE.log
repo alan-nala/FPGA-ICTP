@@ -1,0 +1,104 @@
+17:52:22 DEBUG : Logs will be stored at '/scratch/smr3765/labs/Lab3_PWM_Simulation/lab_custom_ip/vitis2/IDE.log'.
+17:52:34 INFO  : Launching XSCT server: xsct -n  -interactive /scratch/smr3765/labs/Lab3_PWM_Simulation/lab_custom_ip/vitis2/temp_xsdb_launch_script.tcl
+17:52:39 INFO  : Platform repository initialization has completed.
+17:52:44 INFO  : Registering command handlers for Vitis TCF services
+17:53:15 INFO  : XSCT server has started successfully.
+17:53:17 INFO  : plnx-install-location is set to ''
+17:53:17 INFO  : Successfully done setting XSCT server connection channel  
+17:53:17 INFO  : Successfully done query RDI_DATADIR 
+17:53:17 INFO  : Successfully done setting workspace for the tool. 
+17:54:24 INFO  : Result from executing command 'getProjects': lab_custom_ip_wrapper
+17:54:24 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202210_1|/scratch/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_202210_1/xilinx_zcu102_base_202210_1.xpfm;xilinx_zcu102_base_dfx_202210_1|/scratch/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_dfx_202210_1/xilinx_zcu102_base_dfx_202210_1.xpfm;xilinx_zcu104_base_202210_1|/scratch/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu104_base_202210_1/xilinx_zcu104_base_202210_1.xpfm
+17:54:24 WARN  : An unexpected exception occurred in the module 'platform project logging'
+17:54:26 INFO  : Platform 'lab_custom_ip_wrapper' is added to custom repositories.
+17:54:41 INFO  : Platform 'lab_custom_ip_wrapper' is added to custom repositories.
+18:02:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:02:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:02:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}' command is executed.
+18:02:43 INFO  : Device configured successfully with "/scratch/smr3765/labs/Lab3_PWM_Simulation/lab_custom_ip/vitis2/lab_custom_ip_wrapper/export/lab_custom_ip_wrapper/hw/lab_custom_ip_wrapper.bit"
+18:03:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:03:51 INFO  : Jtag cable 'Digilent Zed 210248A39C5D' is selected.
+18:03:51 INFO  : 'jtag frequency' command is executed.
+18:03:51 INFO  : Context for 'APU' is selected.
+18:03:51 INFO  : System reset is completed.
+18:03:54 INFO  : 'after 3000' command is executed.
+18:03:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}' command is executed.
+18:03:57 INFO  : Device configured successfully with "/scratch/smr3765/labs/Lab3_PWM_Simulation/lab_custom_ip/vitis2/lab_custom_ip/_ide/bitstream/lab_custom_ip_wrapper.bit"
+18:03:57 INFO  : Context for 'APU' is selected.
+18:03:57 INFO  : Hardware design and registers information is loaded from '/scratch/smr3765/labs/Lab3_PWM_Simulation/lab_custom_ip/vitis2/lab_custom_ip_wrapper/export/lab_custom_ip_wrapper/hw/lab_custom_ip_wrapper.xsa'.
+18:03:57 INFO  : 'configparams force-mem-access 1' command is executed.
+18:03:57 INFO  : Context for 'APU' is selected.
+18:03:57 INFO  : Sourcing of '/scratch/smr3765/labs/Lab3_PWM_Simulation/lab_custom_ip/vitis2/lab_custom_ip/_ide/psinit/ps7_init.tcl' is done.
+18:03:58 INFO  : 'ps7_init' command is executed.
+18:03:58 INFO  : 'ps7_post_config' command is executed.
+18:03:58 INFO  : 'configparams force-mem-access 0' command is executed.
+18:03:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}
+fpga -file /scratch/smr3765/labs/Lab3_PWM_Simulation/lab_custom_ip/vitis2/lab_custom_ip/_ide/bitstream/lab_custom_ip_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /scratch/smr3765/labs/Lab3_PWM_Simulation/lab_custom_ip/vitis2/lab_custom_ip_wrapper/export/lab_custom_ip_wrapper/hw/lab_custom_ip_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /scratch/smr3765/labs/Lab3_PWM_Simulation/lab_custom_ip/vitis2/lab_custom_ip/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:03:58 INFO  : Launch script is exported to file '/scratch/smr3765/labs/Lab3_PWM_Simulation/lab_custom_ip/vitis2/lab_custom_ip_system/_ide/scripts/debugger_lab_custom_ip-default.tcl'
+18:05:28 INFO  : Result from executing command 'getProjects': lab_custom_ip_wrapper
+18:05:28 INFO  : Result from executing command 'getPlatforms': lab_custom_ip_wrapper|/scratch/smr3765/labs/Lab3_PWM_Simulation/lab_custom_ip/vitis2/lab_custom_ip_wrapper/export/lab_custom_ip_wrapper/lab_custom_ip_wrapper.xpfm;xilinx_zcu102_base_202210_1|/scratch/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_202210_1/xilinx_zcu102_base_202210_1.xpfm;xilinx_zcu102_base_dfx_202210_1|/scratch/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_dfx_202210_1/xilinx_zcu102_base_dfx_202210_1.xpfm;xilinx_zcu104_base_202210_1|/scratch/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu104_base_202210_1/xilinx_zcu104_base_202210_1.xpfm
+18:05:31 INFO  : Checking for BSP changes to sync application flags for project 'lab_custom_ip'...
+18:06:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:06:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:06:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}' command is executed.
+18:06:26 INFO  : Device configured successfully with "/scratch/smr3765/labs/Lab3_PWM_Simulation/lab_custom_ip/vitis2/lab_custom_ip_wrapper/export/lab_custom_ip_wrapper/hw/lab_custom_ip_wrapper.bit"
+18:07:12 INFO  : Disconnected from the channel tcfchan#1.
+18:07:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}' command is executed.
+18:07:14 INFO  : 'fpga -state' command is executed.
+18:07:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:07:15 INFO  : Jtag cable 'Digilent Zed 210248A39C5D' is selected.
+18:07:15 INFO  : 'jtag frequency' command is executed.
+18:07:15 INFO  : Context for 'APU' is selected.
+18:07:15 INFO  : Hardware design and registers information is loaded from '/scratch/smr3765/labs/Lab3_PWM_Simulation/lab_custom_ip/vitis2/lab_custom_ip_wrapper/export/lab_custom_ip_wrapper/hw/lab_custom_ip_wrapper.xsa'.
+18:07:15 INFO  : 'configparams force-mem-access 1' command is executed.
+18:07:15 INFO  : Context for 'APU' is selected.
+18:07:15 INFO  : 'stop' command is executed.
+18:07:15 INFO  : Sourcing of '/scratch/smr3765/labs/Lab3_PWM_Simulation/lab_custom_ip/vitis2/lab_custom_ip/_ide/psinit/ps7_init.tcl' is done.
+18:07:16 INFO  : 'ps7_init' command is executed.
+18:07:16 INFO  : 'ps7_post_config' command is executed.
+18:07:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:07:16 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+18:07:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:07:17 INFO  : The application '/scratch/smr3765/labs/Lab3_PWM_Simulation/lab_custom_ip/vitis2/lab_custom_ip/Debug/lab_custom_ip.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:07:17 INFO  : 'configparams force-mem-access 0' command is executed.
+18:07:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /scratch/smr3765/labs/Lab3_PWM_Simulation/lab_custom_ip/vitis2/lab_custom_ip_wrapper/export/lab_custom_ip_wrapper/hw/lab_custom_ip_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+stop
+source /scratch/smr3765/labs/Lab3_PWM_Simulation/lab_custom_ip/vitis2/lab_custom_ip/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+rst -processor
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /scratch/smr3765/labs/Lab3_PWM_Simulation/lab_custom_ip/vitis2/lab_custom_ip/Debug/lab_custom_ip.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:07:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:07:17 INFO  : 'con' command is executed.
+18:07:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:07:17 INFO  : Launch script is exported to file '/scratch/smr3765/labs/Lab3_PWM_Simulation/lab_custom_ip/vitis2/lab_custom_ip_system/_ide/scripts/debugger_lab_custom_ip-default.tcl'
+18:34:14 INFO  : Disconnected from the channel tcfchan#3.

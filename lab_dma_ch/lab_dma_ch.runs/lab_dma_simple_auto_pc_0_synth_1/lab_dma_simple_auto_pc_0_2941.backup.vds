@@ -1,0 +1,225 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Nov 22 16:44:53 2022
+# Process ID: 2941
+# Current directory: /scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.runs/lab_dma_simple_auto_pc_0_synth_1
+# Command line: vivado -log lab_dma_simple_auto_pc_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab_dma_simple_auto_pc_0.tcl
+# Log file: /scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.runs/lab_dma_simple_auto_pc_0_synth_1/lab_dma_simple_auto_pc_0.vds
+# Journal file: /scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.runs/lab_dma_simple_auto_pc_0_synth_1/vivado.jou
+# Running On: hp6g4-inf-21.ictp.it, OS: Linux, CPU Frequency: 4001.960 MHz, CPU Physical cores: 6, Host memory: 16583 MB
+#-----------------------------------------------------------
+WARNING: [Common 17-1221] Tcl app 'designutils' is out of date for this release. Please run tclapp::reset_tclstore and reinstall the app.
+source lab_dma_simple_auto_pc_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2674.391 ; gain = 2.016 ; free physical = 4763 ; free virtual = 13369
+Command: synth_design -top lab_dma_simple_auto_pc_0 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3146
+WARNING: [Synth 8-9501] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [/scratch/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:4023]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 2674.391 ; gain = 0.000 ; free physical = 418 ; free virtual = 9046
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'lab_dma_simple_auto_pc_0' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ip/lab_dma_simple_auto_pc_0/synth/lab_dma_simple_auto_pc_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_26_axi_protocol_converter' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4807]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_26_b2s' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4225]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_26_b2s_aw_channel' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3970]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_26_b2s_cmd_translator' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3463]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_26_b2s_incr_cmd' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3091]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_26_b2s_incr_cmd' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3091]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_26_b2s_wrap_cmd' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2901]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_26_b2s_wrap_cmd' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2901]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_26_b2s_cmd_translator' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3463]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_26_b2s_wr_cmd_fsm' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3223]
+INFO: [Synth 8-226] default block is never used [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3277]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_26_b2s_wr_cmd_fsm' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3223]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_26_b2s_aw_channel' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3970]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_26_b2s_b_channel' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3605]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_26_b2s_simple_fifo' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_26_b2s_simple_fifo' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_26_b2s_simple_fifo__parameterized0' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_26_b2s_simple_fifo__parameterized0' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_26_b2s_b_channel' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3605]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_26_b2s_ar_channel' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4081]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_26_b2s_rd_cmd_fsm' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3333]
+INFO: [Synth 8-226] default block is never used [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3395]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_26_b2s_rd_cmd_fsm' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3333]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_26_b2s_ar_channel' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4081]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_26_b2s_r_channel' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3810]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_26_b2s_simple_fifo__parameterized1' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_26_b2s_simple_fifo__parameterized1' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_26_b2s_simple_fifo__parameterized2' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_26_b2s_simple_fifo__parameterized2' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_26_b2s_r_channel' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3810]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_26_axi_register_slice' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:3725]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_26_axic_register_slice' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_26_axic_register_slice' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_26_axic_register_slice__parameterized0' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_26_axic_register_slice__parameterized0' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_26_axic_register_slice__parameterized1' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_26_axic_register_slice__parameterized1' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_26_axic_register_slice__parameterized2' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_26_axic_register_slice__parameterized2' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_26_axi_register_slice' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:3725]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_26_axi_register_slice' is unconnected for instance 'SI_REG' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4392]
+WARNING: [Synth 8-7023] instance 'SI_REG' of module 'axi_register_slice_v2_1_26_axi_register_slice' has 93 connections declared, but only 92 given [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4392]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_26_axi_register_slice__parameterized0' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:3725]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_26_axic_register_slice__parameterized3' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_26_axic_register_slice__parameterized3' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_26_axic_register_slice__parameterized4' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_26_axic_register_slice__parameterized4' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_26_axic_register_slice__parameterized5' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_26_axic_register_slice__parameterized5' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_26_axic_register_slice__parameterized6' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_26_axic_register_slice__parameterized6' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_26_axi_register_slice__parameterized0' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:3725]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_26_axi_register_slice' is unconnected for instance 'MI_REG' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4647]
+WARNING: [Synth 8-7023] instance 'MI_REG' of module 'axi_register_slice_v2_1_26_axi_register_slice' has 93 connections declared, but only 92 given [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4647]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_26_b2s' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4225]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_26_axi_protocol_converter' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4807]
+INFO: [Synth 8-6155] done synthesizing module 'lab_dma_simple_auto_pc_0' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ip/lab_dma_simple_auto_pc_0/synth/lab_dma_simple_auto_pc_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element state_r1_reg was removed.  [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3383]
+WARNING: [Synth 8-6014] Unused sequential element s_arlen_r_reg was removed.  [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3384]
+WARNING: [Synth 8-7129] Port ACLK in module axi_register_slice_v2_1_26_axic_register_slice__parameterized6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESET in module axi_register_slice_v2_1_26_axic_register_slice__parameterized6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module axi_register_slice_v2_1_26_axic_register_slice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESET in module axi_register_slice_v2_1_26_axic_register_slice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module axi_register_slice_v2_1_26_axic_register_slice__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESET in module axi_register_slice_v2_1_26_axic_register_slice__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module axi_register_slice_v2_1_26_axic_register_slice__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESET in module axi_register_slice_v2_1_26_axic_register_slice__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bid[0] in module axi_infrastructure_v1_1_0_vector2axi__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_buser[0] in module axi_infrastructure_v1_1_0_vector2axi__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rid[0] in module axi_infrastructure_v1_1_0_vector2axi__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rlast in module axi_infrastructure_v1_1_0_vector2axi__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_ruser[0] in module axi_infrastructure_v1_1_0_vector2axi__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awid[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[7] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[6] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[5] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[4] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[3] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[2] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[2] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awburst[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awburst[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlock[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[3] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[2] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[3] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[2] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[3] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[2] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awuser[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wlast in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wuser[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arid[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[7] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[6] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[5] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[4] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[3] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[2] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arsize[2] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arsize[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arsize[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arburst[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arburst[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlock[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[3] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[2] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arregion[3] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arregion[2] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arregion[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arregion[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[3] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[2] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_aruser[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk2x in module axi_register_slice_v2_1_26_axi_register_slice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module axi_register_slice_v2_1_26_axic_register_slice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESET in module axi_register_slice_v2_1_26_axic_register_slice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_buser[0] in module axi_infrastructure_v1_1_0_vector2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_ruser[0] in module axi_infrastructure_v1_1_0_vector2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[3] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[2] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[1] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awuser[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wuser[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arregion[3] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arregion[2] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arregion[1] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arregion[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_aruser[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk2x in module axi_register_slice_v2_1_26_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_arlen[7] in module axi_protocol_converter_v2_1_26_b2s_rd_cmd_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_arlen[6] in module axi_protocol_converter_v2_1_26_b2s_rd_cmd_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_arlen[5] in module axi_protocol_converter_v2_1_26_b2s_rd_cmd_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_arlen[4] in module axi_protocol_converter_v2_1_26_b2s_rd_cmd_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_arlen[3] in module axi_protocol_converter_v2_1_26_b2s_rd_cmd_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_arlen[2] in module axi_protocol_converter_v2_1_26_b2s_rd_cmd_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_arlen[1] in module axi_protocol_converter_v2_1_26_b2s_rd_cmd_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_arlen[0] in module axi_protocol_converter_v2_1_26_b2s_rd_cmd_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axlen[7] in module axi_protocol_converter_v2_1_26_b2s_wrap_cmd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axlen[6] in module axi_protocol_converter_v2_1_26_b2s_wrap_cmd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axlen[5] in module axi_protocol_converter_v2_1_26_b2s_wrap_cmd is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:01:13 . Memory (MB): peak = 2674.391 ; gain = 0.000 ; free physical = 139 ; free virtual = 5801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:01:21 . Memory (MB): peak = 2674.391 ; gain = 0.000 ; free physical = 130 ; free virtual = 5372
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:01:21 . Memory (MB): peak = 2674.391 ; gain = 0.000 ; free physical = 130 ; free virtual = 5372
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2674.391 ; gain = 0.000 ; free physical = 3892 ; free virtual = 7214
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ip/lab_dma_simple_auto_pc_0/lab_dma_simple_auto_pc_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ip/lab_dma_simple_auto_pc_0/lab_dma_simple_auto_pc_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.runs/lab_dma_simple_auto_pc_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.runs/lab_dma_simple_auto_pc_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2787.234 ; gain = 0.000 ; free physical = 5184 ; free virtual = 8632
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2787.234 ; gain = 0.000 ; free physical = 5199 ; free virtual = 8647
+INFO: [Designutils 20-5008] Incremental synthesis strategy off

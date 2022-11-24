@@ -1,0 +1,162 @@
+16:46:43 DEBUG : Logs will be stored at '/scratch/smr3765/labs/lab_ComBlock/Vitis/IDE.log'.
+16:46:56 INFO  : Launching XSCT server: xsct -n  -interactive /scratch/smr3765/labs/lab_ComBlock/Vitis/temp_xsdb_launch_script.tcl
+16:46:58 INFO  : Registering command handlers for Vitis TCF services
+16:47:00 INFO  : Platform repository initialization has completed.
+16:47:07 INFO  : XSCT server has started successfully.
+16:47:07 INFO  : plnx-install-location is set to ''
+16:47:13 INFO  : Successfully done setting XSCT server connection channel  
+16:47:13 INFO  : Successfully done query RDI_DATADIR 
+16:47:13 INFO  : Successfully done setting workspace for the tool. 
+16:51:32 INFO  : Result from executing command 'getProjects': ComBlock_wrapper
+16:51:32 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202210_1|/scratch/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_202210_1/xilinx_zcu102_base_202210_1.xpfm;xilinx_zcu102_base_dfx_202210_1|/scratch/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_dfx_202210_1/xilinx_zcu102_base_dfx_202210_1.xpfm;xilinx_zcu104_base_202210_1|/scratch/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu104_base_202210_1/xilinx_zcu104_base_202210_1.xpfm
+16:51:32 WARN  : An unexpected exception occurred in the module 'platform project logging'
+16:51:33 INFO  : Platform 'ComBlock_wrapper' is added to custom repositories.
+16:51:49 INFO  : Platform 'ComBlock_wrapper' is added to custom repositories.
+18:04:29 INFO  : Result from executing command 'getProjects': ComBlock_wrapper
+18:04:29 INFO  : Result from executing command 'getPlatforms': ComBlock_wrapper|/scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/ComBlock_wrapper.xpfm;xilinx_zcu102_base_202210_1|/scratch/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_202210_1/xilinx_zcu102_base_202210_1.xpfm;xilinx_zcu102_base_dfx_202210_1|/scratch/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_dfx_202210_1/xilinx_zcu102_base_dfx_202210_1.xpfm;xilinx_zcu104_base_202210_1|/scratch/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu104_base_202210_1/xilinx_zcu104_base_202210_1.xpfm
+18:04:33 INFO  : Checking for BSP changes to sync application flags for project 'comblock_test'...
+18:05:19 INFO  : Checking for BSP changes to sync application flags for project 'comblock_test'...
+18:05:36 INFO  : Checking for BSP changes to sync application flags for project 'comblock_test'...
+18:06:50 INFO  : Checking for BSP changes to sync application flags for project 'comblock_test'...
+18:07:31 INFO  : Checking for BSP changes to sync application flags for project 'comblock_test'...
+18:08:27 INFO  : Checking for BSP changes to sync application flags for project 'comblock_test'...
+18:09:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:09:35 INFO  : Jtag cable 'Digilent Zed 210248A39C5D' is selected.
+18:09:35 INFO  : 'jtag frequency' command is executed.
+18:09:35 INFO  : Context for 'APU' is selected.
+18:09:35 INFO  : System reset is completed.
+18:09:38 INFO  : 'after 3000' command is executed.
+18:09:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}' command is executed.
+18:09:41 INFO  : Device configured successfully with "/scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/_ide/bitstream/ComBlock_wrapper.bit"
+18:09:41 INFO  : Context for 'APU' is selected.
+18:09:41 INFO  : Hardware design and registers information is loaded from '/scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa'.
+18:09:41 INFO  : 'configparams force-mem-access 1' command is executed.
+18:09:41 INFO  : Context for 'APU' is selected.
+18:09:41 INFO  : Sourcing of '/scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/_ide/psinit/ps7_init.tcl' is done.
+18:09:42 INFO  : 'ps7_init' command is executed.
+18:09:42 INFO  : 'ps7_post_config' command is executed.
+18:09:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:09:42 INFO  : The application '/scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/Debug/comblock_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:09:42 INFO  : 'configparams force-mem-access 0' command is executed.
+18:09:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}
+fpga -file /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/_ide/bitstream/ComBlock_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/Debug/comblock_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:09:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:09:43 INFO  : 'con' command is executed.
+18:09:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:09:43 INFO  : Launch script is exported to file '/scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test_system/_ide/scripts/systemdebugger_comblock_test_system_standalone.tcl'
+18:11:08 INFO  : Checking for BSP changes to sync application flags for project 'comblock_test'...
+18:12:39 INFO  : Disconnected from the channel tcfchan#3.
+18:12:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:12:40 INFO  : Jtag cable 'Digilent Zed 210248A39C5D' is selected.
+18:12:40 INFO  : 'jtag frequency' command is executed.
+18:12:40 INFO  : Context for 'APU' is selected.
+18:12:40 INFO  : System reset is completed.
+18:12:43 INFO  : 'after 3000' command is executed.
+18:12:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}' command is executed.
+18:12:46 INFO  : Device configured successfully with "/scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/_ide/bitstream/ComBlock_wrapper.bit"
+18:12:46 INFO  : Context for 'APU' is selected.
+18:12:46 INFO  : Hardware design and registers information is loaded from '/scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa'.
+18:12:46 INFO  : 'configparams force-mem-access 1' command is executed.
+18:12:46 INFO  : Context for 'APU' is selected.
+18:12:46 INFO  : Sourcing of '/scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/_ide/psinit/ps7_init.tcl' is done.
+18:12:47 INFO  : 'ps7_init' command is executed.
+18:12:47 INFO  : 'ps7_post_config' command is executed.
+18:12:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:12:47 INFO  : The application '/scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/Debug/comblock_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:12:47 INFO  : 'configparams force-mem-access 0' command is executed.
+18:12:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}
+fpga -file /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/_ide/bitstream/ComBlock_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/Debug/comblock_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:12:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:12:47 INFO  : 'con' command is executed.
+18:12:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:12:47 INFO  : Launch script is exported to file '/scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test_system/_ide/scripts/systemdebugger_comblock_test_system_standalone.tcl'
+18:17:05 INFO  : Checking for BSP changes to sync application flags for project 'comblock_test'...
+18:17:51 INFO  : Disconnected from the channel tcfchan#5.
+18:17:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:17:53 INFO  : Jtag cable 'Digilent Zed 210248A39C5D' is selected.
+18:17:53 INFO  : 'jtag frequency' command is executed.
+18:17:53 INFO  : Context for 'APU' is selected.
+18:17:53 INFO  : System reset is completed.
+18:17:56 INFO  : 'after 3000' command is executed.
+18:17:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}' command is executed.
+18:17:59 INFO  : Device configured successfully with "/scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/_ide/bitstream/ComBlock_wrapper.bit"
+18:17:59 INFO  : Context for 'APU' is selected.
+18:17:59 INFO  : Hardware design and registers information is loaded from '/scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa'.
+18:17:59 INFO  : 'configparams force-mem-access 1' command is executed.
+18:17:59 INFO  : Context for 'APU' is selected.
+18:17:59 INFO  : Sourcing of '/scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/_ide/psinit/ps7_init.tcl' is done.
+18:18:00 INFO  : 'ps7_init' command is executed.
+18:18:00 INFO  : 'ps7_post_config' command is executed.
+18:18:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:18:00 INFO  : The application '/scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/Debug/comblock_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:18:00 INFO  : 'configparams force-mem-access 0' command is executed.
+18:18:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}
+fpga -file /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/_ide/bitstream/ComBlock_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /scratch/smr3765/labs/lab_ComBlock/Vitis/ComBlock_wrapper/export/ComBlock_wrapper/hw/ComBlock_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test/Debug/comblock_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:18:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:18:00 INFO  : 'con' command is executed.
+18:18:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:18:00 INFO  : Launch script is exported to file '/scratch/smr3765/labs/lab_ComBlock/Vitis/comblock_test_system/_ide/scripts/systemdebugger_comblock_test_system_standalone.tcl'
+18:20:47 INFO  : Disconnected from the channel tcfchan#7.

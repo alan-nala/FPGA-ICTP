@@ -1,0 +1,551 @@
+15:29:28 DEBUG : Logs will be stored at '/scratch/smr3765/labs/lab_irq/IDE.log'.
+15:29:38 INFO  : Registering command handlers for Vitis TCF services
+15:29:38 INFO  : Launching XSCT server: xsct -n  -interactive /scratch/smr3765/labs/lab_irq/temp_xsdb_launch_script.tcl
+15:29:39 INFO  : Platform repository initialization has completed.
+15:29:42 INFO  : XSCT server has started successfully.
+15:29:42 INFO  : Successfully done setting XSCT server connection channel  
+15:29:45 INFO  : plnx-install-location is set to ''
+15:29:45 INFO  : Successfully done setting workspace for the tool. 
+15:29:45 INFO  : Successfully done query RDI_DATADIR 
+15:32:41 INFO  : Result from executing command 'getProjects': lab_irq_wrapper
+15:32:41 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202210_1|/scratch/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_202210_1/xilinx_zcu102_base_202210_1.xpfm;xilinx_zcu102_base_dfx_202210_1|/scratch/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_dfx_202210_1/xilinx_zcu102_base_dfx_202210_1.xpfm;xilinx_zcu104_base_202210_1|/scratch/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu104_base_202210_1/xilinx_zcu104_base_202210_1.xpfm
+15:32:41 WARN  : An unexpected exception occurred in the module 'platform project logging'
+15:32:41 INFO  : Platform 'lab_irq_wrapper' is added to custom repositories.
+15:32:49 INFO  : Platform 'lab_irq_wrapper' is added to custom repositories.
+15:35:19 INFO  : Successfully generated /scratch/smr3765/labs/lab_irq/lab_irq/src/lscript.ld.
+15:35:19 INFO  : Applying linker script to all configurations of project lab_irq.
+15:35:19 INFO  : Setting rebuild state to true for all configurations of project lab_irq.
+15:48:27 INFO  : Result from executing command 'getProjects': lab_irq_wrapper
+15:48:27 INFO  : Result from executing command 'getPlatforms': lab_irq_wrapper|/scratch/smr3765/labs/lab_irq/lab_irq_wrapper/export/lab_irq_wrapper/lab_irq_wrapper.xpfm;xilinx_zcu102_base_202210_1|/scratch/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_202210_1/xilinx_zcu102_base_202210_1.xpfm;xilinx_zcu102_base_dfx_202210_1|/scratch/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_dfx_202210_1/xilinx_zcu102_base_dfx_202210_1.xpfm;xilinx_zcu104_base_202210_1|/scratch/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu104_base_202210_1/xilinx_zcu104_base_202210_1.xpfm
+15:48:31 INFO  : Checking for BSP changes to sync application flags for project 'lab_irq'...
+15:53:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:53:45 INFO  : Jtag cable 'Digilent Zed 210248A39C5D' is selected.
+15:53:45 INFO  : 'jtag frequency' command is executed.
+15:53:45 INFO  : Context for 'APU' is selected.
+15:53:45 INFO  : System reset is completed.
+15:53:48 INFO  : 'after 3000' command is executed.
+15:53:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}' command is executed.
+15:53:50 INFO  : Device configured successfully with "/scratch/smr3765/labs/lab_irq/lab_irq/_ide/bitstream/lab_irq_wrapper.bit"
+15:53:50 INFO  : Context for 'APU' is selected.
+15:53:51 INFO  : Hardware design and registers information is loaded from '/scratch/smr3765/labs/lab_irq/lab_irq_wrapper/export/lab_irq_wrapper/hw/lab_irq_wrapper.xsa'.
+15:53:51 INFO  : 'configparams force-mem-access 1' command is executed.
+15:53:51 INFO  : Context for 'APU' is selected.
+15:53:51 INFO  : Sourcing of '/scratch/smr3765/labs/lab_irq/lab_irq/_ide/psinit/ps7_init.tcl' is done.
+15:53:51 INFO  : 'ps7_init' command is executed.
+15:53:51 INFO  : 'ps7_post_config' command is executed.
+15:53:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:53:51 INFO  : The application '/scratch/smr3765/labs/lab_irq/lab_irq/Debug/lab_irq.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:53:51 INFO  : 'configparams force-mem-access 0' command is executed.
+15:53:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}
+fpga -file /scratch/smr3765/labs/lab_irq/lab_irq/_ide/bitstream/lab_irq_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /scratch/smr3765/labs/lab_irq/lab_irq_wrapper/export/lab_irq_wrapper/hw/lab_irq_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /scratch/smr3765/labs/lab_irq/lab_irq/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /scratch/smr3765/labs/lab_irq/lab_irq/Debug/lab_irq.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:53:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:53:51 INFO  : 'con' command is executed.
+15:53:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:53:51 INFO  : Disconnected from the channel tcfchan#2.
+16:51:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:51:37 INFO  : Jtag cable 'Digilent Zed 210248A39C5D' is selected.
+16:51:37 INFO  : 'jtag frequency' command is executed.
+16:51:37 INFO  : Context for 'APU' is selected.
+16:51:37 INFO  : System reset is completed.
+16:51:40 INFO  : 'after 3000' command is executed.
+16:51:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}' command is executed.
+16:51:43 INFO  : Device configured successfully with "/scratch/smr3765/labs/lab_irq/lab_irq/_ide/bitstream/lab_irq_wrapper.bit"
+16:51:43 INFO  : Context for 'APU' is selected.
+16:51:43 INFO  : Hardware design and registers information is loaded from '/scratch/smr3765/labs/lab_irq/lab_irq_wrapper/export/lab_irq_wrapper/hw/lab_irq_wrapper.xsa'.
+16:51:43 INFO  : 'configparams force-mem-access 1' command is executed.
+16:51:43 INFO  : Context for 'APU' is selected.
+16:51:43 INFO  : Sourcing of '/scratch/smr3765/labs/lab_irq/lab_irq/_ide/psinit/ps7_init.tcl' is done.
+16:51:43 INFO  : 'ps7_init' command is executed.
+16:51:43 INFO  : 'ps7_post_config' command is executed.
+16:51:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:51:43 INFO  : The application '/scratch/smr3765/labs/lab_irq/lab_irq/Debug/lab_irq.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:51:43 INFO  : 'configparams force-mem-access 0' command is executed.
+16:51:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}
+fpga -file /scratch/smr3765/labs/lab_irq/lab_irq/_ide/bitstream/lab_irq_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /scratch/smr3765/labs/lab_irq/lab_irq_wrapper/export/lab_irq_wrapper/hw/lab_irq_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /scratch/smr3765/labs/lab_irq/lab_irq/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /scratch/smr3765/labs/lab_irq/lab_irq/Debug/lab_irq.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:51:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:51:43 INFO  : 'con' command is executed.
+16:51:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:51:43 INFO  : Disconnected from the channel tcfchan#3.
+16:52:04 INFO  : Checking for BSP changes to sync application flags for project 'lab_irq'...
+16:56:04 INFO  : Checking for BSP changes to sync application flags for project 'lab_irq'...
+16:56:55 INFO  : Checking for BSP changes to sync application flags for project 'lab_irq'...
+16:58:57 INFO  : Checking for BSP changes to sync application flags for project 'lab_irq'...
+16:59:08 INFO  : Checking for BSP changes to sync application flags for project 'lab_irq'...
+16:59:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:59:25 INFO  : Jtag cable 'Digilent Zed 210248A39C5D' is selected.
+16:59:25 INFO  : 'jtag frequency' command is executed.
+16:59:25 INFO  : Context for 'APU' is selected.
+16:59:25 INFO  : System reset is completed.
+16:59:28 INFO  : 'after 3000' command is executed.
+16:59:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}' command is executed.
+16:59:31 INFO  : Device configured successfully with "/scratch/smr3765/labs/lab_irq/lab_irq/_ide/bitstream/lab_irq_wrapper.bit"
+16:59:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:59:31 INFO  : Context for 'APU' is selected.
+16:59:31 INFO  : Hardware design and registers information is loaded from '/scratch/smr3765/labs/lab_irq/lab_irq_wrapper/export/lab_irq_wrapper/hw/lab_irq_wrapper.xsa'.
+16:59:31 INFO  : 'configparams force-mem-access 1' command is executed.
+16:59:31 INFO  : Context for 'APU' is selected.
+16:59:31 INFO  : Sourcing of '/scratch/smr3765/labs/lab_irq/lab_irq/_ide/psinit/ps7_init.tcl' is done.
+16:59:31 INFO  : 'ps7_init' command is executed.
+16:59:31 INFO  : 'ps7_post_config' command is executed.
+16:59:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:59:31 INFO  : The application '/scratch/smr3765/labs/lab_irq/lab_irq/Debug/lab_irq.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:59:31 INFO  : 'configparams force-mem-access 0' command is executed.
+16:59:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}
+fpga -file /scratch/smr3765/labs/lab_irq/lab_irq/_ide/bitstream/lab_irq_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /scratch/smr3765/labs/lab_irq/lab_irq_wrapper/export/lab_irq_wrapper/hw/lab_irq_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /scratch/smr3765/labs/lab_irq/lab_irq/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /scratch/smr3765/labs/lab_irq/lab_irq/Debug/lab_irq.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:59:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:59:31 INFO  : 'con' command is executed.
+16:59:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:59:31 INFO  : Jtag cable 'Digilent Zed 210248A39C5D' is selected.
+16:59:31 INFO  : Disconnected from the channel tcfchan#6.
+16:59:31 ERROR : Invalid target. Use "connect" command to connect to hw_server/TCF agent
+16:59:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+16:59:31 ERROR : Invalid target. Use "connect" command to connect to hw_server/TCF agent
+17:01:56 INFO  : Checking for BSP changes to sync application flags for project 'lab_irq'...
+17:02:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:02:01 INFO  : Jtag cable 'Digilent Zed 210248A39C5D' is selected.
+17:02:01 INFO  : 'jtag frequency' command is executed.
+17:02:01 INFO  : Context for 'APU' is selected.
+17:02:01 INFO  : System reset is completed.
+17:02:04 INFO  : 'after 3000' command is executed.
+17:02:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}' command is executed.
+17:02:06 INFO  : Device configured successfully with "/scratch/smr3765/labs/lab_irq/lab_irq/_ide/bitstream/lab_irq_wrapper.bit"
+17:02:06 INFO  : Context for 'APU' is selected.
+17:02:06 INFO  : Hardware design and registers information is loaded from '/scratch/smr3765/labs/lab_irq/lab_irq_wrapper/export/lab_irq_wrapper/hw/lab_irq_wrapper.xsa'.
+17:02:06 INFO  : 'configparams force-mem-access 1' command is executed.
+17:02:06 INFO  : Context for 'APU' is selected.
+17:02:06 INFO  : Sourcing of '/scratch/smr3765/labs/lab_irq/lab_irq/_ide/psinit/ps7_init.tcl' is done.
+17:02:07 INFO  : 'ps7_init' command is executed.
+17:02:07 INFO  : 'ps7_post_config' command is executed.
+17:02:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:02:07 INFO  : The application '/scratch/smr3765/labs/lab_irq/lab_irq/Debug/lab_irq.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:02:07 INFO  : 'configparams force-mem-access 0' command is executed.
+17:02:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}
+fpga -file /scratch/smr3765/labs/lab_irq/lab_irq/_ide/bitstream/lab_irq_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /scratch/smr3765/labs/lab_irq/lab_irq_wrapper/export/lab_irq_wrapper/hw/lab_irq_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /scratch/smr3765/labs/lab_irq/lab_irq/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /scratch/smr3765/labs/lab_irq/lab_irq/Debug/lab_irq.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:02:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:02:07 INFO  : 'con' command is executed.
+17:02:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:02:07 INFO  : Disconnected from the channel tcfchan#7.
+17:14:07 INFO  : Checking for BSP changes to sync application flags for project 'lab_irq'...
+17:14:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:14:22 INFO  : Jtag cable 'Digilent Zed 210248A39C5D' is selected.
+17:14:22 INFO  : 'jtag frequency' command is executed.
+17:14:22 INFO  : Context for 'APU' is selected.
+17:14:22 INFO  : System reset is completed.
+17:14:25 INFO  : 'after 3000' command is executed.
+17:14:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}' command is executed.
+17:14:28 INFO  : Device configured successfully with "/scratch/smr3765/labs/lab_irq/lab_irq/_ide/bitstream/lab_irq_wrapper.bit"
+17:14:28 INFO  : Context for 'APU' is selected.
+17:14:28 INFO  : Hardware design and registers information is loaded from '/scratch/smr3765/labs/lab_irq/lab_irq_wrapper/export/lab_irq_wrapper/hw/lab_irq_wrapper.xsa'.
+17:14:28 INFO  : 'configparams force-mem-access 1' command is executed.
+17:14:28 INFO  : Context for 'APU' is selected.
+17:14:28 INFO  : Sourcing of '/scratch/smr3765/labs/lab_irq/lab_irq/_ide/psinit/ps7_init.tcl' is done.
+17:14:28 INFO  : 'ps7_init' command is executed.
+17:14:28 INFO  : 'ps7_post_config' command is executed.
+17:14:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:14:28 INFO  : The application '/scratch/smr3765/labs/lab_irq/lab_irq/Debug/lab_irq.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:14:28 INFO  : 'configparams force-mem-access 0' command is executed.
+17:14:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}
+fpga -file /scratch/smr3765/labs/lab_irq/lab_irq/_ide/bitstream/lab_irq_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /scratch/smr3765/labs/lab_irq/lab_irq_wrapper/export/lab_irq_wrapper/hw/lab_irq_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /scratch/smr3765/labs/lab_irq/lab_irq/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /scratch/smr3765/labs/lab_irq/lab_irq/Debug/lab_irq.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:14:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:14:28 INFO  : 'con' command is executed.
+17:14:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:14:28 INFO  : Launch script is exported to file '/scratch/smr3765/labs/lab_irq/lab_irq_system/_ide/scripts/systemdebugger_lab_irq_system_standalone.tcl'
+17:15:12 INFO  : Checking for BSP changes to sync application flags for project 'lab_irq'...
+17:15:32 INFO  : Disconnected from the channel tcfchan#9.
+17:15:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:15:32 INFO  : Jtag cable 'Digilent Zed 210248A39C5D' is selected.
+17:15:32 INFO  : 'jtag frequency' command is executed.
+17:15:32 INFO  : Context for 'APU' is selected.
+17:15:32 INFO  : System reset is completed.
+17:15:35 INFO  : 'after 3000' command is executed.
+17:15:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}' command is executed.
+17:15:37 INFO  : Device configured successfully with "/scratch/smr3765/labs/lab_irq/lab_irq/_ide/bitstream/lab_irq_wrapper.bit"
+17:15:38 INFO  : Context for 'APU' is selected.
+17:15:38 INFO  : Hardware design and registers information is loaded from '/scratch/smr3765/labs/lab_irq/lab_irq_wrapper/export/lab_irq_wrapper/hw/lab_irq_wrapper.xsa'.
+17:15:38 INFO  : 'configparams force-mem-access 1' command is executed.
+17:15:38 INFO  : Context for 'APU' is selected.
+17:15:38 INFO  : Sourcing of '/scratch/smr3765/labs/lab_irq/lab_irq/_ide/psinit/ps7_init.tcl' is done.
+17:15:38 INFO  : 'ps7_init' command is executed.
+17:15:38 INFO  : 'ps7_post_config' command is executed.
+17:15:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:15:38 INFO  : The application '/scratch/smr3765/labs/lab_irq/lab_irq/Debug/lab_irq.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:15:38 INFO  : 'configparams force-mem-access 0' command is executed.
+17:15:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}
+fpga -file /scratch/smr3765/labs/lab_irq/lab_irq/_ide/bitstream/lab_irq_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /scratch/smr3765/labs/lab_irq/lab_irq_wrapper/export/lab_irq_wrapper/hw/lab_irq_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /scratch/smr3765/labs/lab_irq/lab_irq/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /scratch/smr3765/labs/lab_irq/lab_irq/Debug/lab_irq.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:15:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:15:38 INFO  : 'con' command is executed.
+17:15:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:15:38 INFO  : Launch script is exported to file '/scratch/smr3765/labs/lab_irq/lab_irq_system/_ide/scripts/systemdebugger_lab_irq_system_standalone.tcl'
+17:16:54 INFO  : Checking for BSP changes to sync application flags for project 'lab_irq'...
+17:17:07 INFO  : Disconnected from the channel tcfchan#11.
+17:17:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:17:07 INFO  : Jtag cable 'Digilent Zed 210248A39C5D' is selected.
+17:17:07 INFO  : 'jtag frequency' command is executed.
+17:17:07 INFO  : Context for 'APU' is selected.
+17:17:07 INFO  : System reset is completed.
+17:17:10 INFO  : 'after 3000' command is executed.
+17:17:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}' command is executed.
+17:17:13 INFO  : Device configured successfully with "/scratch/smr3765/labs/lab_irq/lab_irq/_ide/bitstream/lab_irq_wrapper.bit"
+17:17:13 INFO  : Context for 'APU' is selected.
+17:17:13 INFO  : Hardware design and registers information is loaded from '/scratch/smr3765/labs/lab_irq/lab_irq_wrapper/export/lab_irq_wrapper/hw/lab_irq_wrapper.xsa'.
+17:17:13 INFO  : 'configparams force-mem-access 1' command is executed.
+17:17:13 INFO  : Context for 'APU' is selected.
+17:17:13 INFO  : Sourcing of '/scratch/smr3765/labs/lab_irq/lab_irq/_ide/psinit/ps7_init.tcl' is done.
+17:17:13 INFO  : 'ps7_init' command is executed.
+17:17:13 INFO  : 'ps7_post_config' command is executed.
+17:17:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:17:13 INFO  : The application '/scratch/smr3765/labs/lab_irq/lab_irq/Debug/lab_irq.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:17:13 INFO  : 'configparams force-mem-access 0' command is executed.
+17:17:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}
+fpga -file /scratch/smr3765/labs/lab_irq/lab_irq/_ide/bitstream/lab_irq_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /scratch/smr3765/labs/lab_irq/lab_irq_wrapper/export/lab_irq_wrapper/hw/lab_irq_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /scratch/smr3765/labs/lab_irq/lab_irq/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /scratch/smr3765/labs/lab_irq/lab_irq/Debug/lab_irq.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:17:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:17:13 INFO  : 'con' command is executed.
+17:17:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:17:13 INFO  : Launch script is exported to file '/scratch/smr3765/labs/lab_irq/lab_irq_system/_ide/scripts/systemdebugger_lab_irq_system_standalone.tcl'
+17:18:11 INFO  : Checking for BSP changes to sync application flags for project 'lab_irq'...
+17:18:19 INFO  : Disconnected from the channel tcfchan#13.
+17:18:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:18:19 INFO  : Jtag cable 'Digilent Zed 210248A39C5D' is selected.
+17:18:19 INFO  : 'jtag frequency' command is executed.
+17:18:19 INFO  : Context for 'APU' is selected.
+17:18:19 INFO  : System reset is completed.
+17:18:22 INFO  : 'after 3000' command is executed.
+17:18:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}' command is executed.
+17:18:25 INFO  : Device configured successfully with "/scratch/smr3765/labs/lab_irq/lab_irq/_ide/bitstream/lab_irq_wrapper.bit"
+17:18:25 INFO  : Context for 'APU' is selected.
+17:18:25 INFO  : Hardware design and registers information is loaded from '/scratch/smr3765/labs/lab_irq/lab_irq_wrapper/export/lab_irq_wrapper/hw/lab_irq_wrapper.xsa'.
+17:18:25 INFO  : 'configparams force-mem-access 1' command is executed.
+17:18:25 INFO  : Context for 'APU' is selected.
+17:18:25 INFO  : Sourcing of '/scratch/smr3765/labs/lab_irq/lab_irq/_ide/psinit/ps7_init.tcl' is done.
+17:18:25 INFO  : 'ps7_init' command is executed.
+17:18:25 INFO  : 'ps7_post_config' command is executed.
+17:18:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:18:25 INFO  : The application '/scratch/smr3765/labs/lab_irq/lab_irq/Debug/lab_irq.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:18:25 INFO  : 'configparams force-mem-access 0' command is executed.
+17:18:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}
+fpga -file /scratch/smr3765/labs/lab_irq/lab_irq/_ide/bitstream/lab_irq_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /scratch/smr3765/labs/lab_irq/lab_irq_wrapper/export/lab_irq_wrapper/hw/lab_irq_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /scratch/smr3765/labs/lab_irq/lab_irq/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /scratch/smr3765/labs/lab_irq/lab_irq/Debug/lab_irq.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:18:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:18:25 INFO  : 'con' command is executed.
+17:18:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:18:25 INFO  : Launch script is exported to file '/scratch/smr3765/labs/lab_irq/lab_irq_system/_ide/scripts/systemdebugger_lab_irq_system_standalone.tcl'
+17:19:02 INFO  : Checking for BSP changes to sync application flags for project 'lab_irq'...
+17:20:36 INFO  : Disconnected from the channel tcfchan#15.
+17:20:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:20:37 INFO  : Jtag cable 'Digilent Zed 210248A39C5D' is selected.
+17:20:37 ERROR : port closed
+17:20:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+17:20:37 ERROR : port closed
+17:21:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:21:01 INFO  : Jtag cable 'Digilent Zed 210248A39C5D' is selected.
+17:21:01 INFO  : 'jtag frequency' command is executed.
+17:21:01 INFO  : Context for 'APU' is selected.
+17:21:01 INFO  : System reset is completed.
+17:21:04 INFO  : 'after 3000' command is executed.
+17:21:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}' command is executed.
+17:21:07 INFO  : Device configured successfully with "/scratch/smr3765/labs/lab_irq/lab_irq/_ide/bitstream/lab_irq_wrapper.bit"
+17:21:07 INFO  : Context for 'APU' is selected.
+17:21:07 INFO  : Hardware design and registers information is loaded from '/scratch/smr3765/labs/lab_irq/lab_irq_wrapper/export/lab_irq_wrapper/hw/lab_irq_wrapper.xsa'.
+17:21:07 INFO  : 'configparams force-mem-access 1' command is executed.
+17:21:07 INFO  : Context for 'APU' is selected.
+17:21:07 INFO  : Sourcing of '/scratch/smr3765/labs/lab_irq/lab_irq/_ide/psinit/ps7_init.tcl' is done.
+17:21:07 INFO  : 'ps7_init' command is executed.
+17:21:07 INFO  : 'ps7_post_config' command is executed.
+17:21:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:21:07 INFO  : The application '/scratch/smr3765/labs/lab_irq/lab_irq/Debug/lab_irq.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:21:07 INFO  : 'configparams force-mem-access 0' command is executed.
+17:21:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}
+fpga -file /scratch/smr3765/labs/lab_irq/lab_irq/_ide/bitstream/lab_irq_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /scratch/smr3765/labs/lab_irq/lab_irq_wrapper/export/lab_irq_wrapper/hw/lab_irq_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /scratch/smr3765/labs/lab_irq/lab_irq/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /scratch/smr3765/labs/lab_irq/lab_irq/Debug/lab_irq.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:21:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:21:07 INFO  : 'con' command is executed.
+17:21:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:21:07 INFO  : Launch script is exported to file '/scratch/smr3765/labs/lab_irq/lab_irq_system/_ide/scripts/systemdebugger_lab_irq_system_standalone.tcl'
+17:22:03 INFO  : Checking for BSP changes to sync application flags for project 'lab_irq'...
+17:22:19 INFO  : Disconnected from the channel tcfchan#17.
+17:22:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:22:19 INFO  : Jtag cable 'Digilent Zed 210248A39C5D' is selected.
+17:22:19 INFO  : 'jtag frequency' command is executed.
+17:22:19 INFO  : Context for 'APU' is selected.
+17:22:19 INFO  : System reset is completed.
+17:22:22 INFO  : 'after 3000' command is executed.
+17:22:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}' command is executed.
+17:22:25 INFO  : Device configured successfully with "/scratch/smr3765/labs/lab_irq/lab_irq/_ide/bitstream/lab_irq_wrapper.bit"
+17:22:25 INFO  : Context for 'APU' is selected.
+17:22:25 INFO  : Hardware design and registers information is loaded from '/scratch/smr3765/labs/lab_irq/lab_irq_wrapper/export/lab_irq_wrapper/hw/lab_irq_wrapper.xsa'.
+17:22:25 INFO  : 'configparams force-mem-access 1' command is executed.
+17:22:25 INFO  : Context for 'APU' is selected.
+17:22:25 INFO  : Sourcing of '/scratch/smr3765/labs/lab_irq/lab_irq/_ide/psinit/ps7_init.tcl' is done.
+17:22:25 INFO  : 'ps7_init' command is executed.
+17:22:25 INFO  : 'ps7_post_config' command is executed.
+17:22:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:22:25 INFO  : The application '/scratch/smr3765/labs/lab_irq/lab_irq/Debug/lab_irq.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:22:25 INFO  : 'configparams force-mem-access 0' command is executed.
+17:22:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}
+fpga -file /scratch/smr3765/labs/lab_irq/lab_irq/_ide/bitstream/lab_irq_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /scratch/smr3765/labs/lab_irq/lab_irq_wrapper/export/lab_irq_wrapper/hw/lab_irq_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /scratch/smr3765/labs/lab_irq/lab_irq/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /scratch/smr3765/labs/lab_irq/lab_irq/Debug/lab_irq.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:22:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:22:25 INFO  : 'con' command is executed.
+17:22:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:22:25 INFO  : Launch script is exported to file '/scratch/smr3765/labs/lab_irq/lab_irq_system/_ide/scripts/systemdebugger_lab_irq_system_standalone.tcl'
+17:23:52 INFO  : Checking for BSP changes to sync application flags for project 'lab_irq'...
+17:24:02 INFO  : Disconnected from the channel tcfchan#19.
+17:24:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:24:02 INFO  : Jtag cable 'Digilent Zed 210248A39C5D' is selected.
+17:24:02 INFO  : 'jtag frequency' command is executed.
+17:24:02 INFO  : Context for 'APU' is selected.
+17:24:02 INFO  : System reset is completed.
+17:24:05 INFO  : 'after 3000' command is executed.
+17:24:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}' command is executed.
+17:24:08 INFO  : Device configured successfully with "/scratch/smr3765/labs/lab_irq/lab_irq/_ide/bitstream/lab_irq_wrapper.bit"
+17:24:08 INFO  : Context for 'APU' is selected.
+17:24:08 INFO  : Hardware design and registers information is loaded from '/scratch/smr3765/labs/lab_irq/lab_irq_wrapper/export/lab_irq_wrapper/hw/lab_irq_wrapper.xsa'.
+17:24:08 INFO  : 'configparams force-mem-access 1' command is executed.
+17:24:08 INFO  : Context for 'APU' is selected.
+17:24:08 INFO  : Sourcing of '/scratch/smr3765/labs/lab_irq/lab_irq/_ide/psinit/ps7_init.tcl' is done.
+17:24:08 INFO  : 'ps7_init' command is executed.
+17:24:08 INFO  : 'ps7_post_config' command is executed.
+17:24:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:24:08 INFO  : The application '/scratch/smr3765/labs/lab_irq/lab_irq/Debug/lab_irq.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:24:08 INFO  : 'configparams force-mem-access 0' command is executed.
+17:24:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}
+fpga -file /scratch/smr3765/labs/lab_irq/lab_irq/_ide/bitstream/lab_irq_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /scratch/smr3765/labs/lab_irq/lab_irq_wrapper/export/lab_irq_wrapper/hw/lab_irq_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /scratch/smr3765/labs/lab_irq/lab_irq/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /scratch/smr3765/labs/lab_irq/lab_irq/Debug/lab_irq.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:24:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:24:08 INFO  : 'con' command is executed.
+17:24:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:24:08 INFO  : Launch script is exported to file '/scratch/smr3765/labs/lab_irq/lab_irq_system/_ide/scripts/systemdebugger_lab_irq_system_standalone.tcl'
+17:45:09 INFO  : Disconnected from the channel tcfchan#21.

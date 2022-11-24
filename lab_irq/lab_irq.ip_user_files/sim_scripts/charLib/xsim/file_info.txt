@@ -1,0 +1,1 @@
+charLib_sim_netlist.vhdl,vhdl,xil_defaultlib,../../../ip/charLib/charLib_sim_netlist.vhdl,

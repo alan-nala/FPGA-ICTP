@@ -1,0 +1,7 @@
+Running: xsim.dir/yuv_filter/xsimk -simmode gui -wdb yuv_filter.wdb -simrunnum 0 -socket 48077
+Design successfully loaded
+Design Loading Memory Usage: 261708 KB (Peak: 261708 KB)
+Design Loading CPU Usage: 580 ms
+Simulation completed
+Simulation Memory Usage: 604760 KB (Peak: 735836 KB)
+Simulation CPU Usage: 34460 ms

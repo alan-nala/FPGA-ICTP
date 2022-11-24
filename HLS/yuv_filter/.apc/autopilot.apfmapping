@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="yuv_filter.c" path="/scratch/smr3765/Labs/HLS_Lab/yuv_filter/yuv_filter.c"/>
+  </source>
+  <testbench>
+    <originFiles name="image_aux.c" path="/scratch/smr3765/Labs/HLS_Lab/yuv_filter/image_aux.c"/>
+    <originFiles name="image_aux.h" path="/scratch/smr3765/Labs/HLS_Lab/yuv_filter/image_aux.h"/>
+    <originFiles name="yuv_filter_test.c" path="/scratch/smr3765/Labs/HLS_Lab/yuv_filter/yuv_filter_test.c"/>
+    <originFiles name="input.dat" path="/scratch/smr3765/Labs/HLS_Lab/yuv_filter/test_data/input.dat"/>
+    <originFiles name="output.dat" path="/scratch/smr3765/Labs/HLS_Lab/yuv_filter/test_data/output.dat"/>
+    <originFiles name="output.golden.dat" path="/scratch/smr3765/Labs/HLS_Lab/yuv_filter/test_data/output.golden.dat"/>
+    <originFiles name="yuv_filter.h" path="/scratch/smr3765/Labs/HLS_Lab/yuv_filter/yuv_filter.h"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'yuv2rgb.1' to 'yuv2rgb_1'." projectName="yuv_filter" solutionName="solution2" date="2022-11-18T12:24:18.433+0100" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'yuv2rgb.1_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y' to 'yuv2rgb_1_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y'." projectName="yuv_filter" solutionName="solution2" date="2022-11-18T12:24:18.427+0100" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'rgb2yuv.1' to 'rgb2yuv_1'." projectName="yuv_filter" solutionName="solution2" date="2022-11-18T12:24:18.425+0100" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'rgb2yuv.1_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y' to 'rgb2yuv_1_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y'." projectName="yuv_filter" solutionName="solution2" date="2022-11-18T12:24:18.419+0100" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'yuv2rgb.1' to 'yuv2rgb_1'." projectName="yuv_filter" solutionName="solution1" date="2022-11-18T12:23:52.723+0100" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'yuv2rgb.1_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y' to 'yuv2rgb_1_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y'." projectName="yuv_filter" solutionName="solution1" date="2022-11-18T12:23:52.716+0100" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'rgb2yuv.1' to 'rgb2yuv_1'." projectName="yuv_filter" solutionName="solution1" date="2022-11-18T12:23:52.655+0100" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'rgb2yuv.1_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y' to 'rgb2yuv_1_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y'." projectName="yuv_filter" solutionName="solution1" date="2022-11-18T12:23:52.652+0100" type="Warning"/>
+      </synLog>
+      <simLog>
+        <logs message="WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the &quot;-mt off -v 1&quot; switches to see more information from the C compiler. The following environment variables have been detected:&#xA;    LIBRARY_PATH" projectName="yuv_filter" solutionName="solution2" date="2022-11-18T12:30:50.947+0100" type="Warning"/>
+      </simLog>
+      <mgLog/>
+      <packageLog>
+        <logs message="WARNING: [Common 17-1221] Tcl app 'designutils' is out of date for this release. Please run tclapp::reset_tclstore and reinstall the app.&#xA;source run_ippack.tcl -notrace" projectName="yuv_filter" solutionName="solution2" date="2022-11-18T12:41:18.286+0100" type="Warning"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

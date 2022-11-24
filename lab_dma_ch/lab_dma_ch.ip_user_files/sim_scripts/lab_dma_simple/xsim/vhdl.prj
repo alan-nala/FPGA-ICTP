@@ -1,0 +1,12 @@
+vhdl xil_defaultlib  \
+"/scratch/smr3765/labs/lab_dma_simple/lab_dma_simple.gen/sources_1/bd/lab_dma_simple/ip/lab_dma_simple_processing_system7_0_0/lab_dma_simple_processing_system7_0_0_sim_netlist.vhdl" \
+"/scratch/smr3765/labs/lab_dma_simple/lab_dma_simple.gen/sources_1/bd/lab_dma_simple/ip/lab_dma_simple_axi_dma_0_0/lab_dma_simple_axi_dma_0_0_sim_netlist.vhdl" \
+"../../../../lab_dma_simple.gen/sources_1/bd/lab_dma_simple/ip/lab_dma_simple_rst_ps7_0_100M_0/sim/lab_dma_simple_rst_ps7_0_100M_0.vhd" \
+"/scratch/smr3765/labs/lab_dma_simple/lab_dma_simple.gen/sources_1/bd/lab_dma_simple/ip/lab_dma_simple_xbar_0/lab_dma_simple_xbar_0_sim_netlist.vhdl" \
+"/scratch/smr3765/labs/lab_dma_simple/lab_dma_simple.gen/sources_1/bd/lab_dma_simple/ip/lab_dma_simple_auto_pc_0/lab_dma_simple_auto_pc_0_sim_netlist.vhdl" \
+"/scratch/smr3765/labs/lab_dma_simple/lab_dma_simple.gen/sources_1/bd/lab_dma_simple/ip/lab_dma_simple_auto_us_0/lab_dma_simple_auto_us_0_sim_netlist.vhdl" \
+"/scratch/smr3765/labs/lab_dma_simple/lab_dma_simple.gen/sources_1/bd/lab_dma_simple/ip/lab_dma_simple_auto_us_1/lab_dma_simple_auto_us_1_sim_netlist.vhdl" \
+"/scratch/smr3765/labs/lab_dma_simple/lab_dma_simple.gen/sources_1/bd/lab_dma_simple/ip/lab_dma_simple_auto_pc_1/lab_dma_simple_auto_pc_1_sim_netlist.vhdl" \
+"../../../../lab_dma_simple.gen/sources_1/bd/lab_dma_simple/sim/lab_dma_simple.vhd" \
+
+nosort

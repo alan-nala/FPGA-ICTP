@@ -1,0 +1,188 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Nov 22 16:44:53 2022
+# Process ID: 2935
+# Current directory: /scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.runs/lab_dma_simple_auto_pc_1_synth_1
+# Command line: vivado -log lab_dma_simple_auto_pc_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab_dma_simple_auto_pc_1.tcl
+# Log file: /scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.runs/lab_dma_simple_auto_pc_1_synth_1/lab_dma_simple_auto_pc_1.vds
+# Journal file: /scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.runs/lab_dma_simple_auto_pc_1_synth_1/vivado.jou
+# Running On: hp6g4-inf-21.ictp.it, OS: Linux, CPU Frequency: 3965.175 MHz, CPU Physical cores: 6, Host memory: 16583 MB
+#-----------------------------------------------------------
+WARNING: [Common 17-1221] Tcl app 'designutils' is out of date for this release. Please run tclapp::reset_tclstore and reinstall the app.
+source lab_dma_simple_auto_pc_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2674.391 ; gain = 2.016 ; free physical = 4763 ; free virtual = 13369
+Command: synth_design -top lab_dma_simple_auto_pc_1 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3147
+WARNING: [Synth 8-9501] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [/scratch/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:4023]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 2674.391 ; gain = 0.000 ; free physical = 415 ; free virtual = 9043
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'lab_dma_simple_auto_pc_1' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ip/lab_dma_simple_auto_pc_1/synth/lab_dma_simple_auto_pc_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_26_axi_protocol_converter' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4807]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_26_axi3_conv' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:953]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_26_b_downsizer' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2275]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_26_b_downsizer' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2275]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_26_a_axi3_conv' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:61]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_25_axic_fifo' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/5390/hdl/axi_data_fifo_v2_1_vl_rfs.v:63]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_25_fifo_gen' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/5390/hdl/axi_data_fifo_v2_1_vl_rfs.v:167]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [/scratch/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1174]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (0#1) [/scratch/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1174]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_25_fifo_gen' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/5390/hdl/axi_data_fifo_v2_1_vl_rfs.v:167]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_25_axic_fifo' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/5390/hdl/axi_data_fifo_v2_1_vl_rfs.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_26_a_axi3_conv' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:61]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_26_w_axi3_conv' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2003]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_26_w_axi3_conv' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2003]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_26_a_axi3_conv__parameterized0' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:61]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_25_axic_fifo__parameterized0' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/5390/hdl/axi_data_fifo_v2_1_vl_rfs.v:63]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_25_fifo_gen__parameterized0' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/5390/hdl/axi_data_fifo_v2_1_vl_rfs.v:167]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_25_fifo_gen__parameterized0' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/5390/hdl/axi_data_fifo_v2_1_vl_rfs.v:167]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_25_axic_fifo__parameterized0' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/5390/hdl/axi_data_fifo_v2_1_vl_rfs.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_26_a_axi3_conv__parameterized0' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:61]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_26_r_axi3_conv' [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:1788]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_26_r_axi3_conv' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:1788]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_26_axi3_conv' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:953]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_26_axi_protocol_converter' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4807]
+INFO: [Synth 8-6155] done synthesizing module 'lab_dma_simple_auto_pc_1' (0#1) [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ip/lab_dma_simple_auto_pc_1/synth/lab_dma_simple_auto_pc_1.v:53]
+WARNING: [Synth 8-6014] Unused sequential element S_AXI_AUSER_Q_reg was removed.  [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:281]
+WARNING: [Synth 8-6014] Unused sequential element NO_B_CHANNEL.cmd_b_depth_reg was removed.  [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:853]
+WARNING: [Synth 8-6014] Unused sequential element S_AXI_AUSER_Q_reg was removed.  [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:281]
+WARNING: [Synth 8-6014] Unused sequential element cmd_b_push_block_reg was removed.  [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:637]
+WARNING: [Synth 8-7129] Port ACLK in module axi_protocol_converter_v2_1_26_r_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESET in module axi_protocol_converter_v2_1_26_r_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ALMOST_FULL_I in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_I in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ALMOST_EMPTY_I in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_EMPTY_I in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_ACK_I in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VALID_I in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OVERFLOW_I in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port UNDERFLOW_I in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[5] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[4] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[3] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[2] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[1] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[0] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[5] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[4] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[3] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[2] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[1] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[0] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[5] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[4] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[3] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[2] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[1] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[0] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SBITERR_I in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERR_I in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SRST_FULL_FF in module wr_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_RST in module wr_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SRST in module wr_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SAFETY_CKT_WR_RST in module wr_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS2[4] in module wr_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS2[3] in module wr_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS2[2] in module wr_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS2[1] in module wr_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS2[0] in module wr_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[4] in module wr_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[3] in module wr_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[2] in module wr_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[1] in module wr_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[0] in module wr_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SRST in module wr_bin_cntr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_EN_INTO_LOGIC in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_RST_INTO_LOGIC in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_EN in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_RST_BUSY in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EMPTY in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ALMOST_EMPTY in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[4] in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[3] in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[2] in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[1] in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[0] in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_ASSERT[4] in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_ASSERT[3] in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_ASSERT[2] in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_ASSERT[1] in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_ASSERT[0] in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_NEGATE[4] in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_NEGATE[3] in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_NEGATE[2] in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_NEGATE[1] in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_NEGATE[0] in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SRST in module rd_fwft is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SAFETY_CKT_RD_RST in module rd_fwft is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RAM_ALMOST_EMPTY in module rd_fwft is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SRST in module rd_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SAFETY_CKT_RD_RST in module rd_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_PNTR_PLUS2[4] in module rd_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_PNTR_PLUS2[3] in module rd_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_PNTR_PLUS2[2] in module rd_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_PNTR_PLUS2[1] in module rd_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_PNTR_PLUS2[0] in module rd_status_flags_ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SRST in module rd_bin_cntr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_EN_INTO_LOGIC in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_RST_INTO_LOGIC in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_RST_BUSY in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RST_FULL_FF in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ALMOST_FULL_FB in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FULL in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS1_RD[4] in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS1_RD[3] in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS1_RD[2] in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS1_RD[1] in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS1_RD[0] in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_EMPTY_THRESH[4] in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_EMPTY_THRESH[3] in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_EMPTY_THRESH[2] in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_EMPTY_THRESH[1] in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_EMPTY_THRESH[0] in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_EMPTY_THRESH_ASSERT[4] in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_EMPTY_THRESH_ASSERT[3] in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_EMPTY_THRESH_ASSERT[2] in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_EMPTY_THRESH_ASSERT[1] in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_EMPTY_THRESH_ASSERT[0] in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_EMPTY_THRESH_NEGATE[4] in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_EMPTY_THRESH_NEGATE[3] in module rd_logic is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:01:13 . Memory (MB): peak = 2674.391 ; gain = 0.000 ; free physical = 139 ; free virtual = 5801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:01:20 . Memory (MB): peak = 2674.391 ; gain = 0.000 ; free physical = 131 ; free virtual = 5505
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:01:20 . Memory (MB): peak = 2674.391 ; gain = 0.000 ; free physical = 131 ; free virtual = 5505
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2674.391 ; gain = 0.000 ; free physical = 5226 ; free virtual = 8663
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ip/lab_dma_simple_auto_pc_1/lab_dma_simple_auto_pc_1_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.gen/sources_1/bd/lab_dma_simple/ip/lab_dma_simple_auto_pc_1/lab_dma_simple_auto_pc_1_ooc.xdc] for cell 'inst'
+Parsing XDC File [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.runs/lab_dma_simple_auto_pc_1_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch.runs/lab_dma_simple_auto_pc_1_synth_1/dont_touch.xdc]
+INFO: [Project 1-1714] 3 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2783.234 ; gain = 0.000 ; free physical = 5269 ; free virtual = 8732
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2783.234 ; gain = 0.000 ; free physical = 5258 ; free virtual = 8721
+INFO: [Designutils 20-5008] Incremental synthesis strategy off

@@ -1,0 +1,56 @@
+INFO: [HLS 200-10] Running '/scratch/Xilinx/Vitis_HLS/2022.1/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'aboette' on host 'hp6g4-inf-21.ictp.it' (Linux_x86_64 version 4.15.0-197-generic) on Fri Nov 18 12:40:47 CET 2022
+INFO: [HLS 200-10] On os Linux Mint 19.1 Tessa
+INFO: [HLS 200-10] In directory '/scratch/smr3765/labs/HLS'
+Sourcing Tcl script '/scratch/smr3765/labs/HLS/yuv_filter/solution2/export.tcl'
+INFO: [HLS 200-1510] Running: source /scratch/smr3765/labs/HLS/yuv_filter/solution2/export.tcl
+INFO: [HLS 200-1510] Running: open_project yuv_filter 
+INFO: [HLS 200-10] Opening project '/scratch/smr3765/labs/HLS/yuv_filter'.
+INFO: [HLS 200-1510] Running: set_top yuv_filter 
+INFO: [HLS 200-1510] Running: add_files ../../Labs/HLS_Lab/yuv_filter/yuv_filter.c 
+INFO: [HLS 200-10] Adding design file '../../Labs/HLS_Lab/yuv_filter/yuv_filter.c' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ../../Labs/HLS_Lab/yuv_filter/image_aux.c 
+INFO: [HLS 200-10] Adding test bench file '../../Labs/HLS_Lab/yuv_filter/image_aux.c' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ../../Labs/HLS_Lab/yuv_filter/image_aux.h 
+INFO: [HLS 200-10] Adding test bench file '../../Labs/HLS_Lab/yuv_filter/image_aux.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ../../Labs/HLS_Lab/yuv_filter/test_data/input.dat 
+INFO: [HLS 200-10] Adding test bench file '../../Labs/HLS_Lab/yuv_filter/test_data/input.dat' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ../../Labs/HLS_Lab/yuv_filter/test_data/output.dat 
+INFO: [HLS 200-10] Adding test bench file '../../Labs/HLS_Lab/yuv_filter/test_data/output.dat' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ../../Labs/HLS_Lab/yuv_filter/test_data/output.golden.dat 
+INFO: [HLS 200-10] Adding test bench file '../../Labs/HLS_Lab/yuv_filter/test_data/output.golden.dat' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ../../Labs/HLS_Lab/yuv_filter/yuv_filter.h 
+INFO: [HLS 200-10] Adding test bench file '../../Labs/HLS_Lab/yuv_filter/yuv_filter.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ../../Labs/HLS_Lab/yuv_filter/yuv_filter_test.c 
+INFO: [HLS 200-10] Adding test bench file '../../Labs/HLS_Lab/yuv_filter/yuv_filter_test.c' to the project
+INFO: [HLS 200-1510] Running: open_solution solution2 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/scratch/smr3765/labs/HLS/yuv_filter/solution2'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_dataflow -default_channel=fifo
+INFO: [XFORM 203-701] Set the default channel type in dataflow to FIFO.
+INFO: [HLS 200-1464] Running solution command: config_dataflow -strict_mode=error
+INFO: [XFORM 203-701] Set the default channel type in dataflow to FIFO.
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_dataflow -default_channel fifo -strict_mode error 
+INFO: [XFORM 203-701] Set the default channel type in dataflow to FIFO.
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+WARNING: [Common 17-1221] Tcl app 'designutils' is out of date for this release. Please run tclapp::reset_tclstore and reinstall the app.
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/scratch/Xilinx/Vivado/2022.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 18 12:41:19 2022...
+INFO: [HLS 200-802] Generated output file yuv_filter/solution2/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 17.5 seconds. CPU system time: 1.63 seconds. Elapsed time: 35.61 seconds; current allocated memory: -1026.023 MB.
+INFO: [HLS 200-112] Total CPU user time: 21.36 seconds. Total CPU system time: 2.74 seconds. Total elapsed time: 42.28 seconds; peak allocated memory: 220.660 MB.

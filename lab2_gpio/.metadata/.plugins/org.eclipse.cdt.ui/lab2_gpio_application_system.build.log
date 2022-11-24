@@ -1,0 +1,11 @@
+19:07:03 **** Incremental Build of configuration Debug for project lab2_gpio_application_system ****
+make all 
+Generating bif file for the system project
+Executing command '::scw::generate_bif -xpfm /scratch/smr3765/labs/lab2_gpio/lab2_gpio_platform/export/lab2_gpio_platform/lab2_gpio_platform.xpfm -domains standalone_domain -bifpath /scratch/smr3765/labs/lab2_gpio/lab2_gpio_application_system/Debug/system.bif' on XSCT
+sdcard_gen --xpfm /scratch/smr3765/labs/lab2_gpio/lab2_gpio_platform/export/lab2_gpio_platform/lab2_gpio_platform.xpfm --sys_config lab2_gpio_platform --bif /scratch/smr3765/labs/lab2_gpio/lab2_gpio_application_system/Debug/system.bif --bitstream /scratch/smr3765/labs/lab2_gpio/lab2_gpio_application/_ide/bitstream/lab2_gpio_wrapper.bit --elf /scratch/smr3765/labs/lab2_gpio/lab2_gpio_application/Debug/lab2_gpio_application.elf,ps7_cortexa9_0
+awk: cmd. line:1: warning: command line argument `/etc/upstream-release' is a directory: skipped
+creating BOOT.BIN using /scratch/smr3765/labs/lab2_gpio/lab2_gpio_application/_ide/bitstream/lab2_gpio_wrapper.bit
+Running /scratch/Xilinx/Vitis/2022.1/bin/bootgen  -image /scratch/smr3765/labs/lab2_gpio/lab2_gpio_application_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+19:07:16 Build Finished (took 12s.732ms)
+

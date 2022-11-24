@@ -1,0 +1,126 @@
+17:11:16 DEBUG : Logs will be stored at '/scratch/smr3765/labs/lab_dma_ch/IDE.log'.
+17:11:30 INFO  : Launching XSCT server: xsct -n  -interactive /scratch/smr3765/labs/lab_dma_ch/temp_xsdb_launch_script.tcl
+17:11:31 INFO  : Registering command handlers for Vitis TCF services
+17:11:37 INFO  : Platform repository initialization has completed.
+17:12:02 INFO  : XSCT server has started successfully.
+17:12:02 INFO  : plnx-install-location is set to ''
+17:12:02 INFO  : Successfully done setting XSCT server connection channel  
+17:12:13 INFO  : Successfully done setting workspace for the tool. 
+17:12:13 INFO  : Successfully done query RDI_DATADIR 
+17:13:20 INFO  : Result from executing command 'getProjects': lab_dma_ch_wrapper
+17:13:20 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202210_1|/scratch/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_202210_1/xilinx_zcu102_base_202210_1.xpfm;xilinx_zcu102_base_dfx_202210_1|/scratch/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_dfx_202210_1/xilinx_zcu102_base_dfx_202210_1.xpfm;xilinx_zcu104_base_202210_1|/scratch/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu104_base_202210_1/xilinx_zcu104_base_202210_1.xpfm
+17:13:21 WARN  : An unexpected exception occurred in the module 'platform project logging'
+17:13:23 INFO  : Platform 'lab_dma_ch_wrapper' is added to custom repositories.
+17:13:38 INFO  : Platform 'lab_dma_ch_wrapper' is added to custom repositories.
+17:18:39 INFO  : Result from executing command 'getProjects': lab_dma_ch_wrapper
+17:18:39 INFO  : Result from executing command 'getPlatforms': lab_dma_ch_wrapper|/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch_wrapper/export/lab_dma_ch_wrapper/lab_dma_ch_wrapper.xpfm;xilinx_zcu102_base_202210_1|/scratch/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_202210_1/xilinx_zcu102_base_202210_1.xpfm;xilinx_zcu102_base_dfx_202210_1|/scratch/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_dfx_202210_1/xilinx_zcu102_base_dfx_202210_1.xpfm;xilinx_zcu104_base_202210_1|/scratch/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu104_base_202210_1/xilinx_zcu104_base_202210_1.xpfm
+17:18:42 INFO  : Checking for BSP changes to sync application flags for project 'lab_dma_ch_app'...
+17:30:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:30:15 INFO  : Jtag cable 'Digilent Zed 210248A39C5D' is selected.
+17:30:15 INFO  : 'jtag frequency' command is executed.
+17:30:15 INFO  : Context for 'APU' is selected.
+17:30:16 INFO  : System reset is completed.
+17:30:19 INFO  : 'after 3000' command is executed.
+17:30:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}' command is executed.
+17:30:21 INFO  : Device configured successfully with "/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch_app/_ide/bitstream/lab_dma_ch_wrapper.bit"
+17:30:21 INFO  : Context for 'APU' is selected.
+17:30:21 INFO  : Hardware design and registers information is loaded from '/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch_wrapper/export/lab_dma_ch_wrapper/hw/lab_dma_ch_wrapper.xsa'.
+17:30:21 INFO  : 'configparams force-mem-access 1' command is executed.
+17:30:21 INFO  : Context for 'APU' is selected.
+17:30:21 INFO  : Sourcing of '/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch_app/_ide/psinit/ps7_init.tcl' is done.
+17:30:22 INFO  : 'ps7_init' command is executed.
+17:30:22 INFO  : 'ps7_post_config' command is executed.
+17:30:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:30:22 INFO  : The application '/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch_app/Debug/lab_dma_ch_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:30:22 INFO  : 'configparams force-mem-access 0' command is executed.
+17:30:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}
+fpga -file /scratch/smr3765/labs/lab_dma_ch/lab_dma_ch_app/_ide/bitstream/lab_dma_ch_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /scratch/smr3765/labs/lab_dma_ch/lab_dma_ch_wrapper/export/lab_dma_ch_wrapper/hw/lab_dma_ch_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /scratch/smr3765/labs/lab_dma_ch/lab_dma_ch_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /scratch/smr3765/labs/lab_dma_ch/lab_dma_ch_app/Debug/lab_dma_ch_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:30:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:30:22 INFO  : 'con' command is executed.
+17:30:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:30:22 INFO  : Launch script is exported to file '/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch_app_system/_ide/scripts/systemdebugger_lab_dma_ch_app_system_standalone.tcl'
+17:35:27 INFO  : Checking for BSP changes to sync application flags for project 'lab_dma_ch_intr'...
+17:37:27 INFO  : Disconnected from the channel tcfchan#3.
+17:37:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:37:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+17:37:37 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+17:38:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:38:39 INFO  : Jtag cable 'Digilent Zed 210248A39C5D' is selected.
+17:38:39 INFO  : 'jtag frequency' command is executed.
+17:38:39 INFO  : Context for 'APU' is selected.
+17:38:39 INFO  : System reset is completed.
+17:38:42 INFO  : 'after 3000' command is executed.
+17:38:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}' command is executed.
+17:38:45 INFO  : Device configured successfully with "/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch_intr/_ide/bitstream/lab_dma_ch_wrapper.bit"
+17:38:45 INFO  : Context for 'APU' is selected.
+17:38:45 INFO  : Hardware design and registers information is loaded from '/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch_wrapper/export/lab_dma_ch_wrapper/hw/lab_dma_ch_wrapper.xsa'.
+17:38:45 INFO  : 'configparams force-mem-access 1' command is executed.
+17:38:45 INFO  : Context for 'APU' is selected.
+17:38:45 INFO  : Sourcing of '/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch_intr/_ide/psinit/ps7_init.tcl' is done.
+17:38:46 INFO  : 'ps7_init' command is executed.
+17:38:46 INFO  : 'ps7_post_config' command is executed.
+17:38:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:38:47 INFO  : The application '/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch_intr/Debug/lab_dma_ch_intr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:38:47 INFO  : 'configparams force-mem-access 0' command is executed.
+17:38:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A39C5D" && level==0 && jtag_device_ctx=="jsn-Zed-210248A39C5D-23727093-0"}
+fpga -file /scratch/smr3765/labs/lab_dma_ch/lab_dma_ch_intr/_ide/bitstream/lab_dma_ch_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /scratch/smr3765/labs/lab_dma_ch/lab_dma_ch_wrapper/export/lab_dma_ch_wrapper/hw/lab_dma_ch_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /scratch/smr3765/labs/lab_dma_ch/lab_dma_ch_intr/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /scratch/smr3765/labs/lab_dma_ch/lab_dma_ch_intr/Debug/lab_dma_ch_intr.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:38:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:38:47 INFO  : 'con' command is executed.
+17:38:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:38:47 INFO  : Launch script is exported to file '/scratch/smr3765/labs/lab_dma_ch/lab_dma_ch_intr_system/_ide/scripts/systemdebugger_lab_dma_ch_intr_system_standalone.tcl'
+17:42:39 INFO  : Disconnected from the channel tcfchan#5.

@@ -1,0 +1,48 @@
+19:06:55 **** Incremental Build of configuration Debug for project lab2_gpio_application ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+ 
+make --no-print-directory main-build
+Building file: ../src/lab_gpio_in_out.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab_gpio_in_out.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/scratch/smr3765/labs/lab2_gpio/lab2_gpio_platform/export/lab2_gpio_platform/sw/lab2_gpio_platform/standalone_domain/bspinclude/include -MMD -MP -MF"src/lab_gpio_in_out.d" -MT"src/lab_gpio_in_out.o" -o "src/lab_gpio_in_out.o" "../src/lab_gpio_in_out.c"
+In file included from ../src/lab_gpio_in_out.c:29:
+../src/lab_gpio_in_out.c: In function 'main':
+/scratch/smr3765/labs/lab2_gpio/lab2_gpio_platform/export/lab2_gpio_platform/sw/lab2_gpio_platform/standalone_domain/bspinclude/include/xparameters.h:266:32: warning: unsigned conversion from 'int' to 'u16' {aka 'short unsigned int'} changes value from '1092616192' to '0' [-Woverflow]
+  266 | #define XPAR_PMOD_A_O_BASEADDR 0x41200000
+      |                                ^~~~~~~~~~
+../src/lab_gpio_in_out.c:50:46: note: in expansion of macro 'XPAR_PMOD_A_O_BASEADDR'
+   50 |         Status =  XGpio_Initialize(&pmoda_o, XPAR_PMOD_A_O_BASEADDR);
+      |                                              ^~~~~~~~~~~~~~~~~~~~~~
+/scratch/smr3765/labs/lab2_gpio/lab2_gpio_platform/export/lab2_gpio_platform/sw/lab2_gpio_platform/standalone_domain/bspinclude/include/xparameters.h:274:32: warning: unsigned conversion from 'int' to 'u16' {aka 'short unsigned int'} changes value from '1092681728' to '0' [-Woverflow]
+  274 | #define XPAR_PMOD_B_I_BASEADDR 0x41210000
+      |                                ^~~~~~~~~~
+../src/lab_gpio_in_out.c:57:45: note: in expansion of macro 'XPAR_PMOD_B_I_BASEADDR'
+   57 |         Status = XGpio_Initialize(&pmodb_i, XPAR_PMOD_B_I_BASEADDR);
+      |                                             ^~~~~~~~~~~~~~~~~~~~~~
+../src/lab_gpio_in_out.c:71:25: warning: passing argument 2 of 'XGpioPs_CfgInitialize' from incompatible pointer type [-Wincompatible-pointer-types]
+   71 |                         &PSConfigPtr,
+      |                         ^~~~~~~~~~~~
+      |                         |
+      |                         XGpioPs_Config **
+In file included from ../src/lab_gpio_in_out.c:31:
+/scratch/smr3765/labs/lab2_gpio/lab2_gpio_platform/export/lab2_gpio_platform/sw/lab2_gpio_platform/standalone_domain/bspinclude/include/xgpiops.h:214:71: note: expected 'const XGpioPs_Config *' but argument is of type 'XGpioPs_Config **'
+  214 | s32 XGpioPs_CfgInitialize(XGpioPs *InstancePtr, const XGpioPs_Config *ConfigPtr,
+      |                                                 ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+Finished building: ../src/lab_gpio_in_out.c
+ 
+Building target: lab2_gpio_application.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/scratch/smr3765/labs/lab2_gpio/lab2_gpio_platform/export/lab2_gpio_platform/sw/lab2_gpio_platform/standalone_domain/bsplib/lib -o "lab2_gpio_application.elf"  ./src/lab_gpio_in_out.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: lab2_gpio_application.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size lab2_gpio_application.elf  |tee "lab2_gpio_application.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26734	   1184	  22616	  50534	   c566	lab2_gpio_application.elf
+Finished building: lab2_gpio_application.elf.size
+ 
+
+19:06:58 Build Finished (took 2s.933ms)
+

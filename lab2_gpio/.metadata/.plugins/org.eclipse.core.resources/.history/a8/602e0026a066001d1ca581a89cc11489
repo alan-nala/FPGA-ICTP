@@ -1,0 +1,96 @@
+//=========================================================//
+//   Advanced Workshop on FPGA-based Systems-on-Chip for   //
+// Scientific Instrumentation and Reconfigurable Computing //
+//                                                         //
+//                          Lab                            //
+//                    GPIO IP Cores in PL                  //
+//                                                         //
+//                                                         //
+//=========================================================//
+//-----------------------------------------------------------
+//-- File       : lab_gpio_in_out.c
+//-- Author     : Cristian
+//-- Company    : ICTP-MLAB
+//-- Created    : 2018-11-08
+//-- Last update: 2021-29-01
+//-----------------------------------------------------------
+//-- Description: Simple 'C' code to read from the switches
+//-- and write to the LEDs through two GPIO IP Cores. It also
+//-- write to LED9 controlled by the PS.
+//-----------------------------------------------------------
+//-- Copyright (c) 2018
+//-----------------------------------------------------------
+//-- Revisions  :
+//-- Date        Version   Author           Description
+//-- 2018-11-08   1.0    Crisitan-Liz        Created
+//-- 2021-29-01   2.0 	 L. Garcia	       Updated for remote lab
+//-----------------------------------------------------------
+
+#include "xparameters.h"
+#include "xgpio.h"
+#include "xgpiops.h"
+#include "xil_printf.h"
+
+static XGpioPs psGpioInstancePtr;
+#define PS_GPIO_bank 2
+
+
+int main(void)
+{
+	XGpio pmoda_o, pmodb_i;
+
+	XGpioPs_Config *PSConfigPtr;
+
+	int val, psval;
+	int Status;
+
+	xil_printf("--- Start the Program ---");
+
+	/* Initialize the GPIO drivers */
+	Status = <???>(&pmoda_o, XPAR_PMOD_A_O_BASEADDR);
+
+	if (Status != XST_SUCCESS) {
+			xil_printf("Gpio PMODA Initialization Failed\r\n");
+			return XST_FAILURE;
+		}
+
+	Status = XGpio_Initialize(&pmodb_i, <???>);
+
+	if (Status != XST_SUCCESS) {
+			xil_printf("Gpio PMODB Initialization Failed\r\n");
+			return XST_FAILURE;
+		}
+
+	/* PS GPIO Initialization */
+
+	PSConfigPtr = XGpioPs_LookupConfig(<???>);
+	if (PSConfigPtr == NULL)
+		return XST_FAILURE;
+
+	Status = XGpioPs_CfgInitialize(&psGpioInstancePtr,
+			&PSConfigPtr,
+			PSConfigPtr->BaseAddr);
+
+	if (Status != XST_SUCCESS) {
+				xil_printf("PS GPIO Initialization Failed\r\n");
+				return XST_FAILURE;
+			}
+
+	/* PS GPIO pin setting to Input */
+	XGpioPs_SetDirection(&psGpioInstancePtr, PS_GPIO_bank, 0);
+
+
+		/*Starting a counter */
+		for (int i=0; i<=255; i++){
+			/*Discreate Write pmoda_o*/
+			XGpio_DiscreteWrite(&<???>, 1, i);
+			/*Discreate read pmodb*/			
+			val=XGpio_DiscreteRead(&<???>, 1);
+			psval=XGpioPs_Read(&psGpioInstancePtr, PS_GPIO_bank);
+			xil_printf("PMODA Output: %d, PMODB Receive: %d  PSGPIO Receive %d\n\r",i,val, psval);
+		}
+
+}
+
+
+

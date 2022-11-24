@@ -1,0 +1,15 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (lin64) Build 3526262 Mon Apr 18 15:47:01 MDT 2022
+| Date         : Fri Nov 18 17:35:44 2022
+| Host         : hp6g4-inf-21.ictp.it running 64-bit Linux Mint 19.1 Tessa
+| Command      : report_bus_skew -warn_on_violation -file lab_custom_ip_wrapper_bus_skew_routed.rpt -pb lab_custom_ip_wrapper_bus_skew_routed.pb -rpx lab_custom_ip_wrapper_bus_skew_routed.rpx
+| Design       : lab_custom_ip_wrapper
+| Device       : 7z020-clg484
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+
